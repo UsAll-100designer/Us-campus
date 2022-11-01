@@ -20,7 +20,7 @@
 
 - CSS
 
-  - default.css
+  - 
 
 
 ---
@@ -30,6 +30,10 @@
 
 #### TO-BE
 
+<!--👇🏼 해당 부분 수정 
+                    1. 탭 Sticky
+                    2. 탭 갯수 증가 예측 > Swipe  -->
+
 - HTML
 
   - /Us-campus/html/05_mypage/video_tobe.html
@@ -37,7 +41,7 @@
 
 - CSS
 
-  - default.css
+  - 
 
 
 ---
