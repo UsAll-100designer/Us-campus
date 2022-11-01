@@ -1,0 +1,58 @@
+@charset "UTF-8";
+	header { border-bottom: 1px solid #AFAFAF; }
+	header a { display: inline-block; vertical-align: middle; padding: 0 0.625rem; line-height: 84px; }
+	
+	header .logo { float: left; }
+	header .logo a { padding: 0 1.875rem 0 0; }
+	header .gnb { float: right; }
+	header .profile { width: 42px; height: 42px; padding: 0; text-align: center; line-height: 42px; border-radius: 8px; color: #fff; overflow: hidden; }
+
+	header .menu a { font-weight: 500; }
+
+	header .no { display: none; }
+	header.scroll { position: fixed; left: 0; top: 0; z-index: 200; width: 100%; background: #fff; }
+	@media (max-width:960px) {
+		header a { line-height: 72px; }
+	}
+	@media (max-width:720px) {
+		header { padding: 10px 0; }
+		header a { line-height: 42px; }
+		header .menu { font-size: 1rem; clear: both; }
+		header .menu a { padding: 0 1rem 0 0; line-height: 1em; }
+		header .no { display: inline-block; }
+	}
+
+	footer { padding: 2rem; text-align: center; font-weight: 500; background: #F1F1F1 }
+	footer .link { padding: 1.375rem 0 0 0; font-weight: 700; }
+	footer .link i { display: none; color: #707070; }
+	footer .address { padding: 2rem 0 0 0; }
+	footer .address span { display: inline-block; padding: 0 15px 0 0; }
+	footer .more { display: none; }
+	footer .copy { padding: 2rem 0 0 0; }
+	@media (max-width:960px) {
+		footer { text-align: left; }
+		footer .link i { display: inline-block; padding: 0 0.3rem; }
+		footer .address { display: none; }
+		footer .address.on { display: block; }
+		footer .address span { display: block; padding: 0; }
+		footer .address br { display: none; }
+
+		footer .more { display: block; padding: 1rem 0 0 0; }
+		footer .more i:before { content: "\e941"; font-family: xeicon; }
+		footer .more.on i:before { content: "\e944"; font-family: xeicon; }
+		
+	}
+
+	.mob_box { display: none; }
+	@media (max-width:720px) {
+		.mob_box { display: block; position: fixed; left: 0; bottom: 0; z-index: 100; width: 100%; border-radius: 20px 20px 0 0; background: #fff; box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.1); }
+		.mob_box ul { overflow: hidden; }
+		.mob_box li { float: left; width: 25%; padding: 1rem 0; text-align: center; }
+		.mob_box p { padding: 0.3rem 0 0 0; line-height: 1rem; }
+		.mob_box img { width: 30%; }
+		.mob_box li .on { display: none; }
+		.mob_box li .off { display: block; margin: 0 auto;  }
+		.mob_box .select { color: #01954A; }
+		.mob_box .select .on { display: block; margin: 0 auto; }
+		.mob_box .select .off { display: none; }
+	}

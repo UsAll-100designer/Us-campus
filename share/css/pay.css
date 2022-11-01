@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+	.pay { max-width: 720px; margin: 0 auto; padding: 5rem 1.250rem; }
+	.pay .title { position: relative; padding: 2rem 0 1rem 0; }
+	.pay .title span { float: right; }
+	.pay .title i { color: #949191; cursor: pointer; }
+	
+	.pay .box { border-top: 2px solid #F1F1F1; padding: 2rem 0; }
+	@media (max-width:720px) {
+		.pay { padding: 0 1.250rem 2rem 1.250rem; }
+		.pay .title { padding: 1rem 0 0.5rem 0; }
+		.pay .box { padding: 1rem 0; }
+	}
+
+	.pay .box01 .bt_box { max-width: 335px; margin: 0 auto; padding: 5rem 0 2rem 0; }
+	.pay .box01 .bt_box button { height: 46px; font-weight: 700; border: 0; border-radius: 4px; }
+	.pay .box01 a { display: block; text-align: right; font-weight: 700; text-decoration: underline; }
+
+	.pay .box02 { color: #4E4E4E; }
+	.pay .box02 ul { padding-bottom: 0.625rem; }
+	.pay .box02 li { position: relative; padding-left: 1rem; }
+	.pay .box02 li i { position: absolute; left: 0; }
+	.pay .box02 a { display: block; text-align: right; font-weight: 700; text-decoration: underline; }
+
+	.pay .info th { width: 60px; font-weight: 500; padding: 0 0 1rem 0; text-align: left; }
+	.pay .info td { padding: 0 0 1rem 0; }
+	.pay .info p { max-width: 280px; padding: 0.375em 1rem; border-radius: 4px; background: #F1F1F1; }
+
+	.pay .goods > div { margin: 0 0 2rem 0; padding: 0.5rem; border: 1px solid #D5D3D3; border-radius: 10px; }
+	.pay .goods td { padding: 0.5rem 1rem; }
+	.pay .goods p { padding: 1rem 0 2rem 0; }
+	.pay .goods i { color: #949191; }
+	@media (max-width:720px) {
+		.pay .goods > div { margin: 0 0 1rem 0; }
+	}
+
+	.pay .sale td:nth-child(2) { width: 90px; padding: 0 0 0 10px; }
+	.pay .sale input { padding: 0 1rem; border: 1px solid #B2B2B2; border-radius: 4px; }
+	.pay .sale button { border-radius: 4px; }
+
+	.pay .order > div { padding: 1rem 1.250rem; border: 1px solid #D5D3D3; border-radius: 4px; }
+	.pay .order img { margin-top: -10px; }
+	.pay .order th { padding: 0.750rem 0; text-align: left; font-weight: 500; color: #191919; }
+	.pay .order td { padding: 0.750rem 0; text-align: right; font-size: 1rem; font-weight: 700; color: #191919; }
+	.pay .order i { font-size: 0.750rem; }
+	.pay .order .re { font-weight: 400; }
+	.pay .order .total { margin: 1.250rem 0 0 0; border: 0; border-radius: 2px; background: #F1F1F1; }
+	.pay .order .total th { font-weight: 700; }
+	@media (max-width:720px) {
+		.pay .order th { padding: 0.2rem 0; }
+		.pay .order td { padding: 0.2rem 0; }
+	}
+
+	.pay .address td { padding: 0.313rem 0; }
+	.pay .address td:nth-child(2) { width: 90px; padding: 0 0 0 10px; }
+	.pay .address input { padding: 0 1rem; border: 1px solid #B2B2B2; border-radius: 4px; }
+	.pay .address button { border-radius: 4px; }
+	
+	.pay .cord .list td { padding: 0 0 1rem 0; }	
+	.pay .cord .sell td { padding: 0.5rem 0; }
+	.pay .cord select { border: 1px solid #B2B2B2; }
+
+	.pay .pay_box { padding: 2rem 0 0 0; }
+	.pay .pay_box input { height: 46px; font-weight: 700; border: 0; border-radius: 4px; }
+	@media (max-width:720px) {
+		.pay .pay_box { padding: 1rem 0 0 0; }
+	}
+
+	.bank_info { padding: 3rem 0 0 0; }
+	.bank_info ul { padding: 1.250rem; font-size: 12px; background: #F1F1F1; }
+	.bank_info li { position: relative; padding: 0 0 0 0.5rem; }
+	.bank_info li i { position: absolute; left: 0; }
+	@media (max-width:720px) {
+		.bank_info { padding: 1rem 0 0 0; }
+	}
+	
+
+/* 말풍선 */
+	.speech_bubble { display: none; position: absolute; top: 95%; left: 4%; width: 280px; padding: 0.625rem; font-size: 0.750rem; background: #dfffef; border-radius: .4em; }
+	.speech_bubble.on { display: block; }
+	.speech_bubble:after { content: ''; position: absolute; top: 0; left: 20%; width: 0; height: 0; 
+		border: 10px solid transparent; border-bottom-color: #dfffef; border-top: 0; margin-left: -10px; margin-top: -10px; }
+	.speech_bubble span { display: inline-block; padding: 5px; cursor: pointer; }
+	.speech_bubble p { font-weight: 500; line-height: 1.2rem; }
+	.speech_bubble li { position: relative; padding: 0 0 0 0.75rem; line-height: 1.2rem; }
+	.speech_bubble li i { position: absolute; left: 0; }
+
+/* 결제완료 */
+	.pay .finish { text-align: center; }
+	.pay .finish h5 { line-height: 2rem; }
+	.pay .finish i { background: rgba(55, 200, 116, 0.2); }
+	.pay .finish ul { margin: 0 -0.625rem; padding-top: 12.500rem; overflow: hidden; }
+	.pay .finish li { float: left; width: 50%; padding: 0 0.625rem; }
+	.pay .finish a { display: block; line-height: 46px; font-weight: 500; border-radius: 4px; }
+	@media (max-width:720px) {
+		.pay .finish h5 { padding-top: 3rem; }
+		.pay .finish ul { padding-top: 6rem; }
+	}
+
+/* 결제실폐 */
+	.pay .fail { text-align: center; }
+	.pay .fail h5 { line-height: 2rem; }
+	.pay .fail i { background: rgba(55, 200, 116, 0.2); }
+	.pay .fail ul { padding-top: 12.500rem; overflow: hidden; }
+	.pay .fail li { max-width: 360px; margin: 0 auto; }
+	.pay .fail li a { display: block; line-height: 45px; font-weight: 500; border-radius: 4px; }
+	@media (max-width:720px) {
+		.pay .fail h5 { padding-top: 3rem; }
+		.pay .fail ul { padding-top: 6rem; }
+	}
+
+/* 무통장 */
+	.pay .bank { text-align: center; }
+	.pay .bank h5 { padding-bottom: 1.500rem; line-height: 2rem; }
+	.pay .bank h5 i { background: rgba(55, 200, 116, 0.2); }
+	.pay .bank > div { padding: 2rem 0; border-radius: 4px; background: #F1F1F1; }
+	.pay .bank > div p { padding: 0 0 1rem 0; }
+	.pay .bank table { max-width: 250px; margin: 0 auto;  }
+	.pay .bank th { text-align: left; width: 30%; font-weight: 500; }
+	.pay .bank td { text-align: left; width: 70%; font-weight: 500; }
+	.pay .bank ul { padding-top: 6.250rem; overflow: hidden; }
+	.pay .bank li { max-width: 360px; margin: 0 auto; }
+	.pay .bank li a { display: block; line-height: 45px; font-weight: 500; border-radius: 4px; }
+	@media (max-width:720px) {
+		.pay .bank > div { padding: 1rem 0; }
+		.pay .bank > div p { padding: 0 0 0.5rem 0; }
+		.pay .bank ul { padding-top: 4.167rem; }
+	}
+	
