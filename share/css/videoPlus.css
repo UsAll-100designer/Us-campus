@@ -65,7 +65,7 @@
 .swiper-slide.active {
   color: #fff;
   background: #01954a;
-  border: 2px solid #01954a;
+  border: 1px solid #01954a;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   font-weight: 500;
 }
@@ -113,5 +113,9 @@
   }
   .swiper-slide {
     height: 36px;
+    margin-right: 12px !important;
+  }
+  .swiper-slide a {
+    line-height: 34px;
   }
 }
