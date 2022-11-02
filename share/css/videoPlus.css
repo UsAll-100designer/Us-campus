@@ -110,6 +110,8 @@
   .stickyBox {
     height: 50px;
     margin: 1rem 0;
+    width: 110%;
+    margin-left: -5%;
   }
   .swiper-slide {
     height: 36px;
@@ -117,5 +119,6 @@
   }
   .swiper-slide a {
     line-height: 34px;
+    font-size: 12px;
   }
 }
