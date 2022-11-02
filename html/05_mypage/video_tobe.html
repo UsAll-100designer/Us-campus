@@ -1,290 +1,398 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-	<meta name="theme-color" content="#000000">
-	<title>어스캠퍼스</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+    <meta name="theme-color" content="#000000" />
+    <title>어스캠퍼스</title>
 
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-	
-	<link rel="stylesheet" type="text/css" href="../../share/css/xeicon.css" />
-	<link rel="stylesheet" type="text/css" href="../../share/css/base.css" />
-	<link rel="stylesheet" type="text/css" href="../../share/css/layout.css" />
-	<link rel="stylesheet" type="text/css" href="../../share/css/menu.css" />
-	<link rel="stylesheet" type="text/css" href="../../share/css/study.css" />
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
 
-<body>
-	<div class="wrap">
-		<header>
-			<div class="content">
-				<div class="logo"><a href="../00_main/"><img src="../../img/common/top_logo.png"></a></div>
-				<div class="gnb">
-					<a href="#">나의스터디</a>
-					<a href="#"><img src="../../img/common/icon_alarm.png"></a>
-					<a class="profile s_tt" style="background: #B8C93D;" href="#">어스</a>
-				</div>
-				<div class="menu">
-					<a class="tc01 no" href="#"><i class="xi-angle-left"></i></a>
-					<a href="#">어스캠퍼스</a>
-					<a href="#">815캠퍼스</a>
-				</div>
-			</div>
-		</header>
-		
-		<div class="study">
-			<div class="content">
-				<div class="l_box">
-					<h4>안녕하세요. <strong>김어스님!</strong> <a class="s_tt tab_all" href="#">로그아웃</a></h4>
-					<p class="tc01"><a href="./my_info.html">회원정보 수정 <img src="../../img/common/icon_modify.png"></a></p>
-					<div class="link_box tab_all">
-						<a href="#">FAQ <i class="xi-angle-right"></i></a>
-						<a href="#">구매내역 <i class="xi-angle-right"></i></a>
-					</div>
-					<ul class="menu">
-						<li class="on"><a href="./index.html"><strong>나의 스터디</strong></a></li>
-						<li><a href="./mark.html"><strong>나의 북마크</strong></a></li>
-						<li><a href="./alarm.html"><strong>알림</strong> <span>99+</span></a></li>
-					</ul>
-					<div class="link_box web">
-						<a href="#">FAQ <i class="xi-angle-right"></i></a>
-						<a href="#">구매내역 <i class="xi-angle-right"></i></a>
-						<a href="#">로그아웃 <i class="xi-angle-right"></i></a>
-					</div>
-				</div><!-- left_box -->
-				<div class="r_box">
+    <link rel="stylesheet" type="text/css" href="../../share/css/xeicon.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/study.css" />
+    <style>
+      /* 기본 구조 */
+      .tab_wrap {
+        max-width: 500px;
+        margin: 50px auto;
+        background: #f8f8f8;
+      }
 
-					<div class="my_ban" style="color: #fff; background: #285A89;">
-						<table>
-							<tr>
-								<th><img src="../../img/teacher.png"></th>
-								<td class="h5"><strong>할수있다 알고투자와 함께하는 강환국 패밀리 스터디 할수있다 퀀트투자</strong></td>
-							</tr>
-						</table>
-					</div>
+      /* 가로 스크롤 적용 */
+      .scroll__wrap {
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 0;
+      }
+      .scroll--element {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border: 2px solid #222;
+        background: #fff;
+        font-size: 16px;
+        line-height: 150px;
+        text-align: center;
+      }
+      .scroll--element + .scroll--element {
+        margin-left: 15px;
+      } 
 
-                    <!--👇🏼 해당 부분 수정 
+      .wrap02 { width: 100%; overflow-x: auto; white-space: nowrap; 
+        -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */}
+.wrap02::-webkit-scrollbar {display: none;}
+.wrap02 li { width:200px; hegiht:50px; border: 1px solid #ddd; display:inline-block;}
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="content">
+          <div class="logo">
+            <a href="../00_main/"><img src="../../img/common/top_logo.png" /></a>
+          </div>
+          <div class="gnb">
+            <a href="#">나의스터디</a>
+            <a href="#"><img src="../../img/common/icon_alarm.png" /></a>
+            <a class="profile s_tt" style="background: #b8c93d" href="#">어스</a>
+          </div>
+          <div class="menu">
+            <a class="tc01 no" href="#"><i class="xi-angle-left"></i></a>
+            <a href="#">어스캠퍼스</a>
+            <a href="#">815캠퍼스</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="study">
+        <div class="content">
+          <div class="l_box">
+            <h4>안녕하세요. <strong>김어스님!</strong> <a class="s_tt tab_all" href="#">로그아웃</a></h4>
+            <p class="tc01">
+              <a href="./my_info.html">회원정보 수정 <img src="../../img/common/icon_modify.png" /></a>
+            </p>
+            <div class="link_box tab_all">
+              <a href="#">FAQ <i class="xi-angle-right"></i></a>
+              <a href="#">구매내역 <i class="xi-angle-right"></i></a>
+            </div>
+            <ul class="menu">
+              <li class="on">
+                <a href="./index.html"><strong>나의 스터디</strong></a>
+              </li>
+              <li>
+                <a href="./mark.html"><strong>나의 북마크</strong></a>
+              </li>
+              <li>
+                <a href="./alarm.html"><strong>알림</strong> <span>99+</span></a>
+              </li>
+            </ul>
+            <div class="link_box web">
+              <a href="#">FAQ <i class="xi-angle-right"></i></a>
+              <a href="#">구매내역 <i class="xi-angle-right"></i></a>
+              <a href="#">로그아웃 <i class="xi-angle-right"></i></a>
+            </div>
+          </div>
+          <!-- left_box -->
+          <div class="r_box">
+            <div class="my_ban" style="color: #fff; background: #285a89">
+              <table>
+                <tr>
+                  <th><img src="../../img/teacher.png" /></th>
+                  <td class="h5"><strong>할수있다 알고투자와 함께하는 강환국 패밀리 스터디 할수있다 퀀트투자</strong></td>
+                </tr>
+              </table>
+            </div>
+
+            <!--👇🏼 해당 부분 수정 
                     1. 탭 Sticky
                     2. 탭 갯수 증가 예측 > Swipe  -->
-					<div class="tab_menu">
-						<ul class="tab03">
-							<li><a href="./com.html">커뮤니티</a></li>
-							<li class="on"><a href="./video.html">동영상</a></li>
-							<li><a href="./guide.html">학습기이드</a></li>
-						</ul>
-					</div><!-- tab_menu -->
 
-					<div class="video">
-						<div class="array">
-							<table>
-								<tr>
-									<td><strong>2020년 12월</strong></td>
-									<td>
-										<select>
-											<option>과거순</option>
-											<option>최신순</option>
-										</select>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<div class="list">
-							<table>
-								<tr>
-									<th>
-										<div class="img_box">
-											<img src="../../img/video.png">
-											<p class="top"><span class="type01">VOD</span></p>
-											<p class="bot">
-												<i><img src="../../img/common/like_off.png"></i>
-												<i><img src="../../img/common/book_on.png"></i>
-											</p>
-										</div>
-									</th>
-									<td>
-										<h6 class="subject2"><a href="./video_view.html">퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음</a></h6>
-										<p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
-										<ul class="file_box web">
-											<li><a href="#none"><img src="../../img/common/icon_pdf.png"> 자료다운</a></li>
-											<li><a href="#none"><img src="../../img/common/icon_word.png"> 자료다운</a></li>
-										</ul>
-									</td>
-								</tr>
+            <div class="tab_wrap">
+              <div class="scroll__wrap">
+                <div class="scroll--element">Element1</div>
+                <div class="scroll--element">Element2</div>
+                <div class="scroll--element">Element3</div>
+                <div class="scroll--element">Element4</div>
+                <div class="scroll--element">Element5</div>
+                <div class="scroll--element">Element6</div>
+              </div>
+            </div>
 
-								<tr>
-									<th>
-										<div class="img_box">
-											<img src="../../img/video.png">
-											<p class="top"><span class="type02">VOD</span></p>
-											<p class="bot">
-												<i><img src="../../img/common/like_on.png"></i>
-												<i><img src="../../img/common/book_on.png"></i>
-											</p>
-										</div>
-									</th>
-									<td>
-										<h6 class="subject2">퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음</h6>
-										<p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
-										<ul class="file_box">
-											<li><a href="#none"><img class="web" src="../../img/common/icon_pdf.png"> 파일 다운로드</a></li>
-											<li><a href="#none"><img class="web" src="../../img/common/icon_word.png"> 파일 다운로드</a></li>
-										</ul>
-									</td>
-								</tr>
+            <div class="wrap02">
+              <ul>
+                    <li>AAA</li>
+                    <li>BBB</li>
+                    <li>CCC</li>
+                    <li>AAA</li>
+                    <li>BBB</li>
+                    <li>CCC</li>
+              <ul>
+          </div>
+          
+          
+            <div class="tab_menu">
+              <ul class="tab03">
+                <li><a href="./com.html">커뮤니티</a></li>
+                <li class="on"><a href="./video.html">동영상</a></li>
+                <li><a href="./guide.html">학습기이드</a></li>
+              </ul>
+            </div>
+            <!-- tab_menu -->
 
-								<tr>
-									<th>
-										<div class="img_box">
-											<img src="../../img/video.png">
-											<p class="top"><span class="type03">LIVE</span></p>
-											<p class="bot">
-												<i><img src="../../img/common/like_on.png"></i>
-												<i><img src="../../img/common/book_on.png"></i>
-											</p>
-										</div>
-									</th>
-									<td>
-										<h6 class="subject2">퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음</h6>
-										<p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
-										<ul class="file_box">
-											<li><a href="#none"><img src="../../img/common/icon_pdf.png"> 파일 다운로드</a></li>
-											<li><a href="#none"><img src="../../img/common/icon_word.png"> 파일 다운로드</a></li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
+            <div class="video">
+              <div class="array">
+                <table>
+                  <tr>
+                    <td><strong>2020년 12월</strong></td>
+                    <td>
+                      <select>
+                        <option>과거순</option>
+                        <option>최신순</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="list">
+                <table>
+                  <tr>
+                    <th>
+                      <div class="img_box">
+                        <img src="../../img/video.png" />
+                        <p class="top"><span class="type01">VOD</span></p>
+                        <p class="bot">
+                          <i><img src="../../img/common/like_off.png" /></i>
+                          <i><img src="../../img/common/book_on.png" /></i>
+                        </p>
+                      </div>
+                    </th>
+                    <td>
+                      <h6 class="subject2">
+                        <a href="./video_view.html"
+                          >퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음</a
+                        >
+                      </h6>
+                      <p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
+                      <ul class="file_box web">
+                        <li>
+                          <a href="#none"><img src="../../img/common/icon_pdf.png" /> 자료다운</a>
+                        </li>
+                        <li>
+                          <a href="#none"><img src="../../img/common/icon_word.png" /> 자료다운</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
 
-						<div class="array pd">
-							<table>
-								<tr>
-									<td><strong>2020년 12월</strong></td>
-								</tr>
-							</table>
-						</div>
-						<div class="list">
-							<table>
-								<tr>
-									<th>
-										<div class="img_box">
-											<img src="../../img/video.png">
-											<p class="top"><span class="type01">VOD</span></p>
-											<p class="bot">
-												<i><img src="../../img/common/like_on.png"></i>
-												<i><img src="../../img/common/book_on.png"></i>
-											</p>
-										</div>
-									</th>
-									<td>
-										<h6 class="subject2">퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음</h6>
-										<p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
-										<ul class="file_box">
-											<li><a href="#none"><img src="../../img/common/icon_pdf.png"> 파일 다운로드</a></li>
-											<li><a href="#none"><img src="../../img/common/icon_word.png"> 파일 다운로드</a></li>
-										</ul>
-									</td>
-								</tr>
+                  <tr>
+                    <th>
+                      <div class="img_box">
+                        <img src="../../img/video.png" />
+                        <p class="top"><span class="type02">VOD</span></p>
+                        <p class="bot">
+                          <i><img src="../../img/common/like_on.png" /></i>
+                          <i><img src="../../img/common/book_on.png" /></i>
+                        </p>
+                      </div>
+                    </th>
+                    <td>
+                      <h6 class="subject2">
+                        퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음
+                      </h6>
+                      <p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
+                      <ul class="file_box">
+                        <li>
+                          <a href="#none"><img class="web" src="../../img/common/icon_pdf.png" /> 파일 다운로드</a>
+                        </li>
+                        <li>
+                          <a href="#none"><img class="web" src="../../img/common/icon_word.png" /> 파일 다운로드</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
 
-								<tr>
-									<th>
-										<div class="img_box">
-											<img src="../../img/video.png">
-											<p class="top"><span class="type02">VOD</span></p>
-											<p class="bot">
-												<i><img src="../../img/common/like_on.png"></i>
-												<i><img src="../../img/common/book_on.png"></i>
-											</p>
-										</div>
-									</th>
-									<td>
-										<h6 class="subject2">퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음</h6>
-										<p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
-										<ul class="file_box">
-											<li><a href="#none"><img src="../../img/common/icon_pdf.png"> 파일 다운로드</a></li>
-											<li><a href="#none"><img src="../../img/common/icon_word.png"> 파일 다운로드</a></li>
-										</ul>
-									</td>
-								</tr>
+                  <tr>
+                    <th>
+                      <div class="img_box">
+                        <img src="../../img/video.png" />
+                        <p class="top"><span class="type03">LIVE</span></p>
+                        <p class="bot">
+                          <i><img src="../../img/common/like_on.png" /></i>
+                          <i><img src="../../img/common/book_on.png" /></i>
+                        </p>
+                      </div>
+                    </th>
+                    <td>
+                      <h6 class="subject2">
+                        퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음
+                      </h6>
+                      <p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
+                      <ul class="file_box">
+                        <li>
+                          <a href="#none"><img src="../../img/common/icon_pdf.png" /> 파일 다운로드</a>
+                        </li>
+                        <li>
+                          <a href="#none"><img src="../../img/common/icon_word.png" /> 파일 다운로드</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </div>
 
-								<tr>
-									<th>
-										<div class="img_box">
-											<img src="../../img/video.png">
-											<p class="top"><span class="type03">LIVE</span></p>
-											<p class="bot">
-												<i><img src="../../img/common/like_on.png"></i>
-												<i><img src="../../img/common/book_on.png"></i>
-											</p>
-										</div>
-									</th>
-									<td>
-										<h6 class="subject2">퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음</h6>
-										<p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
-										<ul class="file_box">
-											<li><a href="#none"><img src="../../img/common/icon_pdf.png"> 파일 다운로드</a></li>
-											<li><a href="#none"><img src="../../img/common/icon_word.png"> 파일 다운로드</a></li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div><!-- video -->
-				</div><!-- right_box -->
-			</div>
-			<div class="bg"></div>
-		</div><!-- study -->
+              <div class="array pd">
+                <table>
+                  <tr>
+                    <td><strong>2020년 12월</strong></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="list">
+                <table>
+                  <tr>
+                    <th>
+                      <div class="img_box">
+                        <img src="../../img/video.png" />
+                        <p class="top"><span class="type01">VOD</span></p>
+                        <p class="bot">
+                          <i><img src="../../img/common/like_on.png" /></i>
+                          <i><img src="../../img/common/book_on.png" /></i>
+                        </p>
+                      </div>
+                    </th>
+                    <td>
+                      <h6 class="subject2">
+                        퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음
+                      </h6>
+                      <p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
+                      <ul class="file_box">
+                        <li>
+                          <a href="#none"><img src="../../img/common/icon_pdf.png" /> 파일 다운로드</a>
+                        </li>
+                        <li>
+                          <a href="#none"><img src="../../img/common/icon_word.png" /> 파일 다운로드</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
 
-		<footer>
-			<div>
-				<strong>고객센터 070-8209-6267</strong><br/>(평일 10:00~17:00, 점심 12:00~13:30 )
-			</div>
-			<div class="link">
-				<a href="#">이용 약관</a><i>ㅣ</i>
-				<a href="#">개인정보처리방침</a><i>ㅣ</i>
-				<a href="#">환불정책</a><i>ㅣ</i>
-				<a href="#">FAQ</a>
-			</div>
-			<div class="more on tc02">더보기 <i></i></div>
-			<div class="address on s_tt">
-				<span>어스얼라이언스주식회사 대표이사 김선우</span>
-				<span>주소: 서울특별시 마포구 와우산로23길 20, 2층</span><span>사업자등록번호 :  119-86-49349</span><br/>
-				<span>통신판매업 제2021-서울강남-03547호</span><span>개인정보책임자 유영준 (yuyoungiun@us-all.co.kr)</span>
-			</div>
-			<div class="copy s_tt">Copyright © US Alliance All Right Reserved.</div>
-		</footer>
-		<div class="mob_box">
-			<ul>
-				<li class="select">
-					<a href="#">
-						<img class="off" src="../../img/common/mob_menu01_off.png">
-						<img class="on" src="../../img/common/mob_menu01_on.png">
-						<p>홈</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img class="off" src="../../img/common/mob_menu02_off.png">
-						<img class="on" src="../../img/common/mob_menu02_on.png">
-						<p>나의 스터디</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img class="off" src="../../img/common/mob_menu03_off.png">
-						<img class="on" src="../../img/common/mob_menu03_on.png">
-						<p>알림</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img class="off" src="../../img/common/mob_menu04_off.png">
-						<img class="on" src="../../img/common/mob_menu04_on.png">
-						<p>마이</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div><!-- wrap -->
-</body>
+                  <tr>
+                    <th>
+                      <div class="img_box">
+                        <img src="../../img/video.png" />
+                        <p class="top"><span class="type02">VOD</span></p>
+                        <p class="bot">
+                          <i><img src="../../img/common/like_on.png" /></i>
+                          <i><img src="../../img/common/book_on.png" /></i>
+                        </p>
+                      </div>
+                    </th>
+                    <td>
+                      <h6 class="subject2">
+                        퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음
+                      </h6>
+                      <p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
+                      <ul class="file_box">
+                        <li>
+                          <a href="#none"><img src="../../img/common/icon_pdf.png" /> 파일 다운로드</a>
+                        </li>
+                        <li>
+                          <a href="#none"><img src="../../img/common/icon_word.png" /> 파일 다운로드</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      <div class="img_box">
+                        <img src="../../img/video.png" />
+                        <p class="top"><span class="type03">LIVE</span></p>
+                        <p class="bot">
+                          <i><img src="../../img/common/like_on.png" /></i>
+                          <i><img src="../../img/common/book_on.png" /></i>
+                        </p>
+                      </div>
+                    </th>
+                    <td>
+                      <h6 class="subject2">
+                        퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음 퀀트투자의 첫 걸음
+                      </h6>
+                      <p class="time">2020.02.11 &nbsp; <i class="red">무료</i></p>
+                      <ul class="file_box">
+                        <li>
+                          <a href="#none"><img src="../../img/common/icon_pdf.png" /> 파일 다운로드</a>
+                        </li>
+                        <li>
+                          <a href="#none"><img src="../../img/common/icon_word.png" /> 파일 다운로드</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- video -->
+          </div>
+          <!-- right_box -->
+        </div>
+        <div class="bg"></div>
+      </div>
+      <!-- study -->
+
+      <footer>
+        <div><strong>고객센터 070-8209-6267</strong><br />(평일 10:00~17:00, 점심 12:00~13:30 )</div>
+        <div class="link">
+          <a href="#">이용 약관</a><i>ㅣ</i> <a href="#">개인정보처리방침</a><i>ㅣ</i> <a href="#">환불정책</a><i>ㅣ</i>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="more on tc02">더보기 <i></i></div>
+        <div class="address on s_tt">
+          <span>어스얼라이언스주식회사 대표이사 김선우</span>
+          <span>주소: 서울특별시 마포구 와우산로23길 20, 2층</span><span>사업자등록번호 : 119-86-49349</span><br />
+          <span>통신판매업 제2021-서울강남-03547호</span><span>개인정보책임자 유영준 (yuyoungiun@us-all.co.kr)</span>
+        </div>
+        <div class="copy s_tt">Copyright © US Alliance All Right Reserved.</div>
+      </footer>
+      <div class="mob_box">
+        <ul>
+          <li class="select">
+            <a href="#">
+              <img class="off" src="../../img/common/mob_menu01_off.png" />
+              <img class="on" src="../../img/common/mob_menu01_on.png" />
+              <p>홈</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="off" src="../../img/common/mob_menu02_off.png" />
+              <img class="on" src="../../img/common/mob_menu02_on.png" />
+              <p>나의 스터디</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="off" src="../../img/common/mob_menu03_off.png" />
+              <img class="on" src="../../img/common/mob_menu03_on.png" />
+              <p>알림</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="off" src="../../img/common/mob_menu04_off.png" />
+              <img class="on" src="../../img/common/mob_menu04_on.png" />
+              <p>마이</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- wrap -->
+  </body>
 </html>
