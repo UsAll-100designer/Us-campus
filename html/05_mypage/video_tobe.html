@@ -14,102 +14,12 @@
     <link rel="stylesheet" type="text/css" href="../../share/css/menu.css" />
     <link rel="stylesheet" type="text/css" href="../../share/css/study.css" />
 
-    <!-- Link Swiper's CSS -->
+    <!-- ⚠️ 추가 시작 1️⃣ -->
     <link rel="stylesheet" type="text/css" href="../../share/css/swiper-bundle.min.css" />
-
-    <script src="/Us-campus/share/js/swiper-bundle.min.js"></script>
-    <script defer src="/Us-campus/share/js/swiper.js"></script>
-
-    <style>
-      .swiperWrap {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .swiper {
-        width: 95%;
-        height: 100%;
-        overflow: visible;
-        margin-left: 0;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 0.9rem;
-        background: #fff;
-        font-weight: 400;
-        height: 55px;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        border: 1px solid #ddd;
-        /* border-radius: 3rem; */
-        /*추가*/
-      }
-      .swiper-wrapper {
-        justify-content: flex-start;
-        padding: 2.5rem 0rem;
-      }
-      .swiper-slide.active {
-        color: #fff;
-        background: #01954a;
-        border: 2px solid #01954a;
-        /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-        /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        font-weight: 500;
-      }
-      .swiper-slide:hover {
-        border: 1px solid #01954a;
-        transition: all 0.3s;
-      }
-      /* .sticky {
-        position: sticky;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-      } */
-
-      .stickyBox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        left: 0;
-        height: 60px;
-        z-index: 30;
-      }
-
-      .stickyBox.redbean {
-        background: #c7a8a5;
-      }
-      /*clearfix*/
-      .cf:after {
-        clear: both;
-        content: '';
-        display: block;
-      }
-
-      .study-vis {
-        overflow: visible;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../../share/css/videoPlus.css" />
+    <script src="../../share/js/swiper-bundle.min.js"></script>
+    <script defer src="../../share/js/swiper.js"></script>
+    <!-- ⚠️ 추가 끝 1️⃣ -->
   </head>
 
   <body>
@@ -131,8 +41,9 @@
           </div>
         </div>
       </header>
-
+      <!--📌 변경부분 : class="study study-vis cf"-->
       <div class="study study-vis cf">
+        <!--📌 변경부분 : class="content cf"-->
         <div class="content cf">
           <div class="l_box">
             <h4>안녕하세요. <strong>김어스님!</strong> <a class="s_tt tab_all" href="#">로그아웃</a></h4>
@@ -162,7 +73,6 @@
           </div>
           <!-- left_box -->
           <div class="r_box">
-            <div class="stickyBox redbean">굉장히 스띠끼해질 예정인 박스</div>
             <div class="my_ban" style="color: #fff; background: #285a89">
               <table>
                 <tr>
@@ -179,28 +89,36 @@
             <!-- Swiper JS -->
 
             <!-- Initialize Swiper -->
-            <div class="swiperWrap">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">커뮤니티</div>
-                  <div class="swiper-slide active">동영상</div>
-                  <div class="swiper-slide">학습가이드</div>
-                  <div class="swiper-slide">커뮤니티</div>
-                  <div class="swiper-slide">동영상</div>
-                  <div class="swiper-slide">학습가이드</div>
-                  <div class="swiper-slide">커뮤니티</div>
-                  <div class="swiper-slide">동영상</div>
-                  <div class="swiper-slide">학습가이드</div>
-                  <div class="swiper-slide">커뮤니티</div>
-                  <div class="swiper-slide">동영상</div>
-                  <div class="swiper-slide">학습가이드</div>
+            <div class="stickyBox">
+              <div class="swiperWrap">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="./com.html">커뮤니티</a>
+                    </div>
+
+                    <div class="swiper-slide active">
+                      <a href="./com.html">동영상</a>
+                    </div>
+                    <div class="swiper-slide"><a href="./guide.html">학습가이드</a></div>
+                    <div class="swiper-slide">커뮤니티</div>
+                    <div class="swiper-slide">동영상</div>
+                    <div class="swiper-slide">학습가이드</div>
+                    <div class="swiper-slide">커뮤니티</div>
+                    <div class="swiper-slide">동영상</div>
+                    <div class="swiper-slide">학습가이드</div>
+                    <div class="swiper-slide">커뮤니티</div>
+                    <div class="swiper-slide">동영상</div>
+                    <div class="swiper-slide">학습가이드</div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Swiper JS -->
 
-            <!-- <div class="tab_menu">
+            <!-- 이전 탭 
+              <div class="tab_menu">
               <ul class="tab03">
                 <li><a href="./com.html">커뮤니티</a></li>
                 <li class="on"><a href="./video.html">동영상</a></li>

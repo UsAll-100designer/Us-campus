@@ -1,0 +1,107 @@
+.swiperWrap {
+  position: relative;
+  overflow: hidden;
+}
+.swiperWrap::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 100px;
+  background: url('/Us-campus/img/WG_bg.png');
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+}
+.swiperWrap::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 100px;
+  background: url('/Us-campus/img/WG_bg.png');
+  position: absolute;
+  top: 0;
+  left: -10px;
+  z-index: 20;
+  transform: rotate(0.5turn);
+}
+
+.swiper {
+  width: 83%;
+  height: 100%;
+  overflow: visible;
+  margin-left: 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 0.9rem;
+  background: #fff;
+  font-weight: 400;
+  height: 48px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  /*추가*/
+  border: 1px solid #ddd;
+  border-radius: 3rem;
+  position: relative;
+}
+.swiper-slide:first-of-type {
+  margin-left: 15px;
+}
+.swiper-slide.active {
+  color: #fff;
+  background: #01954a;
+  border: 2px solid #01954a;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-weight: 500;
+}
+.swiper-slide:hover {
+  border: 1px solid #01954a;
+  transition: all 0.3s;
+}
+
+.swiper-slide a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 44px;
+}
+
+.stickyBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 80px;
+  z-index: 30;
+  background: #f8f8f8;
+  margin: 1.5rem 0;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+/*clearfix*/
+.cf:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.study-vis {
+  overflow: visible;
+}
