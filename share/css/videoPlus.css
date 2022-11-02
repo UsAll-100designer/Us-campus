@@ -56,29 +56,34 @@
   align-items: center;
   /*추가*/
   border: 1px solid #ddd;
-  border-radius: 3rem;
+  border-radius: 6px;
   position: relative;
 }
 .swiper-slide:first-of-type {
   margin-left: 15px;
 }
-.swiper-slide.active {
-  color: #fff;
-  background: #01954a;
-  border: 1px solid #01954a;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  font-weight: 500;
-}
-.swiper-slide:hover {
-  border: 1px solid #01954a;
-  transition: all 0.3s;
-}
-
 .swiper-slide a {
   display: inline-block;
   width: 100%;
   height: 100%;
   line-height: 44px;
+  color: #666;
+}
+.swiper-slide.active {
+  color: #fff;
+  background: rgb(2, 105, 53);
+  background: linear-gradient(0deg, rgba(2, 105, 53, 1) 35%, rgba(6, 130, 71, 1) 100%);
+  border: 1px solid #01954a;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-weight: 700;
+}
+
+.swiper-slide.active a {
+  color: #fff;
+}
+.swiper-slide:hover {
+  border: 1px solid #08b061;
+  transition: all 0.3s;
 }
 
 .stickyBox {

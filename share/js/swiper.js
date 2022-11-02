@@ -7,7 +7,7 @@
 
 var swiper = new Swiper('.mySwiper', {
   slidesPerView: 3,
-  spaceBetween: 20,
+  spaceBetween: 15,
   slidesPerGroup: 3,
   loopFillGroupWithBlank: true,
   grabCursor: true,
