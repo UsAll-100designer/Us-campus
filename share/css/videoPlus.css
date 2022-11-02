@@ -105,3 +105,13 @@
 .study-vis {
   overflow: visible;
 }
+
+@media (max-width: 720px) {
+  .stickyBox {
+    height: 50px;
+    margin: 1rem 0;
+  }
+  .swiper-slide {
+    height: 36px;
+  }
+}
