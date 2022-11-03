@@ -55,12 +55,13 @@
   -webkit-align-items: center;
   align-items: center;
   /*추가*/
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  border-bottom: 2px solid #ddd;
   position: relative;
+  width: auto !important;
+  padding: 0 75px;
 }
 .swiper-slide:first-of-type {
-  margin-left: 15px;
+  margin-left: 0px;
 }
 .swiper-slide a {
   display: inline-block;
@@ -70,19 +71,17 @@
   color: #666;
 }
 .swiper-slide.active {
-  color: #fff;
-  background: rgb(2, 105, 53);
-  background: linear-gradient(0deg, rgba(2, 105, 53, 1) 35%, rgba(6, 130, 71, 1) 100%);
-  border: 1px solid #01954a;
+  border-bottom: 2px solid #01954a;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   font-weight: 700;
+  z-index: 20;
 }
 
 .swiper-slide.active a {
-  color: #fff;
+  color: #01954a;
 }
 .swiper-slide:hover {
-  border: 1px solid #08b061;
+  border-bottom: 2px solid #08b061;
   transition: all 0.3s;
 }
 
@@ -93,11 +92,11 @@
   position: sticky;
   top: 0;
   left: 0;
-  height: 80px;
+  height: 48px;
   z-index: 30;
-  background: #f8f8f8;
+  background: #fff;
   margin: 1.5rem 0;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 /*clearfix*/
@@ -113,14 +112,14 @@
 
 @media (max-width: 720px) {
   .stickyBox {
-    height: 50px;
+    height: 36px;
     margin: 1rem 0;
     width: 110%;
     margin-left: -5%;
   }
   .swiper-slide {
     height: 36px;
-    margin-right: 12px !important;
+    padding: 0 30px;
   }
   .swiper-slide:first-of-type {
     margin-left: 19px;
