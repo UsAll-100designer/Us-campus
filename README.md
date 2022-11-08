@@ -9,6 +9,7 @@
 - 11M 01D Legacy Update
 - 11M 02D 요청완료 Update
 - 11M 03D 탭 스타일 변경 요청 / 완료
+- 11M 08D 팝업 추가요청
 
 ---
 
@@ -91,5 +92,21 @@
   <!-- ⚠️ 추가 끝 2️⃣ -->
 
 ```
+
+---
+
+#### AS-IS
+
+- HTML
+
+  - /Us-campus/html/05_mypage/index.html
+
+---
+
+#### TO-BE
+
+- HTML
+
+  - /Us-campus/html/05_mypage/index_PopUp.html
 
 ---
