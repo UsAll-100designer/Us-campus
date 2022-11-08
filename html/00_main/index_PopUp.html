@@ -25,6 +25,23 @@
 
   <body>
     <div class="wrap">
+      <!-- ⚠️ 추가 시작 2️⃣ -->
+      <a style="position: absolute; top: 10px; left: 10px; padding: 15px" class="btn--default modal-open" href="#open-modal-common">모달 예시</a>
+
+      <div id="open-modal-common" class="modal modal-window">
+        <div class="modal-wrap">
+          <a href="#" title="Close" class="close modal-close"></a>
+          <div class="modal-wrap__tit-wrap">
+            <h1 class="modal-wrap__tit">삭제 하시겠습니까?</h1>
+          </div>
+          <div class="modal-wrap__btn">
+            <!--📌 DEV Check(11) : 취소버튼 필요없다면 삭제 -->
+            <button class="modal-wrap__btn--no">취소</button>
+            <button class="modal-wrap__btn--yes">확인</button>
+          </div>
+        </div>
+      </div>
+      <!-- ⚠️ 추가 끝 2️⃣ -->
       <header>
         <div class="content">
           <div class="logo">
