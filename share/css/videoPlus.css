@@ -110,22 +110,41 @@
   overflow: visible;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .stickyBox {
-    height: 36px;
+    height: 4rem;
     margin: 1rem 0;
     width: 110%;
     margin-left: -5%;
   }
   .swiper-slide {
-    height: 36px;
-    padding: 0 30px;
+    height: 4rem;
+    padding: 0 2rem;
   }
   .swiper-slide:first-of-type {
-    margin-left: 19px;
+    margin-left: 1rem;
   }
   .swiper-slide a {
-    line-height: 34px;
-    font-size: 12px;
+    line-height: 4rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 720px) {
+  .stickyBox {
+    height: 4rem;
+    margin: 1rem 0;
+    width: 110%;
+    margin-left: -5%;
+  }
+  .swiper-slide {
+    height: 4rem;
+    padding: 0 2rem;
+  }
+  .swiper-slide:first-of-type {
+    margin-left: 1rem;
+  }
+  .swiper-slide a {
+    line-height: 4rem;
+    font-size: 1rem;
   }
 }
