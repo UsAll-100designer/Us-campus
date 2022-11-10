@@ -13,12 +13,6 @@
   border-radius: 20px;
 }
 
-.modal_contents {
-  margin: 5%;
-  height: 200px;
-  overflow-y: scroll;
-}
-
 .modal_bg {
   position: fixed;
   z-index: 40;
@@ -34,7 +28,9 @@
   margin-top: 5vh;
   border-radius: 0 35px 35px 35px;
   font-family: 'Pretendard', serif;
+  padding-top: 2%;
 }
+
 .modal_close_select {
   position: absolute;
   width: auto;
@@ -55,6 +51,12 @@
   background: url('/img/IC_PopUp_closeBtn.png') no-repeat;
   background-size: cover;
   display: inline-block;
+}
+
+.modal_contents {
+  margin: 3%;
+  height: 85vh;
+  overflow-y: scroll;
 }
 
 .modal_button_wrap {
