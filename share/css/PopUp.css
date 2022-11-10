@@ -1,3 +1,24 @@
+/* 스크롤바 스타일 */
+.modal_wrap::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal_wrap::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+.modal_wrap::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+
+.modal_contents {
+  margin: 5%;
+  height: 200px;
+  overflow-y: scroll;
+}
+
 .modal_bg {
   position: fixed;
   z-index: 40;
@@ -12,6 +33,7 @@
   height: 90vh;
   margin-top: 5vh;
   border-radius: 0 35px 35px 35px;
+  font-family: 'Pretendard', serif;
 }
 .modal_close_select {
   position: absolute;
@@ -38,18 +60,36 @@
 .modal_button_wrap {
   width: 100%;
   background: #fff;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.875rem;
+  border-radius: 0 0 35px 35px;
 }
 
-.modal_button_wrap > [class^='btn-01'] {
-}
-.modal_button_wrap > [class^='btn-02'] {
-}
-
-.modal_button_wrap > [cclass$='-neu'] {
+.modal_button_wrap button {
+  border-radius: 0 1rem 1rem 1rem;
 }
 
-.modal_button_wrap > [cclass$='-pos'] {
+.modal_button_wrap > [class^='btn01'] {
+  width: 100%;
+}
+.modal_button_wrap > [class^='btn02'] {
+  width: 48%;
 }
 
-.modal_button_wrap > [cclass$='-neg'] {
+.modal_button_wrap > [class$='-neu'] {
+  color: #5b9379;
+  border: 2px solid #66a889;
+}
+
+.modal_button_wrap > [class$='-pos'] {
+  color: #fff;
+  background: #3d5443;
+}
+
+.modal_button_wrap > [class$='-neg'] {
+  background: #97ab97;
 }
