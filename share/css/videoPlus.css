@@ -129,7 +129,7 @@
   background: url('/img/arrow.png') no-repeat;
   background-size: 50% auto;
   background-position: center;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .swiper-button-prev {
@@ -137,7 +137,7 @@
   background-size: 50% auto;
   background-position: center;
   transform: rotate(0.5turn);
-  opacity: 0.4;
+  opacity: 0.7;
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
@@ -182,7 +182,7 @@
   background-size: cover;
 } */
 
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .stickyBox {
     height: 4rem;
     margin: 1rem 0;
@@ -202,37 +202,13 @@
     font-size: 1rem;
   }
   .swiper-button-next {
-    background: url('/img/arrow.png') no-repeat;
     background-size: 30% auto;
     background-position: center;
-    opacity: 0.4;
   }
 
   .swiper-button-prev {
-    background: url('/img/arrow.png') no-repeat;
     background-size: 30% auto;
     background-position: center;
     transform: rotate(0.5turn);
-    opacity: 0.4;
-  }
-}
-@media (max-width: 720px) {
-  .stickyBox {
-    height: 4rem;
-    margin: 1rem 0;
-    width: 110%;
-    margin-left: -5%;
-  }
-  .swiper-slide {
-    height: 4rem;
-    padding: 0 2rem;
-    min-width: 32%;
-  }
-  .swiper-slide:first-of-type {
-    margin-left: 1rem;
-  }
-  .swiper-slide a {
-    line-height: 4rem;
-    font-size: 1rem;
   }
 }
