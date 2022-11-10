@@ -24,10 +24,32 @@
 }
 .modal_close_button {
   position: absolute;
-  width: auto;
+  width: 2.813rem;
+  height: 2.813rem;
+  font-size: 0;
   top: -40px;
   right: 20px;
   color: #fff;
-  background: transparent;
+  background: url('/img/IC_PopUp_closeBtn.png') no-repeat;
+  background-size: cover;
   display: inline-block;
+}
+
+.modal_button_wrap {
+  width: 100%;
+  background: #fff;
+}
+
+.modal_button_wrap > [class^='btn-01'] {
+}
+.modal_button_wrap > [class^='btn-02'] {
+}
+
+.modal_button_wrap > [cclass$='-neu'] {
+}
+
+.modal_button_wrap > [cclass$='-pos'] {
+}
+
+.modal_button_wrap > [cclass$='-neg'] {
 }
