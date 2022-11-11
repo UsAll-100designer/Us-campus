@@ -117,7 +117,7 @@
 
 - IMG
 
-  - img/arrow.png
+  - img/IC_PopUp_closeBtn.png
 
 ```
     <!-- ⚠️ 추가 시작 1️⃣ -->
