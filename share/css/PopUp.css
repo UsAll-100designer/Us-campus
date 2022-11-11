@@ -95,6 +95,8 @@
   transform: translateY(-5px);
 }
 
+/* button 스타일 추가 */
+
 .modal_button_wrap > [class^='btn01'] {
   width: 100%;
 }
