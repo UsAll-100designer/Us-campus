@@ -1,3 +1,5 @@
+/*11/11 탭 3개일때, 영역을 넘겼을때, 그랩 및 스크롤인 안되는 부분 수정*/
+
 .swiperWrap {
   position: relative;
   overflow: hidden;
@@ -56,8 +58,9 @@
   /*추가*/
   border-bottom: 2px solid #ddd;
   position: relative;
-  padding: 0 2rem;
-  width: 33.333%;
+  width: auto !important;
+  padding: 0 4.688rem;
+  min-width: 33.333%;
 }
 .swiper-slide:first-of-type {
   margin-left: 0px;
