@@ -1,0 +1,26 @@
+p.inAppPayGuide {
+  width: 100%;
+  background: #f1f1f1;
+  color: #555;
+  padding: 0.5rem 1rem 0.6rem;
+  margin-top: -1.25rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  line-height: 1.3rem;
+}
+
+p.inAppPayGuide b {
+  line-height: 1.8em;
+  color: #222;
+  font-weight: 700;
+}
+
+p.inAppPayGuide span {
+  font-size: 0.7rem;
+}
+@media (max-width: 600px) {
+  p.inAppPayGuide {
+    margin-top: 2.25rem;
+  }
+}
