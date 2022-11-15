@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Raleway", Helvetica, Arial;
+	overflow-x: hidden;
+}
+[name="menu-input"] {
+	display: none;
+}
+#container {
+	padding: 50px 0 0 0;
+	transition: all 300ms;
+}
+nav {
+	position: fixed;
+	background: rgba(255,255,255,0.7);
+	width: 50%;
+	height: 100%;
+	transform: translateX(-100%);
+	transition: all 300ms;
+	padding: 0 50px;
+}
+main {
+	transition: all 300ms;
+	padding: 0 50px;
+	min-width: 400px;
+}
+header {
+	height: 30px;
+}
+#display-menu-switch {
+	background: crimson;
+	color: #FFF;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+#hide-menu-switch {
+	position: fixed;
+	top: 0;
+	right: 100%;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	background: rgba(0,0,0,0.1);
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	transition: opacity 300ms, left 300ms;
+}
+#display-menu-input:checked ~ #container nav {
+	transform: translateX(0);
+}
+#display-menu-input:checked ~ #container main {
+	transform: translateX(50%);
+}
+#display-menu-input:checked ~ #hide-menu-switch {
+	opacity: 1;
+	left: 50%;
+	right: 0;
+}
+
+@media (min-width: 900px) {
+	#container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 50px;
+	}
+	nav {
+		transform: translateX(0);
+		width: 300px;
+		padding: 0;
+		margin-right: 50px;
+	}
+	aside {
+		
+	}
+	main {
+		transform: translateX(0) !important;
+		padding: 0;
+		margin-left: 300px;
+	}
+	#display-menu-switch {
+		display: none;
+	}
+	#display-menu-input:checked ~ #hide-menu-switch {
+		display: none;
+	}
+}
