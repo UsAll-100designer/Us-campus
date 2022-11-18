@@ -1678,3 +1678,16 @@
   padding: 0.625rem;
   background: #f1f1f1;
 }
+
+/* 추가 */
+.video .array.pd {
+  border-bottom: 2px solid #ddd;
+}
+.video .menuCate .menuCateTitle {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.video .menuCate .menuCateTitle.open + .menuCateList {
+  background: #f8f8f8;
+}
