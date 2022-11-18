@@ -1,0 +1,261 @@
+.menu__box {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+  * {
+    font-family: 'Pretendard', serif;
+  }
+  header {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    overflow: visible;
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    z-index: 200;
+    background: #fff;
+  }
+
+  .study {
+    padding-top: 65px;
+  }
+  .hamburger-menu {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .content .gnb {
+    display: none;
+  }
+  .study .l_box {
+    display: none;
+  }
+  header .menu a {
+    display: none;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+  #menu__toggle:checked ~ .deem {
+    visibility: visible;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #58be71;
+
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+    background-color: #85c853;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+    background-color: #2eb48e;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 65px;
+    right: -100%;
+    z-index: 100;
+    width: 265px;
+    height: 100%;
+
+    margin: 0;
+
+    list-style: none;
+
+    background-color: #fff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+
+    transition-duration: 0.25s;
+  }
+
+  .menu__box .memberMenu {
+    background: #3e877c;
+    padding: 25px;
+    margin-bottom: 15px;
+  }
+  .menu__box .memberMenu .profile {
+    width: 76px;
+    height: 76px;
+    background: #fff;
+    border-radius: 15px;
+    position: relative;
+    left: 10px;
+  }
+  .menu__box .memberMenu .alarm_noti {
+    position: relative;
+    top: -10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background: url('/img/IC_alarmBell.png');
+    background-size: contain;
+  }
+  .menu__box .memberMenu .alarm_noti span {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ef833a;
+    color: #fff;
+    font-weight: 700;
+  }
+  .menu__box .memberMenu .prof_text {
+    position: relative;
+    top: 20px;
+    left: 27px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  .menu__box .memberMenu .prof_text span {
+    font-size: 14px;
+  }
+  .menu__box .memberMenu .prof_text b {
+    font-size: 17px;
+    font-weight: 900;
+  }
+  .menu__box .memberMenu ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menu__box .memberMenu ol button {
+    margin-top: 15px;
+  }
+  .menu__box .menu__item {
+    display: block;
+    padding: 18px 14px;
+
+    color: #63666b;
+    border-bottom: 2px solid #d3d0d7;
+
+    font-size: 14px;
+    margin: 0 25px;
+
+    text-decoration: none;
+
+    transition-duration: 0.25s;
+  }
+
+  .menu__box .menu__item {
+    background: no-repeat right/8% url('/img/IC_link.png');
+    background-position: center right 20px;
+  }
+  header .menu__box a.menu__item {
+    line-height: 1em;
+  }
+  .menu__box .sub_menu {
+    margin: 25px;
+    margin-top: 15px;
+    display: flex;
+  }
+  .menu__box .sub_menu ol {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menu__box button {
+    border-radius: 0 10px 10px 10px;
+    font-weight: 700;
+    width: 103px;
+    height: 36px;
+  }
+  .menu__box .sub_menu ol li button {
+    border: 1px solid #d3d0d6;
+    color: #64666b;
+  }
+
+  .menu__box button.btn-pos {
+    background: #fff;
+    color: #5b9379;
+    border: 1px solid #66a889;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .menu__box button.btn-neg {
+    background: #0a1715;
+    color: #94c073;
+    border: 1px solid #0a1715;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .menu__box button.btn-neu {
+    border: 1px solid #d3d0d6;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  .menu__box button.btn-change {
+    padding-left: 0px;
+    background: no-repeat right/12% url('/img/IC_change.png');
+    background-position: center right 10px;
+    background-color: #fff;
+  }
+  .menu__box button.btn-change span {
+    position: relative;
+    left: -7px;
+  }
+  .deem {
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    content: '';
+    visibility: hidden;
+    display: block;
+    z-index: 90;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
