@@ -235,13 +235,75 @@
 
 ```
     <!-- ⚠️ 추가 시작 1️⃣ -->
+     <link rel="stylesheet" type="text/css" href="../../share/css/Res_menu.css" />
+    <style>
+      @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    </style>
 
     <!-- ⚠️ 추가 끝 1️⃣ -->
 
     <!-- ⚠️ 추가 시작 2️⃣ -->
-
+<div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <div class="deem"></div>
+          <ul class="menu__box">
+            <li class="memberMenu">
+              <ol>
+                <li class="profile"></li>
+                <li class="prof_text">
+                  <span>안녕하세요.</span><br />
+                  <b>백규진님!</b>
+                </li>
+                <li class="alarm_noti">
+                  <span>1</span>
+                </li>
+                <li>
+                  <button class="btn-pos btn-change"><span>회원정보 수정</span></button>
+                </li>
+                <li><button class="btn-neg">로그아웃</button></li>
+              </ol>
+            </li>
+            <li><a class="menu__item" href="#">나의 스터디</a></li>
+            <li><a class="menu__item" href="#">어스캠퍼스</a></li>
+            <li><a class="menu__item" href="#">815캠퍼스</a></li>
+            <li class="sub_menu">
+              <ol>
+                <li><button class="btn-neu">FAQ</button></li>
+                <li><button class="btn-neu">구매내역</button></li>
+              </ol>
+            </li>
+          </ul>
+        </div>
     <!-- ⚠️ 추가 끝 2️⃣ -->
 
 ```
 
 ---
+
+#### TO-BE
+
+변경파일
+
+- CSS
+
+  - share/css/study.css
+
+```
+/* 추가 */
+.video .array.pd {
+ border-bottom: 2px solid #ddd;
+}
+.video .menuCate .menuCateTitle {
+ margin-top: 0.5rem;
+ margin-bottom: 0.5rem;
+}
+
+.video .menuCate .menuCateTitle.open + .menuCateList {
+ background: #f8f8f8;
+}
+
+
+```
