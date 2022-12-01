@@ -23,6 +23,7 @@
 
 - 12M 01D 모바일 백그라운드 CSS 수정
 - 12M 01D 팝업 및 폰트 수정
+- 12M 01D layout.css / base.css > site CSS 변화코드변경
 
 ---
 
@@ -401,5 +402,17 @@
 
 
 ```
+
+---
+
+#### 12M 01D layout.css / base.css > site CSS 변화코드변경
+
+- CSS
+
+  - share/css/layout.css
+
+  - share/css/base.css
+
+  - share/css/PopUp.css
 
 ---
