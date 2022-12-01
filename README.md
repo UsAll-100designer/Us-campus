@@ -22,6 +22,7 @@
 - 11M 29D 키인 결제 (카드결제) 디자인 / 1-5 페이지별 레이아웃 일관성 필요 / 1-4 주문서 페이지 레이아웃 및 디자인리뉴얼
 
 - 12M 01D 모바일 백그라운드 CSS 수정
+- 12M 01D 팝업 및 폰트 수정
 
 ---
 
@@ -365,10 +366,40 @@
   }
   /* ⚠️ 추가 시작 1️⃣ */
 
-
   ```
+
+---
+
+#### 12M 01D 팝업 및 폰트 수정
+
+- CSS
+
+  - share/css/layout.css
+
+```
+  /* ⚠️ 추가 시작 1️⃣ */
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+  /* ⚠️ 추가 끝 1️⃣ */
+
+  /* ⚠️ 추가 시작 2️⃣ */
+  /*font-family: Noto Sans KR;*/
+
+  font-family: 'Pretendard', serif;
+  /* ⚠️ 추가 끝 2️⃣ */
+
+```
+
+- CSS
+
+  - share/css/PopUp.css
+
+```
+
+ /* ⚠️ 변경 시작 1️⃣ */
+  padding: 0.5rem 1rem;
+  /* ⚠️ 변경 끝 1️⃣ */
+
 
 ```
 
 ---
-```
