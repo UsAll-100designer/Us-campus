@@ -1,0 +1,9 @@
+/*폰트*/
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+.pay {
+  width: 630px;
+}
+
+@media (max-width: 960px) {
+}
