@@ -70,7 +70,7 @@ select {
   line-height: 1.5;
   border: 1px solid #949191;
   border-radius: 4px;
-  background: url(../../img/common/select_bg.png) 100% -44px no-repeat, #fff;
+  background: url('/img/common/select_bg.png') 100% -44px no-repeat, #fff;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
