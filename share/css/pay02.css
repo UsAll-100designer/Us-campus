@@ -1,8 +1,119 @@
 /*폰트*/
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
-.pay {
-  width: 630px;
+/*나눔스퀘어 네오*/
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css');
+
+/*clearfix*/
+.cf:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'NanumSquareAc', sans-serif;
+}
+
+/* text-decoration: line-through; */
+/*layout*/
+
+.pay_wrap {
+  display: flex;
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.pay_wrap > .pay-left {
+  width: 680px;
+  height: auto;
+  min-height: 500px;
+  padding: 65px 20px;
+}
+.pay_wrap > .pay-right {
+  width: 440px;
+  height: auto;
+  min-height: 500px;
+  background: #f7f7f7;
+  padding: 65px 20px;
+}
+
+/*accordian*/
+
+.accordion {
+  margin: 50px;
+}
+.accordion dt,
+.accordion dd {
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+.accordion dt:last-of-type,
+.accordion dd:last-of-type {
+  border-bottom: 1px solid black;
+}
+.accordion dt a,
+.accordion dd a {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+.accordion dd {
+  border-top: 0;
+  font-size: 12px;
+}
+.accordion dd:last-of-type {
+  border-top: 1px solid white;
+  position: relative;
+  top: -1px;
+}
+
+/* <select> styles */
+select {
+  /* Reset */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 20em;
+  height: 3em;
+  padding: 0 4em 0 1em;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg') no-repeat right 0.8em center/1.4em,
+    linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
+  color: white;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  /* <option> colors */
+  /* Remove focus outline */
+  /* Remove IE arrow */
+}
+select option {
+  color: inherit;
+  background-color: #320a28;
+}
+select:focus {
+  outline: none;
+}
+select::-ms-expand {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font: 16px Sans-Serif;
 }
 
 @media (max-width: 960px) {
