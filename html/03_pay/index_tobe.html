@@ -27,52 +27,7 @@
 
 
     <style>
-       .pay_wrap article{margin-bottom: 40px;}
-      .pay_wrap article h5,.pay_wrap aside h5{
-        position: relative;
-        color:#284C39;
-        font-size: 18px;
-        font-weight: bold;
-        margin-left: 20px;
-        margin-bottom: 15px;
-      }
-      .pay_wrap article h5::before, .pay_wrap aside h5::before{
-        position: absolute;
-        top:7px;
-        left: -20px;
-        content: '';
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background:#91C565 ;
-        border-radius: 50%;
-        
-      }
-      .pay_wrap .pay-left__orderProduct{
-        display: flex;
-        width: 100%;
-        height:auto;
-        padding: 30px 35px;
-        border-radius: 15px;
-        border: 1px solid #C2C1C4;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-      }
-      .pay_wrap .pay-left__orderProduct img{ width: 50%; height:auto; }
-      .pay-left__orderProduct__text{ width: 50%; height:auto; text-align: right;}
-      .pay-left__orderProduct__text > span{ font-size: 14px; color: #888888;}
-      .pay-left__orderProduct__text > b{ font-size: 18px; color:#284C39 ; font-family: 'NanumSquareAc', sans-serif;}
-      .pay-left__orderProduct__text > strong{ display: inline-block; color:#314B3A; font-size: 17px; font-weight: 600; background:#F8F8F8 ; border: 1px solid #C2C1C4; border-radius: 27px; padding: 4px 18px; }
-      .pay-left__saleCode__btnWrap{}
-      .pay-left__saleCode__btnWrap input[type="text"]{ font-size:16px; }
-      article .explanation{ width: 100%; height: auto; padding: 20px 40px; line-height: 1.8em; background: #F8F8F8; border: 1px solid #B0AEB2; font-size: 14px; color: #6B6B6B;}
-      article .explanation ul li{ position: relative;}
-      article .explanation ul li::before{position: absolute; top:10px; left: -15px; border-radius: 50%; content: ''; display: block; width: 4px; height: 4px; background: #CFD4D0; }
-      /*Reset*/
-      dl, ol, ul{margin-bottom: 0px;}
-
-      .pay-right .paymentDetail{ width: 100%; height:auto; background:#fff ; border: 1px solid #B0AEB2; border-radius: 15px 15px 0px 0px; padding: 30px 35px;}
-      .pay-right .payPrice{width: 100%; height:auto; font-family: 'NanumSquareAc', sans-serif; font-size: 20px; font-weight: 600; padding: 25px 35px; background: #5BB28E; color: #fff; border-radius: 0px 0px 15px 15px; }
-      .pay_wrap button{ border-radius: 0 10px 10px 10px;}
+      
     </style>
   </head>
 
@@ -121,7 +76,7 @@
             <div class="pay-left__saleCode">
               <div class="pay-left__saleCode__btnWrap">
                 <input placeholder="할인코드를 입력해주세요." type="text" />
-                <button>등록하기</button>
+                <button class="btnST01">등록하기</button>
               </div>
             </div>
             <div class="explanation">
@@ -148,7 +103,7 @@
                     aria-expanded="false"
                     aria-controls="collapse01"
                   />
-                  카드결제</label
+                  <img src="/img/IC_cardPay.png">카드결제</label
                 >
               </div>
 
@@ -187,7 +142,7 @@
                     aria-expanded="false"
                     aria-controls="collapse02"
                   />
-                  무통장입금</label
+                  <img src="/img/IC_bankPay.png">무통장입금</label
                 >
               </div>
               <div id="collapse02" class="collapse" aria-labelledby="heading02" data-parent="#payAccordion">
@@ -213,7 +168,7 @@
                     aria-expanded="false"
                     aria-controls="collapse03"
                   />
-                  키인결제(신용카드 수기결제)</label
+                  <img src="/img/IC_keyInpay.png">키인결제(신용카드 수기결제)</label
                 >
               </div>
               <div id="collapse03" class="collapse" aria-labelledby="heading03" data-parent="#payAccordion">
@@ -283,7 +238,7 @@
                     aria-expanded="false"
                     aria-controls="collapse04"
                   />
-                  삼성페이</label
+                  <img src="/img/IC_samsungPay.png">삼성페이</label
                 >
               </div>
             </div>
@@ -300,7 +255,7 @@
                     aria-expanded="false"
                     aria-controls="collapse05"
                   />
-                  토스페이</label
+                  <img src="/img/IC_tossPay.png">토스페이</label
                 >
               </div>
             </div>
@@ -317,7 +272,7 @@
                     aria-expanded="false"
                     aria-controls="collapse06"
                   />
-                  해외 카드결제</label
+                  <img src="/img/IC_forCardPay.png">해외 카드결제</label
                 >
               </div>
             </div>
@@ -342,7 +297,7 @@
             </ol>
           </div>
           <div class="payPrice"><b>결제예정금액</b><b>720,000</b><b>원</b></div>
-          <button>결제하기</button>
+          <button class="btnST02">결제하기</button>
         </aside>
 
         <!-- ⚠️ 추가 끝 2️⃣ -->
