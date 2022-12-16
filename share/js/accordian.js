@@ -2,8 +2,14 @@
   var allPanels = $('.accordion > dd').hide();
 
   $('.accordion > dt > a').click(function () {
-    allPanels.slideUp();
-    $(this).parent().next().slideDown();
+    $this = $(this);
+    $target = $this.parent().next();
+
+    if (!$target.hasClass('active')) {
+      allPanels.removeClass('active').slideUp();
+      $target.addClass('active').slideDown();
+    }
+
     return false;
   });
 })(jQuery);

@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../share/css/xeicon.css" />
-    <link rel="stylesheet" type="text/css" href="../../share/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/base02.css" />
     <link rel="stylesheet" type="text/css" href="../../share/css/layout.css" />
     <link rel="stylesheet" type="text/css" href="../../share/css/menu.css" />
     <link rel="stylesheet" type="text/css" href="../../share/css/pay.css" />
     <!-- ⚠️ 추가 시작 1️⃣ -->
     <link rel="stylesheet" type="text/css" href="../../share/css/pay02.css" />
     <script type="text/javascript" src="/share/js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="/share/js/jquery-ui.min.js"></script>
+
     <script type="text/javascript" defer src="/share/js/accordian.js"></script>
 
     <!-- ⚠️ 추가 끝 1️⃣ -->
@@ -80,13 +80,13 @@
           </article>
           <article class="paymentMethod">
             <h5>결제수단 선택</h5>
+
             <dl class="accordion">
               <dt>
-                <label>
+                <a href="">
                   <input type="radio" name="radio" />
-                  <span>CSS</span>
-                </label>
-                <a href="">카드결제</a>
+                  <label for="huey">Huey</label>
+                </a>
               </dt>
               <dd>
                 <div class="paymentMethod__input--half">
@@ -98,11 +98,6 @@
                     <option value="3">Nice!</option>
                   </select>
                 </div>
-                <label class="control control--radio"
-                  >Second radio
-                  <input type="radio" name="radio" />
-                  <div class="control__indicator"></div>
-                </label>
                 <div class="paymentMethod__input--half">
                   <label>할부선택</label>
                   <select>
@@ -114,7 +109,7 @@
                 </div>
               </dd>
 
-              <dt><a href="">무통장입금</a></dt>
+              <dt><input type="radio" name="radio" /><a href="">무통장입금</a></dt>
               <dd>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
                 dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.
@@ -172,12 +167,17 @@
                   >
                 </div>
               </dd>
-              <dt><a href="">삼성페이</a></dt>
-              <dd></dd>
-              <dt><a href="">토스페이</a></dt>
-              <dd></dd>
-              <dt><a href="">해외 카드 결제</a></dt>
-              <dd></dd>
+              <dt>
+                <a href=""><input type="radio" />삼성페이</a>
+              </dt>
+
+              <dt>
+                <a href="">토스페이</a>
+              </dt>
+
+              <dt>
+                <a href="">해외 카드 결제</a>
+              </dt>
             </dl>
           </article>
         </section>
