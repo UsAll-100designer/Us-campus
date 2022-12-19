@@ -15,20 +15,18 @@
     <link rel="stylesheet" type="text/css" href="../../share/css/pay.css" />
     <!-- ⚠️ 추가 시작 1️⃣ -->
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="../../share/css/pay02.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/pay02.css" />
 
     <!--JS-->
     <script type="text/javascript" src="/share/js/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script type="text/javascript" defer src="/share/js/radio_accordian.js"></script>
+    <script type="text/javascript" defer src="/share/js/toggle.js"></script>
     <!-- ⚠️ 추가 끝 1️⃣ -->
 
-
-    <style>
-      
-    </style>
+    <style></style>
   </head>
 
   <body>
@@ -58,8 +56,8 @@
             <div class="pay-left__orderProduct">
               <img src="/img/pay_ex_image.png" />
               <div class="pay-left__orderProduct__text">
-                <span>글로벌 위기를 예언한 한국의 닥터둠</span><br>
-                <b>김영익 교수와 함께하는 투자스쿨</b><br>
+                <b>김영익 교수와 함께하는 투자스쿨</b><br />
+                <span>글로벌 위기를 예언한 한국의 닥터둠</span><br />
                 <strong>프리미엄 6개월</strong>
                 <div class="pay-left__orderProduct__text__price">
                   <span class="pay-left__orderProduct__text__price__before-num">1,140,000</span>
@@ -89,215 +87,268 @@
           </article>
           <article class="paymentMethod">
             <h5>결제수단 선택</h5>
-          <div class="pay-accordion" id="payAccordion">
-            <div class="card">
-              <div class="card-header" id="heading01">
-                <label>
-                  <input
-                    class="radioAccordian"
-                    type="radio"
-                    name="customRadio"
-                    value="1"
-                    data-toggle="collapse"
-                    data-target="#collapse01"
-                    aria-expanded="false"
-                    aria-controls="collapse01"
-                  />
-                  <img src="/img/IC_cardPay.png">카드결제</label
-                >
-              </div>
-
-              <div id="collapse01" class="collapse" aria-labelledby="heading01" data-parent="#payAccordion">
-                <div class="card-body">
-                  <div class="paymentMethod__input--half">
-                    <label>카드선택</label>
-                    <select>
-                      <option selected value="0">Pure CSS Select</option>
-                      <option value="1">No Wrapper</option>
-                      <option value="2">No JS</option>
-                      <option value="3">Nice!</option>
-                    </select>
-                  </div>
-                  <div class="paymentMethod__input--half">
-                    <label>할부선택</label>
-                    <select>
-                      <option selected value="0">Pure CSS Select</option>
-                      <option value="1">No Wrapper</option>
-                      <option value="2">No JS</option>
-                      <option value="3">Nice!</option>
-                    </select>
-                  </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="heading02">
-                <label
-                  ><input
-                    class="radioAccordian"
-                    type="radio"
-                    name="customRadio"
-                    value="2"
-                    data-toggle="collapse"
-                    data-target="#collapse02"
-                    aria-expanded="false"
-                    aria-controls="collapse02"
-                  />
-                  <img src="/img/IC_bankPay.png">무통장입금</label
-                >
-              </div>
-              <div id="collapse02" class="collapse" aria-labelledby="heading02" data-parent="#payAccordion">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                  skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                  single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                  haven't heard of them accusamus labore sustainable VHS.
+            <div class="pay-accordion" id="payAccordion">
+              <div class="pay-accordion__summary">
+                <div class="pay-accordion__summary__header" id="heading01">
+                  <label>
+                    <input
+                      class="radioAccordian"
+                      type="radio"
+                      name="customRadio"
+                      value="1"
+                      data-toggle="collapse"
+                      data-target="#collapse01"
+                      aria-expanded="false"
+                      aria-controls="collapse01" />
+                    <img src="/img/IC_cardPay.png" />카드결제
+                    <div class="arrowed">
+                      <div class="arrow-1"></div></div
+                  ></label>
                 </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="heading03">
-                <label
-                  ><input
-                    class="radioAccordian"
-                    type="radio"
-                    name="customRadio"
-                    value="3"
-                    data-toggle="collapse"
-                    data-target="#collapse03"
-                    aria-expanded="false"
-                    aria-controls="collapse03"
-                  />
-                  <img src="/img/IC_keyInpay.png">키인결제(신용카드 수기결제)</label
-                >
-              </div>
-              <div id="collapse03" class="collapse" aria-labelledby="heading03" data-parent="#payAccordion">
-                <div class="card-body">
-                  <div class="paymentMethod__input--half">
-                    <label>카드선택</label>
-                    <select>
-                      <option selected value="0">Pure CSS Select</option>
-                      <option value="1">No Wrapper</option>
-                      <option value="2">No JS</option>
-                      <option value="3">Nice!</option>
-                    </select>
-                  </div>
-                  <div class="paymentMethod__input--half">
-                    <label>할부선택</label>
-                    <select>
-                      <option selected value="0">Pure CSS Select</option>
-                      <option value="1">No Wrapper</option>
-                      <option value="2">No JS</option>
-                      <option value="3">Nice!</option>
-                    </select>
-                  </div>
-                  <div class="paymentMethod__input">
-                    <label>카드번호입력</label>
-                    <input placeholder="네자리" type="number" />
-                    <input placeholder="네자리" type="number" />
-                    <input placeholder="네자리" type="number" />
-                    <input placeholder="네자리" type="number" />
-                  </div>
-                  <div class="paymentMethod__input--half">
-                    <label>유효기간입력</label>
-                    <input placeholder="월(MM)" type="number" />
-                    <input placeholder="년(YY)" type="number" />
-                  </div>
-                  <div class="paymentMethod__input--half">
-                    <label>카드 비밀번호 앞 2자리</label>
-                    <input placeholder="&#42; &#42;" type="password" />
-                  </div>
-                  <div class="paymentMethod__input--half">
-                    <label>생년월일입력 (6자리)</label>
-                    <input placeholder="입력해주세요(YYMMDD)" type="number" />
-                  </div>
-                  <div class="explanation">
-                    <b>키인결제(신용카드 수기결제) 란</b><br />
-                    <span
-                      >카드 단말기나 공인인증서 없이 카드번호화 유효기간만으로도 PC나 모바일에서 결제할 수 있는 결제방식입니다. 간단한 카드 정보(카드번호
-                      16자리,유효기간, 카드 비밀번호 2자리, 생년월일)을 등록하여 결제가 가능한 결제방식입니다. </span
-                    ><br />
-                    <span
-                      >구매자와 카드 명의자가 동일하지 않아도 결제가 가능하며 해당 카드를 사용하여 결제시에는 반드시 카드 명의자의 동의를 받으셔야 합니다. 수업의
-                      등록을 위한 결제와 관련된 의무와 책임은 등록 수강생에게 있음을 알려드립니다.</span
-                    >
+
+                <div id="collapse01" class="collapse pay-accordion__details-wrap" aria-labelledby="heading01" data-parent="#payAccordion">
+                  <div class="pay-accordion__details">
+                    <div class="pay-accordion__details__input--half">
+                      <label>카드선택</label>
+                      <select>
+                        <option selected value="0">선택해주세요.</option>
+                        <option value="1">No Wrapper</option>
+                        <option value="2">No JS</option>
+                        <option value="3">Nice!</option>
+                      </select>
+                    </div>
+                    <div class="pay-accordion__details__input--half">
+                      <label>할부선택</label>
+                      <select>
+                        <option selected value="0">선택해주세요.</option>
+                        <option value="1">No Wrapper</option>
+                        <option value="2">No JS</option>
+                        <option value="3">Nice!</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="heading04">
-                <label
-                  ><input
-                    class="radioAccordian"
-                    type="radio"
-                    name="customRadio"
-                    value="4"
-                    data-toggle="collapse"
-                    data-target="#collapse04"
-                    aria-expanded="false"
-                    aria-controls="collapse04"
-                  />
-                  <img src="/img/IC_samsungPay.png">삼성페이</label
-                >
+              <div class="pay-accordion__summary">
+                <div class="pay-accordion__summary__header" id="heading02">
+                  <label
+                    ><input
+                      class="radioAccordian"
+                      type="radio"
+                      name="customRadio"
+                      value="2"
+                      data-toggle="collapse"
+                      data-target="#collapse02"
+                      aria-expanded="false"
+                      aria-controls="collapse02" />
+                    <img src="/img/IC_bankPay.png" />무통장입금
+                    <div class="arrowed">
+                      <div class="arrow-1"></div></div
+                  ></label>
+                </div>
+                <div id="collapse02" class="collapse pay-accordion__details-wrap" aria-labelledby="heading02" data-parent="#payAccordion">
+                  <div class="pay-accordion__details">
+                    <div class="explanation">
+                      <ul>
+                        <li>무통장(가상계좌) 주문시 고객님께 발급되는 일회성 계좌번호 이므로 입금자명이 다르더라도 입금 확인이 가능합니다.</li>
+                        <li>선택하신 은행을 통해 결제 금액을 1원 단위까지 정확히 맞추셔야 합니다.</li>
+                        <li>가상 계좌의 입금 유효 기간은 주문 후 1일 이내이며, 기간 초과 시 계좌번호는 소멸되어 입금되지 않습니다.</li>
+                        <li>구매 가능 수량이 1개로 제한된 상품은 주문 취소 시, 24시간 내 가상 계좌를 통한 재주문이 불가 합니다.</li>
+                        <li>인터넷뱅킹, 텔레뱅킹, ATM/CD기계, 은행 창구 등에서 입금할 수 있습니다.</li>
+                        <li>ATM 기기는 100원 단위 입금이 되지 않으므로 통장 및 카드로 계좌이체 해주셔야 합니다. 은행 창구에서도 1원 단위 입금이 가능합니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pay-accordion__summary">
+                <div class="pay-accordion__summary__header" id="heading03">
+                  <label
+                    ><input
+                      class="radioAccordian"
+                      type="radio"
+                      name="customRadio"
+                      value="3"
+                      data-toggle="collapse"
+                      data-target="#collapse03"
+                      aria-expanded="false"
+                      aria-controls="collapse03" />
+                    <img src="/img/IC_keyInpay.png" />키인결제(신용카드 수기결제)
+                    <div class="arrowed">
+                      <div class="arrow-1"></div></div
+                  ></label>
+                </div>
+                <div id="collapse03" class="collapse pay-accordion__details-wrap" aria-labelledby="heading03" data-parent="#payAccordion">
+                  <div class="pay-accordion__details">
+                    <div class="pay-accordion__details__input--half">
+                      <label>카드선택</label>
+                      <select>
+                        <option selected value="0">선택해주세요.</option>
+                        <option value="1">No Wrapper</option>
+                        <option value="2">No JS</option>
+                        <option value="3">Nice!</option>
+                      </select>
+                    </div>
+                    <div class="pay-accordion__details__input--half">
+                      <label>할부선택</label>
+                      <select>
+                        <option selected value="0">선택해주세요.</option>
+                        <option value="1">No Wrapper</option>
+                        <option value="2">No JS</option>
+                        <option value="3">Nice!</option>
+                      </select>
+                    </div>
+                    <div class="pay-accordion__details__input">
+                      <label>카드번호입력</label>
+                      <input placeholder="네자리" type="number" />
+                      <input placeholder="네자리" type="number" />
+                      <input placeholder="네자리" type="number" />
+                      <input placeholder="네자리" type="number" />
+                    </div>
+                    <div class="pay-accordion__details__input--half inputHalf">
+                      <label>유효기간입력</label>
+                      <input placeholder="월(MM)" type="number" />
+                      <input placeholder="년(YY)" type="number" />
+                    </div>
+                    <div class="pay-accordion__details__input--half inputHalf cardPassword">
+                      <label>카드 비밀번호 앞 2자리</label>
+                      <input placeholder="&#42; &#42;" type="password" />
+                    </div>
+                    <div class="pay-accordion__details__input--half">
+                      <label>생년월일입력 (6자리)</label>
+                      <input placeholder="입력해주세요(YYMMDD)" type="number" />
+                    </div>
+                    <div class="explanation">
+                      <b>키인결제(신용카드 수기결제) 란</b><br />
+                      <span
+                        >카드 단말기나 공인인증서 없이 카드번호화 유효기간만으로도 PC나 모바일에서 결제할 수 있는 결제방식입니다. 간단한 카드 정보(카드번호
+                        16자리,유효기간, 카드 비밀번호 2자리, 생년월일)을 등록하여 결제가 가능한 결제방식입니다. </span
+                      ><br />
+                      <span
+                        >구매자와 카드 명의자가 동일하지 않아도 결제가 가능하며 해당 카드를 사용하여 결제시에는 반드시 카드 명의자의 동의를 받으셔야 합니다.
+                        수업의 등록을 위한 결제와 관련된 의무와 책임은 등록 수강생에게 있음을 알려드립니다.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pay-accordion__summary">
+                <div class="pay-accordion__summary__header" id="heading04">
+                  <label
+                    ><input
+                      class="radioAccordian"
+                      type="radio"
+                      name="customRadio"
+                      value="4"
+                      data-toggle="collapse"
+                      data-target="#collapse04"
+                      aria-expanded="false"
+                      aria-controls="collapse04"
+                    />
+                    <img src="/img/IC_samsungPay.png" />삼성페이</label
+                  >
+                </div>
+              </div>
+              <div class="pay-accordion__summary">
+                <div class="pay-accordion__summary__header" id="heading05">
+                  <label
+                    ><input
+                      class="radioAccordian"
+                      type="radio"
+                      name="customRadio"
+                      value="5"
+                      data-toggle="collapse"
+                      data-target="#collapse05"
+                      aria-expanded="false"
+                      aria-controls="collapse05"
+                    />
+                    <img src="/img/IC_tossPay.png" />토스페이</label
+                  >
+                </div>
+              </div>
+              <div class="pay-accordion__summary">
+                <div class="pay-accordion__summary__header" id="heading06">
+                  <label
+                    ><input
+                      class="radioAccordian"
+                      type="radio"
+                      name="customRadio"
+                      value="6"
+                      data-toggle="collapse"
+                      data-target="#collapse06"
+                      aria-expanded="false"
+                      aria-controls="collapse06"
+                    />
+                    <img src="/img/IC_forCardPay.png" />해외 카드결제</label
+                  >
+                </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="heading05">
-                <label
-                  ><input
-                    class="radioAccordian"
-                    type="radio"
-                    name="customRadio"
-                    value="5"
-                    data-toggle="collapse"
-                    data-target="#collapse05"
-                    aria-expanded="false"
-                    aria-controls="collapse05"
-                  />
-                  <img src="/img/IC_tossPay.png">토스페이</label
-                >
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="heading06">
-                <label
-                  ><input
-                    class="radioAccordian"
-                    type="radio"
-                    name="customRadio"
-                    value="6"
-                    data-toggle="collapse"
-                    data-target="#collapse06"
-                    aria-expanded="false"
-                    aria-controls="collapse06"
-                  />
-                  <img src="/img/IC_forCardPay.png">해외 카드결제</label
-                >
-              </div>
-            </div>
-          </div>
-            
-
           </article>
-
         </section>
 
         <aside class="pay-right">
           <h5>결제상세</h5>
           <div class="paymentDetail">
-            <div class="paymentDetail__orderPrice"><b>주문금액</b><b>720,000</b><b>원</b></div>
+            <div class="paymentDetail__orderPrice">
+              <b class="priceName">주문금액</b>
+              <b class="price">720,000</b>
+              <b class="priceUnit">원</b>
+            </div>
             <ol>
               <li>
-                <span>정상금액</span><span>1,140,000</span><span>원</span>
+                <span class="priceName">정상금액</span>
+                <span class="price">1,140,000</span>
+                <span class="priceUnit">원</span>
               </li>
               <li>
-                <span>할인금액</span><span>1,140,000</span><span>원</span>
+                <span class="priceName">할인금액</span>
+                <span class="price">-1,140,000</span>
+                <span class="priceUnit">원</span>
+                <div class="d-flex center function-top">
+                  <ul>
+                    <li>
+                      <span class="priceName">ㄴ 얼리버드</span>
+                      <span class="price">-120,000</span>
+                      <span class="priceUnit">원</span><br />
+                    </li>
+                    <li>
+                      <span class="priceName">ㄴ 얼리버드</span>
+                      <span class="price">-120,000</span>
+                      <span class="priceUnit">원</span><br />
+                    </li>
+                  </ul>
+                  <div>
+                    <div class="toggle-up">
+                      <a>
+                        <div class="arrowed">
+                          <div class="arrow-2"></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ol>
           </div>
-          <div class="payPrice"><b>결제예정금액</b><b>720,000</b><b>원</b></div>
+          <div class="payPrice">
+            <b class="priceName">결제예정금액</b>
+            <b class="price">720,000</b>
+            <b class="priceUnit">원</b>
+          </div>
           <button class="btnST02">결제하기</button>
+          <div class="d-flex center function-down">
+            sdfasdfasdfasdfas
+            <div>
+              <div class="toggle-down">
+                <a>
+                  <div class="arrowed">
+                    <div class="arrow-1"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </aside>
 
         <!-- ⚠️ 추가 끝 2️⃣ -->

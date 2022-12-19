@@ -30,11 +30,33 @@ h6 {
   margin: 0 auto;
 }
 
+.pay_wrap input[type='text'],
+.pay_wrap input[type='number'],
+.pay_wrap input[type='password'] {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  padding: 15px 20px;
+  border: 1px solid #b0aeb2;
+  border-radius: 10px;
+}
+
+.pay-left__saleCode__btnWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay-left__saleCode__btnWrap input[type='text'] {
+  width: 295px;
+}
+
 .pay_wrap > .pay-left {
   width: 680px;
   height: auto;
   min-height: 500px;
   padding: 65px 20px;
+  padding-right: 50px;
 }
 .pay_wrap > .pay-right {
   width: 440px;
@@ -44,35 +66,107 @@ h6 {
   padding: 65px 20px;
 }
 
-/*accordian*/
+.pay-accordion {
+  margin: 0 20px;
+  width: calc(100% - 40px);
+}
 
-.accordion {
-  margin: 50px;
+.pay-accordion__summary {
+  background: #fff;
+  border-bottom: 2px solid #d5d5d5;
 }
-.accordion dt,
-.accordion dd {
-  padding: 10px;
-  border: 1px solid black;
-  border-bottom: 0;
+
+.pay-accordion__summary__header {
+  color: #51857c;
+  font-size: 20px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
 }
-.accordion dt:last-of-type,
-.accordion dd:last-of-type {
-  border-bottom: 1px solid black;
-}
-.accordion dt a,
-.accordion dd a {
-  display: block;
-  color: black;
+.pay-accordion__summary__header label {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
   font-weight: bold;
 }
-.accordion dd {
-  border-top: 0;
-  font-size: 12px;
+.pay-accordion__summary__header label .arrowed {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-.accordion dd:last-of-type {
-  border-top: 1px solid white;
+
+.pay-accordion__details-wrap {
   position: relative;
-  top: -1px;
+  border-top: 2px solid #d5d5d5;
+  padding: 20px;
+  background: #f5f7f4;
+}
+.pay-accordion__details {
+}
+
+.pay-accordion__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.pay-accordion__details__input--half {
+  width: 48.5%;
+  margin-bottom: 20px;
+}
+.pay-accordion__details__input--half.cardPassword {
+  position: relative;
+}
+.pay-accordion__details__input--half.cardPassword ::before {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #425344;
+  border-radius: 50%;
+  display: inline-block;
+}
+.pay-accordion__details__input--half.cardPassword ::after {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #425344;
+  border-radius: 50%;
+  display: inline-block;
+}
+.pay-accordion__details__input--half label,
+.pay-accordion__details__input label {
+  font-size: 16px;
+  color: #284c39;
+  font-weight: 600;
+  width: 100%;
+}
+
+.pay-accordion__details__input--half.inputHalf input {
+  width: 47.5%;
+}
+.pay-accordion__details__input--half.inputHalf input:nth-of-type(2) {
+  margin-left: 9px;
+}
+
+.pay-accordion__details__input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.pay-accordion__details__input label {
+  width: 100%;
+}
+.pay-accordion__details__input input[type='number'] {
+  width: 23%;
 }
 
 .pay_wrap article {
@@ -103,29 +197,34 @@ h6 {
   display: flex;
   width: 100%;
   height: auto;
-  padding: 30px 35px;
+  padding: 25px 30px;
   border-radius: 15px;
   border: 1px solid #c2c1c4;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .pay_wrap .pay-left__orderProduct img {
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 .pay-left__orderProduct__text {
-  width: 50%;
+  width: 60%;
   height: auto;
   text-align: right;
 }
-.pay-left__orderProduct__text > span {
-  font-size: 14px;
-  color: #888888;
-}
 .pay-left__orderProduct__text > b {
-  font-size: 18px;
+  font-size: 22px;
   color: #284c39;
   font-family: 'NanumSquareAc', sans-serif;
+  display: inline-block;
+  margin-bottom: 8px;
 }
+.pay-left__orderProduct__text > span {
+  font-size: 16spx;
+  color: #888888;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
 .pay-left__orderProduct__text > strong {
   display: inline-block;
   color: #314b3a;
@@ -135,6 +234,32 @@ h6 {
   border: 1px solid #c2c1c4;
   border-radius: 27px;
   padding: 4px 18px;
+  margin-bottom: 15px;
+}
+
+.pay-left__orderProduct__text__price__before-num {
+  font-size: 21px;
+  font-weight: 600;
+  color: #b0aeb2;
+  text-decoration: line-through;
+}
+.pay-left__orderProduct__text__price__before-unit {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b0aeb2;
+}
+
+.pay-left__orderProduct__text__price__after-num {
+  font-size: 30px;
+  font-weight: 600;
+  color: #2c5c36;
+  display: inline-block;
+  margin-left: 8px;
+}
+.pay-left__orderProduct__text__price__after-unit {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c5c36;
 }
 .pay-left__saleCode__btnWrap {
 }
@@ -150,6 +275,7 @@ article .explanation {
   border: 1px solid #b0aeb2;
   font-size: 14px;
   color: #6b6b6b;
+  margin-top: 15px;
 }
 article .explanation ul li {
   position: relative;
@@ -180,17 +306,89 @@ ul {
   border-radius: 15px 15px 0px 0px;
   padding: 30px 35px;
 }
+
+.pay-right .paymentDetail__orderPrice {
+  display: flex;
+}
+
+.pay-right .paymentDetail__orderPrice .priceName {
+  font-family: 'NanumSquareAc', sans-serif;
+  font-weight: 900;
+  color: #242624;
+  font-size: 20px;
+  margin-right: auto;
+}
+
+.pay-right .paymentDetail__orderPrice .price {
+  font-size: 26px;
+  font-weight: 600;
+  color: #2c5c36;
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+
+.pay-right .paymentDetail__orderPrice .priceUnit {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c5c36;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.pay-right .paymentDetail > ol > li {
+  border-left: 2px solid #b0aeb2;
+  padding-left: 20px;
+  line-height: 2.5em;
+  color: #b0aeb2;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.pay-right .paymentDetail > ol > li .priceName {
+  font-size: 18px;
+  margin-right: auto;
+}
+
+.pay-right .paymentDetail > ol > li .price {
+  font-size: 18px;
+}
+
+.pay-right .paymentDetail > ol > li .priceUnit {
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
 .pay-right .payPrice {
+  display: flex;
   width: 100%;
   height: auto;
-  font-family: 'NanumSquareAc', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
   padding: 25px 35px;
   background: #5bb28e;
   color: #fff;
   border-radius: 0px 0px 15px 15px;
 }
+.pay-right .payPrice .priceName {
+  font-family: 'NanumSquareAc', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: auto;
+}
+.pay-right .payPrice .price {
+  font-size: 26px;
+  font-weight: 600;
+  position: relative;
+  top: -4px;
+}
+.pay-right .payPrice .priceUnit {
+  font-size: 22px;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 5px;
+}
+
 .pay_wrap button.btnST01 {
   width: 295px;
   height: 50px;
@@ -211,10 +409,15 @@ ul {
   background: #f8f8f8;
   border-radius: 0 15px 15px 15px;
 }
-label img {
+.pay-accordion__summary__header label img {
+  position: relative;
+  top: -2px;
   width: 30px;
   height: 30px;
+
   background: #f8f8f8;
+  margin-left: 25px;
+  margin-right: 15px;
   border-radius: 5px;
 }
 
@@ -228,22 +431,23 @@ select {
   outline: 0;
   font: inherit;
   /* Personalize */
-  width: 20em;
-  height: 3em;
+
+  width: 100%;
+  height: 50px;
   padding: 0 4em 0 1em;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg') no-repeat right 0.8em center/1.4em,
-    linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
-  color: white;
-  border-radius: 0.25em;
-  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  background: #fff url('/img/IC_SelectArrow.png') no-repeat right 15px center;
+  -webkit-appearance: none;
+  border-radius: 10px;
+  border: 1px solid #b0aeb2;
   cursor: pointer;
+
   /* <option> colors */
   /* Remove focus outline */
   /* Remove IE arrow */
 }
 select option {
   color: inherit;
-  background-color: #320a28;
+  background-color: #f8f8f8;
 }
 select:focus {
   outline: none;
@@ -254,6 +458,165 @@ select::-ms-expand {
 
 a {
   text-decoration: none;
+}
+
+/* Arrow holder */
+.arrowed {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  margin: 0 20px 20px 0;
+}
+
+/* Just centering the examples */
+.arrowed div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* -- ARROW 1      -- */
+
+.arrow-1 {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #cdcad1;
+  border-width: 2px 2px 0 0;
+  transform: rotate(135deg);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.up {
+  transform: translateY(-5%);
+}
+
+.down {
+  transform: translateY(95%);
+}
+
+.btn-active a {
+  color: #000 !important;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  font-size: 24px;
+}
+
+.function-top {
+  width: 100%;
+}
+.function-top ul {
+  display: inline-block;
+  width: 100%;
+}
+.function-top.up ul {
+  display: none;
+}
+
+.function-top ul li {
+  font-size: 14px;
+  color: #b0aeb2;
+  display: flex;
+}
+
+.function-top ul li .priceName {
+  margin-right: auto;
+}
+
+.function-top,
+.function-down {
+  position: relative;
+  padding: 5px 0;
+  transition: all 1s;
+}
+
+.function-top li a,
+.function-down li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.function-down h2 {
+  font-size: 20px;
+  margin-right: 16px;
+  font-weight: 800;
+}
+.function-down p {
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 16px;
+}
+.function-down li a {
+  color: #aaa;
+}
+.function-down li i {
+  margin-right: 0;
+}
+
+.toggle-up {
+  transition: all 0.8s;
+  position: absolute;
+  cursor: pointer;
+  right: 69%;
+  top: -26px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 0;
+  line-height: 70px;
+}
+
+.toggle-up .arrowed {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+}
+.toggle-up .arrow-2 {
+  height: 10px;
+  width: 10px;
+  border: 1px solid #cdcad1;
+  border-width: 1px 1px 0 0;
+  transform: rotate(-45deg);
+}
+
+.active .arrow-2 {
+  transform: rotate(135deg);
+}
+
+.toggle-down {
+  z-index: 1;
+  transition: all 0.8s;
+  cursor: pointer;
+  position: absolute;
+  right: 50%;
+  bottom: 75px;
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
 }
 
 @media (max-width: 960px) {
