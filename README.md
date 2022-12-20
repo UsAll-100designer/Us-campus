@@ -506,7 +506,7 @@
 
 - JS
 
-  - share/js/radio_accordian.js
+  - share/js/bookBanner.js
   - share/js/toggle.js
 
 ```
