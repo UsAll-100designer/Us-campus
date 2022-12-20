@@ -180,7 +180,7 @@ input:required::placeholder {
 .pay-accordion__details__input label {
   width: 100%;
 }
-.pay-accordion__details__input input[type='number'] {
+.pay-accordion__details__input.column04 input[type='text'] {
   width: 23%;
 }
 
