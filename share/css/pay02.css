@@ -443,6 +443,7 @@ ul {
 
 .pay_wrap .pay-right button.btnST02 {
   margin-top: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .pay-accordion__summary__header label img {
   position: relative;
@@ -702,51 +703,7 @@ span.validation {
   .pay_wrap .pay-left__orderProduct {
     position: relative;
   }
-  .pay_wrap .pay-left__orderProduct img {
-    position: absolute;
-    top: 100px;
-  }
-  .pay-left__orderProduct__text {
-    width: 100%;
-    text-align: left;
-  }
-  .pay-left__orderProduct__text > b {
-    margin-bottom: 0;
-  }
-  .pay-left__orderProduct__text strong {
-    display: inline-block;
-    float: right;
-    margin-left: 50%;
-    font-size: 14px;
-    margin-bottom: 7px;
-  }
-  .pay-left__orderProduct__text__price {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin-left: auto;
-    justify-content: flex-end;
-    float: right;
-  }
-  .pay-left__orderProduct__text__price__before-num {
-    font-size: 17px;
-  }
-  .pay-left__orderProduct__text__price__before-unit {
-    font-size: 14px;
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    margin-left: 2px;
-  }
-  .pay-left__orderProduct__text__price__after-num {
-    font-size: 25px;
-  }
-  .pay-left__orderProduct__text__price__after-unit {
-    font-size: 20px;
-    display: inline-block;
-    margin-left: 3px;
-    margin-top: 5px;
-  }
+
   .pay-left__saleCode__btnWrap input[type='text'] {
     width: 49%;
     font-size: 12px;
@@ -803,6 +760,10 @@ span.validation {
     border-radius: 7px;
     background: #fff url('/img/IC_SelectArrow.png') no-repeat right 8px center;
     background-size: 10%;
+  }
+
+  select:required {
+    background: #f8e5e5 url('/img/IC_SelectArrow.png') no-repeat right 8px center;
   }
   .pay-accordion__details-wrap {
     padding: 15px;
@@ -1070,14 +1031,53 @@ span.validation {
 }
 
 @media (max-width: 768px) {
-  .pay_wrap .pay-left__orderProduct img {
-    width: 15%;
-  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .pay_wrap .pay-left__orderProduct img {
-    width: 40%;
+    position: absolute;
+    top: 100px;
+  }
+  .pay-left__orderProduct__text {
+    width: 100%;
+    text-align: left;
+  }
+  .pay-left__orderProduct__text > b {
+    margin-bottom: 0;
+  }
+  .pay-left__orderProduct__text strong {
+    display: inline-block;
+    float: right;
+    margin-left: 50%;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .pay-left__orderProduct__text__price {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: auto;
+    justify-content: flex-end;
+    float: right;
+  }
+  .pay-left__orderProduct__text__price__before-num {
+    font-size: 17px;
+  }
+  .pay-left__orderProduct__text__price__before-unit {
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-left: 2px;
+  }
+  .pay-left__orderProduct__text__price__after-num {
+    font-size: 25px;
+  }
+  .pay-left__orderProduct__text__price__after-unit {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 3px;
+    margin-top: 5px;
   }
 }
 
