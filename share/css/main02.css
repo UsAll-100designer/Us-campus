@@ -1,0 +1,21 @@
+/*폰트*/
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/*나눔스퀘어 네오*/
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css');
+
+/*clearfix*/
+.cf:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'NanumSquareAc', sans-serif;
+}

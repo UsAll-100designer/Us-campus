@@ -481,3 +481,61 @@
 ```
 
 ---
+
+### 서적 구매 배너
+
+#### AS-IS
+
+- HTML
+
+  - html/00_main/index.html
+
+---
+
+#### TO-BE
+
+추가파일
+
+- HTML
+
+  - html/00_main/index_bookBanner.html
+
+- CSS
+
+  - share/css/pay02.css
+
+- JS
+
+  - share/js/radio_accordian.js
+  - share/js/toggle.js
+
+```
+    <!-- ⚠️ 추가 시작 1️⃣ -->
+   <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/pay02.css" />
+
+    <!--JS-->
+    <script type="text/javascript" src="/share/js/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" defer src="/share/js/radio_accordian.js"></script>
+    <script type="text/javascript" defer src="/share/js/toggle.js"></script>
+    <!-- ⚠️ 추가 끝 1️⃣ -->
+
+    <!-- ⚠️ 추가 시작 2️⃣ -->
+    파일에서 확인
+    <!-- ⚠️ 추가 끝 2️⃣ -->
+
+
+    <!--📌 확인부분 01 : requied 상태값 예시-->
+
+    <!--📌 확인부분 02 : validation 알림글-->
+
+     <!--📌 확인부분 03 : class="btnST01 active" 상태값 btnST02 동일-->
+
+     <!--📌 확인부분 04 : 아멕스 카드시 Place 홀더 변경 및 마지막 input 삭제로 진행-->
+
+     <!--📌 확인부분 05 : github pages 경로 변경 ../../ >> 해당부분 개발시 경로 재설정필요-->
+
+```
