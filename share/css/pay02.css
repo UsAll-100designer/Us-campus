@@ -680,6 +680,16 @@ a {
 .Mo-payPrice-wrap {
   display: none;
 }
+
+span.validation {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  color: #f26969;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
 @media (max-width: 960px) {
   .pay_wrap {
     width: 100%;

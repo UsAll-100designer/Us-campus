@@ -26,6 +26,7 @@
 - 12M 01D layout.css / base.css > site CSS 변화코드변경
 
 - 12M 15D 키인 결제 (카드결제) 디자인 / 1-5 페이지별 레이아웃 일관성 필요 / 1-4 주문서 페이지 레이아웃 및 디자인리뉴얼 (재시작)
+- 12M 20D 키인 결제 (카드결제) 디자인 / 1-5 페이지별 레이아웃 일관성 필요 / 1-4 주문서 페이지 레이아웃 및 디자인리뉴얼 (완료)
 
 ---
 
@@ -439,11 +440,25 @@
 
 - CSS
 
-  -
+  - share/css/pay02.css
+
+- JS
+
+  - share/js/radio_accordian.js
+  - share/js/toggle.js
 
 ```
     <!-- ⚠️ 추가 시작 1️⃣ -->
+   <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/pay02.css" />
 
+    <!--JS-->
+    <script type="text/javascript" src="/share/js/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" defer src="/share/js/radio_accordian.js"></script>
+    <script type="text/javascript" defer src="/share/js/toggle.js"></script>
     <!-- ⚠️ 추가 끝 1️⃣ -->
 
     <!-- ⚠️ 추가 시작 2️⃣ -->
