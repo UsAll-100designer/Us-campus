@@ -38,7 +38,7 @@ h6 {
   line-height: 50px;
   font-size: 16px;
   padding: 15px 20px;
-  border: 1px solid #b0aeb2;
+  border: 1px solid #767678;
   border-radius: 10px;
 }
 
@@ -50,7 +50,7 @@ h6 {
 }
 
 input::placeholder {
-  color: #b0aeb2;
+  color: #767678;
 }
 input:required::placeholder {
   color: #f26969;
@@ -255,13 +255,13 @@ input:required::placeholder {
 .pay-left__orderProduct__text__price__before-num {
   font-size: 21px;
   font-weight: 600;
-  color: #b0aeb2;
+  color: #767678;
   text-decoration: line-through;
 }
 .pay-left__orderProduct__text__price__before-unit {
   font-size: 16px;
   font-weight: 600;
-  color: #b0aeb2;
+  color: #767678;
 }
 
 .pay-left__orderProduct__text__price__after-num {
@@ -287,7 +287,7 @@ article .explanation {
   padding: 20px 40px;
   line-height: 1.8em;
   background: #f8f8f8;
-  border: 1px solid #b0aeb2;
+  border: 1px solid #767678;
   font-size: 14px;
   color: #6b6b6b;
   margin-top: 15px;
@@ -321,7 +321,7 @@ ul {
   width: 100%;
   height: auto;
   background: #fff;
-  border: 1px solid #b0aeb2;
+  border: 1px solid #767678;
   border-radius: 15px 15px 0px 0px;
   padding: 30px 35px;
 }
@@ -356,10 +356,10 @@ ul {
 }
 
 .pay-right .paymentDetail > ol > li {
-  border-left: 2px solid #b0aeb2;
+  border-left: 2px solid #767678;
   padding-left: 20px;
   line-height: 2.5em;
-  color: #b0aeb2;
+  color: #767678;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -473,9 +473,9 @@ select {
   background: #fff url('/img/IC_SelectArrow.png') no-repeat right 15px center;
   -webkit-appearance: none;
   border-radius: 10px;
-  border: 1px solid #b0aeb2;
+  border: 1px solid #767678;
   cursor: pointer;
-  color: #b0aeb2;
+  color: #767678;
 
   /* <option> colors */
   /* Remove focus outline */
@@ -576,7 +576,7 @@ a {
 
 .function-top ul li {
   font-size: 14px;
-  color: #b0aeb2;
+  color: #767678;
   display: flex;
 }
 
@@ -951,10 +951,10 @@ span.validation {
     margin-left: 3px;
   }
   .function-down .paymentDetail ol li {
-    border-left: 1px solid #b0aeb2;
+    border-left: 1px solid #767678;
     padding-left: 10px;
     line-height: 2em;
-    color: #b0aeb2;
+    color: #767678;
     display: flex;
   }
   .function-down .paymentDetail ol li .priceName {
@@ -991,10 +991,10 @@ span.validation {
     margin-left: 3px;
   }
   .pay-right .paymentDetail > ol > li {
-    border-left: 1px solid #b0aeb2;
+    border-left: 1px solid #767678;
     padding-left: 10px;
     line-height: 2em;
-    color: #b0aeb2;
+    color: #767678;
     display: flex;
   }
   .pay-right .paymentDetail > ol > li .priceName {
