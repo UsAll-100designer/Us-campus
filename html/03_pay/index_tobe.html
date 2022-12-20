@@ -74,6 +74,7 @@
             <div class="pay-left__saleCode">
               <div class="pay-left__saleCode__btnWrap">
                 <input placeholder="할인코드를 입력해주세요." type="text" />
+                <!--📌 확인부분 03 : class="btnST01 active" 상태값 btnST02 동일-->
                 <button class="btnST01">등록하기</button>
               </div>
               <span class="validation">코드를 재확인 해주세요</span>
@@ -191,6 +192,7 @@
                         <option value="2">카드</option>
                         <option value="3"></option>
                       </select>
+                      <!--📌 확인부분 02 : validation 알림글-->
                       <span class="validation">카드를 선택 해주세요</span>
                     </div>
                     <div class="pay-accordion__details__input--half">
@@ -205,9 +207,11 @@
                     </div>
                     <div class="pay-accordion__details__input column04">
                       <label>카드번호입력</label>
+                      <!--📌 확인부분 04 : 아멕스 카드시 Place 홀더 변경 및 마지막 input 삭제로 진행-->
                       <input placeholder="네자리" type="text" />
                       <input placeholder="네자리" type="text" />
                       <input placeholder="네자리" type="text" />
+                      <!--📌 확인부분 01 : requied 상태값 예시-->
                       <input placeholder="네자리" type="text" required />
                       <span class="validation">카드번호를 확인해주세요</span>
                     </div>
