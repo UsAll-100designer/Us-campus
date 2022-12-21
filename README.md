@@ -29,6 +29,7 @@
 - 12M 20D 키인 결제 (카드결제) 디자인 / 1-5 페이지별 레이아웃 일관성 필요 / 1-4 주문서 페이지 레이아웃 및 디자인리뉴얼 (완료)
 
 - 12M 20D 서적 구매 배너 Ui-Dev
+- 12M 21D 서적 구매 배너 Ui-Dev (완료)
 
 ---
 
@@ -511,16 +512,13 @@
 
 ```
     <!-- ⚠️ 추가 시작 1️⃣ -->
-   <!--CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../share/css/pay02.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/main02.css" />
 
     <!--JS-->
-    <script type="text/javascript" src="/share/js/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script type="text/javascript" defer src="/share/js/radio_accordian.js"></script>
-    <script type="text/javascript" defer src="/share/js/toggle.js"></script>
+    <script type="text/javascript" defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" defer src="../../share/js/bookBanner.js"></script>
     <!-- ⚠️ 추가 끝 1️⃣ -->
 
     <!-- ⚠️ 추가 시작 2️⃣ -->
