@@ -22,13 +22,12 @@ h6 {
 
 :root {
   --body-color: #2c2d2a;
-  --savanna-bg: #e9bf8b;
   --beach-bg: #e7dfcf;
   --glacier-bg: #b6d6c8;
   --coral-bg: #e86357;
   --arrow-fill: #333231;
   --body-font: 'Pretendard', serif;
-  --italic-font: 'NanumSquareAc', sans-serif;
+  --title-font: 'NanumSquareAc', sans-serif;
 }
 
 * {
@@ -67,7 +66,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
   color: #f8f8f8;
 }
 @media screen and (max-width: 930px) {
@@ -109,7 +107,7 @@ img {
   transition-delay: 0.2s;
 }
 .main-title {
-  font-family: var(--italic-font);
+  font-family: var(--title-font);
   font-size: 30px;
   font-weight: 600;
   margin-top: 30px;
@@ -121,7 +119,7 @@ img {
   font-weight: 900;
 }
 .main-subtitle {
-  font-family: var(--italic-font);
+  font-family: var(--title-font);
   font-weight: 400;
   font-size: 14px;
   margin-top: 14px;
@@ -180,9 +178,10 @@ img {
 
 .right-side {
   display: flex;
-  margin-left: 170px;
-  position: relative;
+  position: absolute;
   flex-shrink: 0;
+  right: 40px;
+  top: 0px;
 }
 @media screen and (max-width: 930px) {
   .right-side {
@@ -339,12 +338,10 @@ img {
 }
 [data-sld='1'] .boxBook {
   background: var(--beach-bg) url('/img/img_slide_bg.png') no-repeat;
+  background-size: contain;
 }
 
 [data-sld='2'] .boxBook {
-  background: var(--glacier-bg) url('/img/img_slide_bg.png') no-repeat;
-}
-
-[data-sld='3'] .boxBook {
   background: var(--coral-bg) url('/img/img_slide_bg.png') no-repeat;
+  background-size: contain;
 }
