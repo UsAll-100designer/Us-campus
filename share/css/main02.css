@@ -385,7 +385,7 @@ img {
     top: -10px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1119px) {
   .boxBook {
     background: var(--glacier-bg) url('../../img/img_slide_bg.png') no-repeat;
     background-size: 120%;
@@ -404,6 +404,27 @@ img {
     padding-left: 20px;
     padding-right: 20px;
     height: 750px;
+  }
+
+  .boxBook {
+    background: var(--glacier-bg) url('../../img/img_slide_bg.png') no-repeat;
+    background-size: 200%;
+  }
+  [data-sld='1'] .boxBook {
+    background: var(--beach-bg) url('../../img/img_slide_bg.png') no-repeat;
+    background-size: 200%;
+  }
+
+  [data-sld='2'] .boxBook {
+    background: var(--coral-bg) url('../../img/img_slide_bg.png') no-repeat;
+    background-size: 200%;
+  }
+
+  .right-side {
+    margin-left: auto;
+  }
+  .left-side {
+    margin-left: auto;
   }
   .button-wrapper {
     top: 4%;
