@@ -387,7 +387,7 @@ img {
 }
 @media (max-width: 1024px) {
   .boxBook {
-    background: var(--glacier-bg) url(../../img/img_slide_bg.png) no-repeat;
+    background: var(--glacier-bg) url('../../img/img_slide_bg.png') no-repeat;
     background-size: 120%;
   }
   .right-side {
