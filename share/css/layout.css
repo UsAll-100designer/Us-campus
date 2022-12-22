@@ -530,6 +530,12 @@ h9,
   .p_view .content .stickyBox {
     margin: 0px !important;
   }
+  .study_btn {
+    margin-top: 2rem;
+  }
+  .vod_box .vod_list li {
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 720px) {
