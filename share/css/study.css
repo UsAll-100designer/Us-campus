@@ -1679,9 +1679,10 @@
   background: #f1f1f1;
 }
 
-/* 추가 */
+/* 추가 */ /* 추가 02 */
 .video .array.pd {
   border-bottom: 2px solid #ddd;
+  padding-bottom: 0;
 }
 .video .menuCate .menuCateTitle {
   margin-top: 0.5rem;
@@ -1690,4 +1691,20 @@
 
 .video .menuCate .menuCateTitle.open + .menuCateList {
   background: #f8f8f8;
+}
+
+/* 추가 02 */
+.video .list th {
+  padding: 2rem 1rem;
+}
+.video .list tr {
+  border-top: 2px solid #f1f1f1;
+}
+
+.video .list tr:nth-child(1) th {
+  margin-top: 2rem;
+}
+
+.video .menuCate .menuCateTitle {
+  padding-bottom: 1rem;
 }

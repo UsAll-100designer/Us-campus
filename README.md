@@ -31,6 +31,8 @@
 - 12M 20D 서적 구매 배너 Ui-Dev
 - 12M 21D 서적 구매 배너 Ui-Dev (완료)
 
+- 12M 22D 1-3 드롭다운 리스트 스타일 변경 (리터치)
+
 ---
 
 #### AS-IS
@@ -296,6 +298,8 @@
 
 #### TO-BE
 
+##### 12M 22D 1-3 드롭다운 리스트 스타일 변경 (리터치)
+
 변경파일
 
 - CSS
@@ -503,12 +507,11 @@
 
 - CSS
 
-  - share/css/pay02.css
+  - share/css/main02.css
 
 - JS
 
   - share/js/bookBanner.js
-  - share/js/toggle.js
 
 ```
     <!-- ⚠️ 추가 시작 1️⃣ -->
