@@ -14,7 +14,10 @@
     <link rel="stylesheet" type="text/css" href="../../share/css/menu.css" />
     <link rel="stylesheet" type="text/css" href="../../share/css/product.css" />
     <!-- ⚠️ 추가 시작 1️⃣ -->
-    <link rel="stylesheet" type="text/css" href="../../share/css/productPlus.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/videoPlus.css" />
+    <script src="../../share/js/swiper-bundle.min.js"></script>
+    <script defer src="../../share/js/swiper.js"></script>
     <!-- ⚠️ 추가 끝 1️⃣ -->
   </head>
 
@@ -38,9 +41,53 @@
         </div>
       </header>
 
-      <div class="p_view">
-        <div class="content">
+      <!--📌 확인부분 01 -->
+      <div class="p_view study-vis cf">
+        <!--📌 확인부분 02 -->
+        <div class="content study-vis cf">
           <div class="body">
+            <div class="top_name h5">
+              <a class="subject1" href="javascript:history.back();"
+                ><div><i class="xi-arrow-left"></i></div
+              ></a>
+              <div class="top_name_title">홍춘욱과 함께하는 안전자산 투자 마스터</div>
+            </div>
+            <!--👇🏼 해당 부분 수정 
+                    1. 탭 Sticky
+                    2. 탭 갯수 증가 예측 > Swipe  -->
+            <!-- ⚠️ 추가 시작 2️⃣ -->
+            <div class="stickyBox">
+              <div class="swiperWrap">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="./com.html">웰컴패키지 영상</a>
+                    </div>
+
+                    <!-- <div class="swiper-slide active">
+                      <a href="./com.html">동영상동영상동영상동영상</a>
+                    </div>
+                    <div class="swiper-slide"><a href="./guide.html">학습가이드</a></div> -->
+                    <div class="swiper-slide"><a href="./guide.html">웰컴패키지 사용안내</a></div>
+
+                    <!-- <div class="swiper-slide">커뮤니티</div>
+                    <div class="swiper-slide">커뮤니티</div> -->
+                    <!-- <div class="swiper-slide">동영상동영상동영상동영상</div>
+                    <div class="swiper-slide">학습가이드</div>
+                    <div class="swiper-slide">커뮤니티</div>
+                    <div class="swiper-slide">동영상</div>
+                    <div class="swiper-slide">동영상동영상동영상동영상학습가이드</div>
+                    <div class="swiper-slide">커뮤니티</div>
+                    <div class="swiper-slide">동영상</div>
+                    <div class="swiper-slide">학습가이드</div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <!-- ⚠️ 추가 끝 2️⃣ -->
+            <!-- 이전 탭 
             <ul class="tab_menu h6">
               <li class="on">
                 <a href="./intro.html"><i>소개</i></a>
@@ -50,7 +97,7 @@
               </li>
               <li>
                 <a href="./video.html"><i>동영상</i></a>
-              </li>
+              </li> -->
             </ul>
             <div class="intro">
               <img src="../../img/product.png" />

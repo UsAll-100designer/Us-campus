@@ -112,7 +112,7 @@
 }
 
 .study-vis {
-  overflow: visible;
+  overflow: visible !important;
 }
 
 .swiper-button-next.swiper-button-disabled,
