@@ -145,6 +145,7 @@
     height: 50px;
     background: url('../../img/IC_alarmBell.png');
     background-size: contain;
+    cursor: pointer;
   }
   .menu__box .memberMenu .alarm_noti span {
     display: flex;
