@@ -522,6 +522,14 @@ h9,
   .popupWrap .popupBody {
     padding: 1.5rem;
   }
+  /*황홍 12/22 추가요청*/
+  .product,
+  .master {
+    padding-top: 65px;
+  }
+  .p_view .content .stickyBox {
+    margin: 0px !important;
+  }
 }
 
 @media (max-width: 720px) {

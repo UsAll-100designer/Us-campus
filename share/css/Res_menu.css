@@ -5,6 +5,9 @@
 @media (max-width: 960px) {
   @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
+  .main {
+    margin-top: 65px;
+  } /*황홍 12/22 추가요청*/
   header {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     overflow: visible;
@@ -157,6 +160,7 @@
     background: #ef833a;
     color: #fff;
     font-weight: 700;
+    line-height: 15px; /*황홍 12/22 추가요청*/
   }
   .menu__box .memberMenu .prof_text {
     position: relative;
