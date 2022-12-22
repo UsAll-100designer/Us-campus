@@ -246,13 +246,13 @@
 
   .menu__box button.btn-change {
     padding-left: 0px;
-    background: no-repeat right/12% url('../../img/IC_change.png');
+    /* background: no-repeat right/12% url('../../img/IC_change.png'); */
     background-position: center right 10px;
     background-color: #fff;
   }
   .menu__box button.btn-change span {
     position: relative;
-    left: -7px;
+    left: 0px;
   }
   .deem {
     background: #000;
