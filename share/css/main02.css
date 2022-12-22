@@ -385,6 +385,18 @@ img {
     top: -10px;
   }
 }
+@media (max-width: 1024px) {
+  .boxBook {
+    background: var(--glacier-bg) url(../../img/img_slide_bg.png) no-repeat;
+    background-size: 120%;
+  }
+  .right-side {
+    margin-left: calc(100% - 50vw);
+  }
+  .left-side {
+    margin-left: calc(100% - 50vw);
+  }
+}
 
 @media (max-width: 500px) {
   .boxBook {
