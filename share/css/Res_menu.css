@@ -146,7 +146,7 @@
     left: 10px;
     width: 50px;
     height: 50px;
-    background: url('../../img/IC_alarmBell.png');
+    background: url('/img/IC_alarmBell.png');
     background-size: contain;
     cursor: pointer;
   }
@@ -203,7 +203,7 @@
   }
 
   .menu__box .menu__item {
-    background: no-repeat right/8% url('../../img/IC_link.png');
+    background: no-repeat right/8% url('/img/IC_link.png');
     background-position: center right 20px;
   }
   header .menu__box a.menu__item {
@@ -250,7 +250,7 @@
 
   .menu__box button.btn-change {
     padding-left: 0px;
-    /* background: no-repeat right/12% url('../../img/IC_change.png'); */
+    /* background: no-repeat right/12% url('/img/IC_change.png'); */
     background-position: center right 10px;
     background-color: #fff;
   }
