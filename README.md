@@ -34,6 +34,8 @@
 - 12M 22D 1-3 드롭다운 리스트 스타일 변경 (리터치)
 - 12M 22D Sticky + Swipe Tab page 추가
 
+- 12M 23D [UI] 얼리버드 판매 방식 - DeV
+
 ---
 
 #### AS-IS
@@ -535,6 +537,8 @@
 
 ```
 
+---
+
 ### Swipe Tab page 추가
 
 - 12M 22D Sticky + Swipe Tab page 추가
@@ -617,3 +621,90 @@
       <div class="content study-vis cf">
 
 ```
+
+---
+
+### Swipe Tab page 추가
+
+- 12M 22D Sticky + Swipe Tab page 추가
+
+#### AS-IS
+
+- HTML
+
+  - html/02_product/intro.html
+
+---
+
+#### TO-BE
+
+추가파일
+
+- HTML
+
+  - html/02_product/intro_tobe.html
+
+- CSS
+
+  - share/css/videoPlus.css
+  - share/css/swiper-bundle.min.css
+
+- JS
+
+  - share/js/swiper-bundle.min.js
+  - share/js/swiper.js
+
+```
+    <!-- ⚠️ 추가 시작 1️⃣ -->
+    <link rel="stylesheet" type="text/css" href="../../share/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/videoPlus.css" />
+    <script src="../../share/js/swiper-bundle.min.js"></script>
+    <script defer src="../../share/js/swiper.js"></script>
+    <!-- ⚠️ 추가 끝 1️⃣ -->
+
+     <!--👇🏼 해당 부분 수정
+            1. 탭 Sticky
+            2. 탭 갯수 증가 예측 > Swipe  -->
+    <!-- ⚠️ 추가 시작 2️⃣ -->
+
+    <div class="stickyBox">
+      <div class="swiperWrap">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="./com.html">웰컴패키지 영상</a>
+            </div>
+
+            <!-- <div class="swiper-slide active">
+              <a href="./com.html">동영상동영상동영상동영상</a>
+            </div>
+            <div class="swiper-slide"><a href="./guide.html">학습가이드</a></div> -->
+            <div class="swiper-slide"><a href="./guide.html">웰컴패키지 사용안내</a></div>
+
+            <!-- <div class="swiper-slide">커뮤니티</div>
+            <div class="swiper-slide">커뮤니티</div> -->
+            <!-- <div class="swiper-slide">동영상동영상동영상동영상</div>
+            <div class="swiper-slide">학습가이드</div>
+            <div class="swiper-slide">커뮤니티</div>
+            <div class="swiper-slide">동영상</div>
+            <div class="swiper-slide">동영상동영상동영상동영상학습가이드</div>
+            <div class="swiper-slide">커뮤니티</div>
+            <div class="swiper-slide">동영상</div>
+            <div class="swiper-slide">학습가이드</div> -->
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <!-- ⚠️ 추가 끝 2️⃣ -->
+
+    <!--📌 확인부분 01 -->
+      <div class="p_view study-vis cf">
+
+    <!--📌 확인부분 02 -->
+      <div class="content study-vis cf">
+
+```
+
+---
