@@ -154,13 +154,13 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 20px;
-    height: 20px;
+    width: 25px; /*황홍 12/23 추가요청*/
+    height: 25px; /*황홍 12/23 추가요청*/
     border-radius: 50%;
     background: #ef833a;
     color: #fff;
     font-weight: 700;
-    line-height: 20px; /*황홍 12/22 추가요청*/
+    line-height: 26px; /*황홍 12/23 추가요청*/
   }
   .menu__box .memberMenu .prof_text {
     position: relative;

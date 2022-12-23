@@ -703,7 +703,23 @@ https://us-campus.co.kr/study/article/221103105706719654
   .board {
     padding-top: 65px;
   }
+```
 
+- share/css/Res_menu.css
+
+```
+ .menu__box .memberMenu .alarm_noti span {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 25px; /*황홍 12/23 추가요청*/
+    height: 25px; /*황홍 12/23 추가요청*/
+    border-radius: 50%;
+    background: #ef833a;
+    color: #fff;
+    font-weight: 700;
+    line-height: 25px; /*황홍 12/23 추가요청*/
+  }
 ```
 
 ---
