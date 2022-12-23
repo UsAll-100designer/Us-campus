@@ -666,7 +666,7 @@
 
 # 12M 23D 얼리버드 판매 방식
 
-- 12M 22D Sticky + Swipe Tab page 추가
+-
 
 #### AS-IS
 
