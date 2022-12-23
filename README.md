@@ -670,6 +670,27 @@
 
 ```
 
+- share/css/layout.css
+
+```
+/*황홍 12/22 추가요청*/
+  .product,
+  .master {
+    padding-top: 65px;
+  }
+
+```
+
+- share/css/study.css
+
+```
+/*황홍 12/23 추가요청*/
+  .study > div {
+    padding: 0;
+    padding-top: 65px;
+  }
+```
+
 ---
 
 # 12M 23D 얼리버드 판매 방식

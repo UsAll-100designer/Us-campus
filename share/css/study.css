@@ -48,8 +48,10 @@
   .study {
     background: #fff;
   }
+  /*황홍 12/23 추가요청*/
   .study > div {
     padding: 0;
+    padding-top: 65px;
   }
   .study .bg {
     display: none;
