@@ -141,6 +141,10 @@
     height: 500px;
     padding-bottom: 1rem;
   }
+  /*황홍 12/23 추가요청*/
+  .modal_contents {
+    overflow-y: scroll;
+  }
 }
 
 /* mobile */
