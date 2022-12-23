@@ -662,19 +662,19 @@
 
 ```
 
+- share/css/PopUp.csss
+
+```
+/*황홍 12/23 추가요청*/
+주석부분 확인
+
+```
+
 ---
 
 # 12M 23D 얼리버드 판매 방식
 
 -
-
-#### AS-IS
-
-- HTML
-
-  - html/02_product/intro.html
-
----
 
 #### TO-BE
 
@@ -682,12 +682,11 @@
 
 - HTML
 
-  - html/02_product/intro_tobe.html
+  - html/03_pay/earlyBird.html
 
 - CSS
 
-  - share/css/videoPlus.css
-  - share/css/swiper-bundle.min.css
+  - share/css/earlyBird.css
 
 - JS
 

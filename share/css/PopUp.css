@@ -24,11 +24,12 @@
   visibility: hidden;
   opacity: 0;
 }
+/*황홍 12/23 추가요청*/
 .modal_wrap {
   position: relative;
   background: #fff;
   width: 550px;
-  height: 90vh;
+  height: auto;
   margin-top: 55px;
   border-radius: 0 35px 35px 35px;
   font-family: 'Pretendard', serif;
@@ -58,11 +59,12 @@
   display: inline-block;
 }
 
+/*황홍 12/23 추가요청*/
 .modal_contents {
   margin: 3%;
   height: 80vh;
-  padding-bottom: 9rem;
-  overflow-y: scroll;
+  padding-bottom: 6rem;
+  /* overflow-y: scroll; */
 }
 
 .modal_button_wrap {
@@ -134,9 +136,10 @@
   .modal_button_wrap {
     border-radius: 0;
   }
+  /*황홍 12/23 추가요청*/
   .modal_contents {
     height: 500px;
-    padding-bottom: 8rem;
+    padding-bottom: 1rem;
   }
 }
 
