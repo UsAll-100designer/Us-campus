@@ -34,6 +34,7 @@
   border-radius: 0 35px 35px 35px;
   font-family: 'Pretendard', serif;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
@@ -63,8 +64,8 @@
 .modal_contents {
   margin: 3%;
   height: 80vh;
-  padding-bottom: 6rem;
-  /* overflow-y: scroll; */
+  padding-bottom: 3rem;
+  overflow-y: scroll;
 }
 
 .modal_button_wrap {
