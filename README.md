@@ -691,6 +691,19 @@
     padding: 0;
     padding-top: 65px;
   }
+
+[ 제외 링크 부분 ]
+https://us-campus.co.kr/study/article/221103105706719654
+```
+
+- share/css/board.css
+
+```
+/*황홍 12/23 추가요청*/
+  .board {
+    padding-top: 65px;
+  }
+
 ```
 
 ---
