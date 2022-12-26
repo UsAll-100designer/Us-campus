@@ -276,6 +276,7 @@ ul {
   height: 2px;
   background: #767678;
   border-radius: 10px;
+  margin: 30px 0px;
 }
 
 .earlyBird-right .studyDetail .title-label {
@@ -287,6 +288,7 @@ ul {
   border-radius: 45px;
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .earlyBird-right .studyDetail .title-label .emoji {
@@ -297,6 +299,7 @@ ul {
   font-size: 24px;
   color: #242624;
   font-weight: 900;
+  margin-bottom: 20px;
 }
 .earlyBird-right .studyDetail .deadline-date {
   font-size: 14px;
@@ -314,6 +317,11 @@ ul {
   border-radius: 25px;
   font-weight: 500;
   letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.earlyBird-right .studyDetail > ol {
+  margin-bottom: 25px;
 }
 
 .earlyBird-right .studyDetail > ol > li {
@@ -347,7 +355,7 @@ ul {
   width: 100%;
   height: auto;
   background: #fff;
-  border: 2px solid #b0aeb2;
+  border: 1px solid #b0aeb2;
   border-radius: 15px;
   padding: 30px 35px;
   margin-bottom: 30px;
@@ -375,6 +383,10 @@ ul {
 
 .earlyBird-right .studyDetail.disabled .description {
   display: none;
+}
+
+.earlyBird-right .studyDetail.disabled > ol {
+  margin-bottom: 0px;
 }
 
 .earlyBird-right .payPrice {
