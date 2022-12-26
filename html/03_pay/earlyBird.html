@@ -28,168 +28,6 @@
     <script type="text/javascript" defer src="/share/js/countdown.js"></script>
     <script type="text/javascript" defer src="/share/js/stickyBanner.js"></script>
     <!-- ⚠️ 추가 끝 1️⃣ -->
-
-    <style>
-      .contdown-wrap {
-        width: 100%;
-        padding: 0px 50px 70px;
-        height: auto;
-        background: #14265a;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-      }
-      .countdown-text .img-wrap {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-      }
-      .contdown-wrap .img-wrap img {
-        transform: scale(0.5);
-      }
-      .countdown-text .sub-title {
-        width: 100%;
-        display: block;
-        color: #f7d22e;
-        font-size: 22px;
-        text-align: center;
-      }
-      .countdown-text .title {
-        width: 100%;
-        display: block;
-        font-weight: 900;
-        font-size: 30px;
-        color: #fff;
-        text-align: center;
-      }
-      .countdown-text .countdown-description {
-        width: 100%;
-        display: block;
-        font-size: 16px;
-        color: #ccfbfd;
-        text-align: center;
-      }
-      .countdown {
-        width: 100%;
-        display: flex;
-        position: relative;
-      }
-
-      .countdown ul {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-      }
-      .countdown li {
-        background: #fff;
-        border-radius: 10px;
-        position: relative;
-        width: 23%;
-        display: inline-block;
-        font-size: 26px;
-        list-style-type: none;
-        line-height: 65px;
-        text-transform: uppercase;
-        color: #131313;
-        text-align: center;
-      }
-
-      .countdown li span {
-        display: inline-block;
-        font-size: 26px;
-      }
-      .description {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        background: #f8f8f8;
-        border: 1px solid #707070;
-        font-size: 14px;
-        border-radius: 10px;
-      }
-      .order-price-wrap {
-        width: 100%;
-        height: auto;
-        background: #fff;
-        border: 2px solid #5d847c;
-        border-bottom: 0px;
-        padding: 30px;
-        padding-bottom: 0px;
-      }
-      .order-price-bg {
-        background: #f8f8f8;
-        padding: 20px;
-      }
-      dl.order-price-detail {
-        border-left: 2px solid #767678;
-        padding-left: 20px;
-        color: #767678;
-      }
-      dl.order-price-detail dt {
-        font-size: 16px;
-      }
-      dl.order-price-detail dd {
-        font-size: 14px;
-        background: #fff;
-        border-radius: 5px;
-        padding: 15px;
-      }
-      .pay-method-guide {
-        width: 100%;
-        height: auto;
-        background: #f8f8f8;
-        border: 1px solid #b0aeb2;
-        border-radius: 15px;
-      }
-      .pay-method-guide dl {
-        color: #6b6b6b;
-        padding: 30px 10px;
-        padding-left: 40px;
-      }
-      .pay-method-guide dl dt {
-        position: relative;
-      }
-      .pay-method-guide dl dt::before {
-        position: absolute;
-        top: 10px;
-        left: -10px;
-        display: block;
-        content: '';
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background: #d6d9d6;
-      }
-      .pay-method-guide dl dd {
-      }
-      .contdown-sticky-wrap {
-        width: 610px;
-        height: auto;
-        background: #14265a;
-        position: relative;
-        z-index: 3;
-        visibility: hidden;
-      }
-      .contdown-sticky-wrap .countdown-text b {
-        width: 100%;
-        background: #fcee64;
-        font-size: 18px;
-        color: #182657;
-        line-height: 50px;
-      }
-      .contdown-sticky-wrap .countdown {
-        padding: 10px 60px;
-        padding-bottom: 30px;
-      }
-      .sticky {
-        visibility: visible;
-        position: fixed;
-        bottom: 0;
-      }
-    </style>
   </head>
 
   <body>
@@ -252,100 +90,143 @@
         </section>
 
         <aside class="earlyBird-right">
-          <div class="sticky">
-            <h5>수강권 선택</h5>
-            <div class="paymentDetail">
-              <div class="title-label"><span class="emoji">🔥</span>론칭특가 40%</div>
-              <h6>강환국과 함꼐하는 패밀리스터디</h6>
-              <div class="deadline-date">
-                <span class="deadline-date__date"> Date </span>
-                11.27 (일) 까지
-              </div>
-              <ol>
-                <li>
+          <!-- <div class="sticky"> -->
+          <h5>수강권 선택</h5>
+          <div class="studyDetail">
+            <div class="title-label"><span class="emoji">🔥</span>론칭특가 40%</div>
+            <h6>강환국과 함께하는 패밀리스터디</h6>
+            <div class="deadline-date">
+              <span class="deadline-date__date"> Date </span>
+              11.27 (일) 까지
+            </div>
+            <ol>
+              <li>
+                <label class="control control--radio">
                   <span class="priceName">베이직 3개월</span>
                   <span class="price">380,000</span>
                   <span class="priceUnit">원</span>
-                </li>
-                <li>
+                  <input type="radio" name="radio" />
+                  <div class="control__indicator"></div>
+                </label>
+              </li>
+              <li>
+                <label class="control control--radio">
                   <span class="priceName">프리미엄 6개월</span>
                   <span class="price">-1,140,000</span>
                   <span class="priceUnit">원</span>
-                </li>
-              </ol>
-              <div class="description">
-                <span>8만원 할인쿠폰이 적용된 가격입니다.</span>
-                <span>할인코드 : 강환국 화이팅</span>
-              </div>
-            </div>
-            <div class="order-price-wrap">
-              <div class="order-price-bg">
-                <div class="order-price">
-                  <b class="priceName">주문금액</b>
-                  <b class="price">393,000</b>
-                  <b class="priceUnit">원</b>
-                </div>
-                <dl class="order-price-detail">
-                  <dt>강환국과 함께하는 패밀리스터디</dt>
-                  <dd>
-                    <span class="priceName">ㄴ 베이직 3개월</span>
-                    <span class="price">393,000</span>
-                    <span class="priceUnit">원</span>
-                  </dd>
-                  <dt>강환국 퀀트투자 저서</dt>
-                  <dd>
-                    <span class="priceName">ㄴ 베이직 3개월</span>
-                    <span class="price">393,000</span>
-                    <span class="priceUnit">원</span>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <div class="payPrice">
-              <b class="priceName">결제예정금액</b>
-              <b class="price">720,000</b>
-              <b class="priceUnit">원</b>
-            </div>
-            <button class="btnST02">결제하기</button>
-            <div class="paymentDetail">
-              <div class="title-label"><span class="emoji">🔥</span>론칭특가 40%</div>
-              <h6>강환국과 함꼐하는 패밀리스터디</h6>
-              <div class="deadline-date">
-                <span class="deadline-date__date"> Date </span>
-                11.27 (일) 까지
-              </div>
-              <ol>
-                <li>
-                  <span class="priceName">베이직 3개월</span>
-                  <span class="price">380,000</span>
-                  <span class="priceUnit">원</span>
-                </li>
-                <li>
-                  <span class="priceName">프리미엄 6개월</span>
-                  <span class="price">-1,140,000</span>
-                  <span class="priceUnit">원</span>
-                </li>
-              </ol>
-              <div class="description">
-                <span>8만원 할인쿠폰이 적용된 가격입니다.</span>
-                <span>할인코드 : 강환국 화이팅</span>
-              </div>
+                  <input type="radio" name="radio" />
+                  <div class="control__indicator"></div>
+                </label>
+              </li>
+            </ol>
+            <div class="description">
+              <span>8만원 할인쿠폰이 적용된 가격입니다.</span>
+              <span>할인코드 : 강환국 화이팅</span>
             </div>
 
-            <h5>결제수단 안내</h5>
-            <div style="margin-bottom: 2000px" class="pay-method-guide">
-              <dl>
-                <dt>카드결제</dt>
-                <dd>결제시 최대 2-6개월 무이자할부</dd>
-                <dt>무통장 입금</dt>
-                <dd>신한, 우리, 국민 등 13개 은행 지원</dd>
-                <dt>안심키인결제</dt>
-                <dd>통화하면서 안전하게 신용카드. 무이자결제</dd>
-                <span>문의전화 : 1833-2295</span>
-                <span>(평일 10:00~17:00, 점심 12:00~13:30)</span>
+            <hr class="line" />
+
+            <div class="title-label"><span class="emoji">🔥</span>론칭특가 40%</div>
+            <h6>강환국과 함께하는 패밀리스터디</h6>
+            <div class="deadline-date">
+              <span class="deadline-date__date"> Date </span>
+              11.27 (일) 까지
+            </div>
+            <ol>
+              <li>
+                <label class="control control--checkbox">
+                  <span class="priceName">베이직 3개월</span>
+                  <span class="price">380,000</span>
+                  <span class="priceUnit">원</span>
+                  <input type="checkbox" />
+                  <div class="control__indicator"></div>
+                </label>
+              </li>
+              <li>
+                <label class="control control--checkbox">
+                  <span class="priceName">프리미엄 6개월</span>
+                  <span class="price">-1,140,000</span>
+                  <span class="priceUnit">원</span>
+                  <input type="checkbox" />
+                  <div class="control__indicator"></div>
+                </label>
+              </li>
+            </ol>
+
+            <div class="description">
+              <span>8만원 할인쿠폰이 적용된 가격입니다.</span>
+              <span>할인코드 : 강환국 화이팅</span>
+            </div>
+          </div>
+          <div class="order-price-wrap">
+            <div class="order-price-bg">
+              <div class="order-price">
+                <b class="priceName">주문금액</b>
+                <b class="price">393,000</b>
+                <b class="priceUnit">원</b>
+              </div>
+              <dl class="order-price-detail">
+                <dt>강환국과 함께하는 패밀리스터디</dt>
+                <dd>
+                  <span class="priceName">ㄴ 베이직 3개월</span>
+                  <span class="price">393,000</span>
+                  <span class="priceUnit">원</span>
+                </dd>
+                <dt>강환국 퀀트투자 저서</dt>
+                <dd>
+                  <span class="priceName">ㄴ 베이직 3개월</span>
+                  <span class="price">393,000</span>
+                  <span class="priceUnit">원</span>
+                </dd>
               </dl>
             </div>
           </div>
+          <div class="payPrice">
+            <b class="priceName">결제예정금액</b>
+            <b class="price">720,000</b>
+            <b class="priceUnit">원</b>
+          </div>
+          <button class="btnST02">결제하기</button>
+
+          <div class="studyDetail disabled">
+            <div class="title-label"><span class="emoji">🔥</span>론칭특가 40%</div>
+            <h6>강환국과 함꼐하는 패밀리스터디</h6>
+            <div class="deadline-date">
+              <span class="deadline-date__date"> Date </span>
+              11.27 (일) 까지
+            </div>
+            <ol>
+              <li>
+                <span class="priceName">베이직 3개월</span>
+                <span class="price">380,000</span>
+                <span class="priceUnit">원</span>
+              </li>
+              <li>
+                <span class="priceName">프리미엄 6개월</span>
+                <span class="price">-1,140,000</span>
+                <span class="priceUnit">원</span>
+              </li>
+            </ol>
+            <div class="description">
+              <span>8만원 할인쿠폰이 적용된 가격입니다.</span>
+              <span>할인코드 : 강환국 화이팅</span>
+            </div>
+          </div>
+
+          <h5>결제수단 안내</h5>
+          <div style="margin-bottom: 2000px" class="pay-method-guide">
+            <dl>
+              <dt>카드결제</dt>
+              <dd>결제시 최대 2-6개월 무이자할부</dd>
+              <dt>무통장 입금</dt>
+              <dd>신한, 우리, 국민 등 13개 은행 지원</dd>
+              <dt>안심키인결제</dt>
+              <dd>통화하면서 안전하게 신용카드. 무이자결제</dd>
+              <span>문의전화 : 1833-2295</span>
+              <span>(평일 10:00~17:00, 점심 12:00~13:30)</span>
+            </dl>
+          </div>
+          <!-- </div> -->
           <!--sticky-->
         </aside>
 

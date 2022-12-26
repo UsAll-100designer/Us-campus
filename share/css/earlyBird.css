@@ -79,6 +79,167 @@ h6 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+/*countdown*/
+.contdown-wrap {
+  width: 100%;
+  padding: 0px 50px 70px;
+  height: auto;
+  background: #14265a;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.countdown-text .img-wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.contdown-wrap .img-wrap img {
+  transform: scale(0.5);
+}
+.countdown-text .sub-title {
+  width: 100%;
+  display: block;
+  color: #f7d22e;
+  font-size: 22px;
+  text-align: center;
+}
+.countdown-text .title {
+  width: 100%;
+  display: block;
+  font-weight: 900;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+.countdown-text .countdown-description {
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #ccfbfd;
+  text-align: center;
+}
+.countdown {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.countdown ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.countdown li {
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  width: 23%;
+  display: inline-block;
+  font-size: 26px;
+  list-style-type: none;
+  line-height: 65px;
+  text-transform: uppercase;
+  color: #131313;
+  text-align: center;
+}
+
+.countdown li span {
+  display: inline-block;
+  font-size: 26px;
+}
+.description {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border: 1px solid #707070;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.order-price-wrap {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 2px solid #5d847c;
+  border-bottom: 0px;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+.order-price-bg {
+  background: #f8f8f8;
+  padding: 20px;
+}
+dl.order-price-detail {
+  border-left: 2px solid #767678;
+  padding-left: 20px;
+  color: #767678;
+}
+dl.order-price-detail dt {
+  font-size: 16px;
+}
+dl.order-price-detail dd {
+  font-size: 14px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px;
+}
+.pay-method-guide {
+  width: 100%;
+  height: auto;
+  background: #f8f8f8;
+  border: 1px solid #b0aeb2;
+  border-radius: 15px;
+}
+.pay-method-guide dl {
+  color: #6b6b6b;
+  padding: 30px 10px;
+  padding-left: 40px;
+}
+.pay-method-guide dl dt {
+  position: relative;
+}
+.pay-method-guide dl dt::before {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  display: block;
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #d6d9d6;
+}
+.pay-method-guide dl dd {
+}
+.contdown-sticky-wrap {
+  width: 610px;
+  height: auto;
+  background: #14265a;
+  position: relative;
+  z-index: 3;
+  visibility: hidden;
+}
+.contdown-sticky-wrap .countdown-text b {
+  width: 100%;
+  background: #fcee64;
+  font-size: 18px;
+  color: #182657;
+  line-height: 50px;
+}
+.contdown-sticky-wrap .countdown {
+  padding: 10px 60px;
+  padding-bottom: 30px;
+}
+.sticky {
+  visibility: visible;
+  position: fixed;
+  bottom: 0;
+}
+
 /*Reset*/
 dl,
 ol,
@@ -90,45 +251,60 @@ ul {
   top: 0px;
   padding-top: 30px;
 }
-.earlyBird-right .paymentDetail {
+.earlyBird-right .studyDetail {
   width: 100%;
   height: auto;
-  background: #fff;
-  border: 1px solid #767678;
+  background: #f2f9f5;
+  border: 2px solid #65837c;
+  border-bottom: 0px;
   border-radius: 15px 15px 0px 0px;
   padding: 30px 35px;
 }
-
-.earlyBird-right .paymentDetail__orderPrice {
-  display: flex;
+.earlyBird-right .studyDetail hr.class {
+  width: 100%;
+  height: 2px;
+  background: #767678;
 }
 
-.earlyBird-right .paymentDetail__orderPrice .priceName {
-  font-family: 'NanumSquareAc', sans-serif;
-  font-weight: 900;
-  color: #242624;
+.earlyBird-right .studyDetail .title-label {
+  display: inline-block;
+  background: #5bd06f;
+  color: #fff;
+  padding: 13px 20px;
+  line-height: 1em;
+  border-radius: 45px;
   font-size: 20px;
-  margin-right: auto;
+  font-weight: 700;
 }
 
-.earlyBird-right .paymentDetail__orderPrice .price {
-  font-size: 26px;
-  font-weight: 600;
-  color: #2c5c36;
+.earlyBird-right .studyDetail .title-label .emoji {
   display: inline-block;
-  position: relative;
-  top: -5px;
+  margin-right: 8px;
 }
-
-.earlyBird-right .paymentDetail__orderPrice .priceUnit {
-  font-size: 22px;
-  font-weight: 600;
-  color: #2c5c36;
+.earlyBird-right .studyDetail h6 {
+  font-size: 24px;
+  color: #242624;
+  font-weight: 900;
+}
+.earlyBird-right .studyDetail .deadline-date {
+  font-size: 14px;
+  color: #242624;
+  font-weight: 500;
+}
+.earlyBird-right .studyDetail .deadline-date .deadline-date__date {
+  font-size: 11px;
+  color: #838483;
+  background: #fff;
+  line-height: 1em;
+  border: 1px solid #707070;
   display: inline-block;
-  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
-.earlyBird-right .paymentDetail > ol > li {
+.earlyBird-right .studyDetail > ol > li {
   border-left: 2px solid #767678;
   padding-left: 20px;
   line-height: 2.5em;
@@ -138,16 +314,91 @@ ul {
   flex-wrap: wrap;
 }
 
-.earlyBird-right .paymentDetail > ol > li .priceName {
+.earlyBird-right .studyDetail > ol > li .priceName {
   font-size: 18px;
   margin-right: auto;
 }
 
-.earlyBird-right .paymentDetail > ol > li .price {
+.earlyBird-right .studyDetail > ol > li .price {
   font-size: 18px;
 }
 
-.earlyBird-right .paymentDetail > ol > li .priceUnit {
+.earlyBird-right .studyDetail > ol > li .priceUnit {
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/*disabled*/
+
+.earlyBird-right .studyDetail.disabled {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 2px solid #b0aeb2;
+  border-radius: 15px;
+  padding: 30px 35px;
+}
+
+.earlyBird-right .studyDetail.disabled .title-label {
+  display: inline-block;
+  background: #767678;
+  color: #fff;
+  padding: 13px 20px;
+  line-height: 1em;
+  border-radius: 45px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.earlyBird-right .studyDetail.disabled .title-label .emoji {
+  display: inline-block;
+  visibility: hidden;
+  margin-right: 8px;
+}
+.earlyBird-right .studyDetail.disabled h6 {
+  font-size: 24px;
+  color: #767678;
+  font-weight: 900;
+}
+.earlyBird-right .studyDetail.disabled .deadline-date {
+  font-size: 14px;
+  color: #242624;
+  font-weight: 500;
+}
+.earlyBird-right .studyDetail.disabled .deadline-date .deadline-date__date {
+  font-size: 11px;
+  color: #838483;
+  background: #fff;
+  line-height: 1em;
+  border: 1px solid #707070;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.earlyBird-right .studyDetail.disabled > ol > li {
+  border-left: 2px solid #767678;
+  padding-left: 20px;
+  line-height: 2.5em;
+  color: #767678;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.earlyBird-right .studyDetail.disabled > ol > li .priceName {
+  font-size: 18px;
+  margin-right: auto;
+}
+
+.earlyBird-right .studyDetail.disabled > ol > li .price {
+  font-size: 18px;
+}
+
+.earlyBird-right .studyDetail.disabled > ol > li .priceUnit {
   font-size: 16px;
   display: inline-block;
   margin-left: 5px;
@@ -217,6 +468,79 @@ ul {
 .earlyBird_wrap .pay-right button.btnST02 {
   margin-top: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/*checkbox / radio*/
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+.control input:checked ~ .control__indicator {
+  background: #2aa1c0;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+}
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+.control--radio .control__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
 }
 
 @media (max-width: 960px) {
@@ -328,11 +652,11 @@ ul {
     width: 100%;
     margin-left: -22px;
   }
-  .function-down .paymentDetail {
+  .function-down .studyDetail {
     display: none;
   }
 
-  .function-down.down .paymentDetail {
+  .function-down.down .studyDetail {
     display: block;
     width: 100%;
     background: #fff;
@@ -340,7 +664,7 @@ ul {
     padding: 25px;
     border-radius: 15px 15px 0 0;
   }
-  .function-down.down .paymentDetail .paymentDetail-BG {
+  .function-down.down .studyDetail .studyDetail-BG {
     background: #f8f8f8;
     padding: 20px;
     border-radius: 15px 15px 0 0;
@@ -417,85 +741,85 @@ ul {
     font-size: 14px;
     border-radius: 0 7px 7px 7px;
   }
-  .function-down .paymentDetail__orderPrice {
+  .function-down .studyDetail__orderPrice {
     display: flex;
     margin-bottom: 10px;
   }
-  .function-down .paymentDetail__orderPrice .priceName {
+  .function-down .studyDetail__orderPrice .priceName {
     font-family: 'NanumSquareAc', sans-serif;
     font-size: 14px;
     font-weight: 800;
     margin-right: auto;
   }
-  .function-down .paymentDetail__orderPrice .price {
+  .function-down .studyDetail__orderPrice .price {
     font-size: 15px;
     color: #2c5c36;
     position: relative;
     top: -2px;
   }
-  .function-down .paymentDetail__orderPrice .priceUnit {
+  .function-down .studyDetail__orderPrice .priceUnit {
     font-size: 13px;
     color: #2c5c36;
     display: inline-block;
     margin-left: 3px;
   }
-  .function-down .paymentDetail ol li {
+  .function-down .studyDetail ol li {
     border-left: 1px solid #767678;
     padding-left: 10px;
     line-height: 2em;
     color: #767678;
     display: flex;
   }
-  .function-down .paymentDetail ol li .priceName {
+  .function-down .studyDetail ol li .priceName {
     font-size: 12px;
     font-weight: 700;
     margin-right: auto;
   }
-  .function-down .paymentDetail ol li .price {
+  .function-down .studyDetail ol li .price {
     font-size: 13px;
     font-weight: 700;
   }
-  .function-down .paymentDetail ol li .priceUnit {
+  .function-down .studyDetail ol li .priceUnit {
     font-size: 10px;
     display: inline-block;
     margin-left: 3px;
   }
 
-  .pay-right .paymentDetail__orderPrice .priceName {
+  .pay-right .studyDetail__orderPrice .priceName {
     font-family: 'NanumSquareAc', sans-serif;
     font-size: 14px;
     font-weight: 800;
     margin-right: auto;
   }
-  .pay-right .paymentDetail__orderPrice .price {
+  .pay-right .studyDetail__orderPrice .price {
     font-size: 15px;
     color: #2c5c36;
     position: relative;
     top: -2px;
   }
-  .pay-right .paymentDetail__orderPrice .priceUnit {
+  .pay-right .studyDetail__orderPrice .priceUnit {
     font-size: 13px;
     color: #2c5c36;
     display: inline-block;
     margin-left: 3px;
   }
-  .pay-right .paymentDetail > ol > li {
+  .pay-right .studyDetail > ol > li {
     border-left: 1px solid #767678;
     padding-left: 10px;
     line-height: 2em;
     color: #767678;
     display: flex;
   }
-  .pay-right .paymentDetail > ol > li .priceName {
+  .pay-right .studyDetail > ol > li .priceName {
     font-size: 12px;
     font-weight: 700;
     margin-right: auto;
   }
-  .pay-right .paymentDetail > ol > li .price {
+  .pay-right .studyDetail > ol > li .price {
     font-size: 13px;
     font-weight: 700;
   }
-  .pay-right .paymentDetail > ol > li .priceUnit {
+  .pay-right .studyDetail > ol > li .priceUnit {
     font-size: 10px;
     display: inline-block;
     margin-left: 3px;
