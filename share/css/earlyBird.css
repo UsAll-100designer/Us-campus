@@ -193,14 +193,18 @@ dl.order-price-detail dd {
   background: #f8f8f8;
   border: 1px solid #b0aeb2;
   border-radius: 15px;
-}
-.pay-method-guide dl {
-  color: #6b6b6b;
   padding: 30px 10px;
   padding-left: 40px;
 }
+.pay-method-guide dl {
+  color: #6b6b6b;
+  display: flex;
+  width: 100%;
+}
 .pay-method-guide dl dt {
   position: relative;
+  display: block;
+  width: 30%;
 }
 .pay-method-guide dl dt::before {
   position: absolute;
@@ -214,6 +218,12 @@ dl.order-price-detail dd {
   background: #d6d9d6;
 }
 .pay-method-guide dl dd {
+  display: block;
+  width: 70%;
+}
+.pay-method-guide span {
+  display: block;
+  width: 100%;
 }
 .contdown-sticky-wrap {
   width: 610px;
@@ -260,10 +270,11 @@ ul {
   border-radius: 15px 15px 0px 0px;
   padding: 30px 35px;
 }
-.earlyBird-right .studyDetail hr.class {
+.earlyBird-right .studyDetail hr.line {
   width: 100%;
   height: 2px;
   background: #767678;
+  border-radius: 10px;
 }
 
 .earlyBird-right .studyDetail .title-label {
@@ -338,6 +349,7 @@ ul {
   border: 2px solid #b0aeb2;
   border-radius: 15px;
   padding: 30px 35px;
+  margin-bottom: 30px;
 }
 
 .earlyBird-right .studyDetail.disabled .title-label {
@@ -352,14 +364,16 @@ ul {
 }
 
 .earlyBird-right .studyDetail.disabled .title-label .emoji {
-  display: inline-block;
-  visibility: hidden;
-  margin-right: 8px;
+  display: none;
 }
 .earlyBird-right .studyDetail.disabled h6 {
   font-size: 24px;
   color: #767678;
   font-weight: 900;
+}
+
+.earlyBird-right .studyDetail.disabled .description {
+  display: none;
 }
 
 .earlyBird-right .payPrice {
@@ -370,7 +384,6 @@ ul {
   padding-bottom: 15px;
   background: #5bb28e;
   color: #fff;
-  border-radius: 0px 0px 15px 15px;
 }
 .earlyBird-right .payPrice .priceName {
   font-family: 'NanumSquareAc', sans-serif;
@@ -390,26 +403,30 @@ ul {
   display: inline-block;
   margin-left: 5px;
 }
-
-.earlyBird_wrap button.btnST01 {
-  width: 295px;
-  height: 50px;
-  font-size: 16px;
-  font-weight: 600;
-  background: #f7f7f7;
-  color: #242624;
-  border: 1px solid #c8c7ca;
-  border-radius: 0 10px 10px 10px;
-}
-
-.earlyBird_wrap button.btnST01.active {
-  background: #455245;
-  color: #f8f8f8;
-  border: 1px solid #455245;
-}
-.earlyBird_wrap button.btnST02 {
+.earlyBird-right .button-wrap {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  height: 65px;
+  padding: 15px;
+  background: #fff;
+  border: 2px solid #5d847c;
+  border-radius: 0 0 15px 15px;
+  border-top: 0px;
+  margin-bottom: 30px;
+}
+
+.earlyBird-right .button-wrap .shareBtn {
+  background: #fff url('/img/IC_share.png') 40% center no-repeat;
+  background-size: 50%;
+  width: 70px;
+  height: 60px;
+  border-radius: 0 10px 10px 10px;
+  border: 2px solid #c2c1c4;
+}
+
+.earlyBird_wrap button.btnST02 {
+  width: 80%;
+  height: 60px;
   font-size: 22px;
   border: 1px solid #c2c1c4;
   color: #242624;

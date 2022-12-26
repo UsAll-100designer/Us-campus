@@ -186,7 +186,10 @@
             <b class="price">720,000</b>
             <b class="priceUnit">원</b>
           </div>
-          <button class="btnST02">결제하기</button>
+          <div class="button-wrap">
+            <button class="shareBtn"></button>
+            <button class="btnST02">결제하기</button>
+          </div>
 
           <div class="studyDetail disabled">
             <div class="title-label"><span class="emoji">🔥</span>론칭특가 40%</div>
@@ -197,14 +200,22 @@
             </div>
             <ol>
               <li>
-                <span class="priceName">베이직 3개월</span>
-                <span class="price">380,000</span>
-                <span class="priceUnit">원</span>
+                <label class="control control--radio">
+                  <span class="priceName">베이직 3개월</span>
+                  <span class="price">380,000</span>
+                  <span class="priceUnit">원</span>
+                  <input type="radio" name="radio" disabled />
+                  <div class="control__indicator"></div>
+                </label>
               </li>
               <li>
-                <span class="priceName">프리미엄 6개월</span>
-                <span class="price">-1,140,000</span>
-                <span class="priceUnit">원</span>
+                <label class="control control--radio">
+                  <span class="priceName">프리미엄 6개월</span>
+                  <span class="price">-1,140,000</span>
+                  <span class="priceUnit">원</span>
+                  <input type="radio" name="radio" disabled />
+                  <div class="control__indicator"></div>
+                </label>
               </li>
             </ol>
             <div class="description">
@@ -218,13 +229,18 @@
             <dl>
               <dt>카드결제</dt>
               <dd>결제시 최대 2-6개월 무이자할부</dd>
+            </dl>
+            <dl>
               <dt>무통장 입금</dt>
               <dd>신한, 우리, 국민 등 13개 은행 지원</dd>
+            </dl>
+            <dl>
               <dt>안심키인결제</dt>
               <dd>통화하면서 안전하게 신용카드. 무이자결제</dd>
-              <span>문의전화 : 1833-2295</span>
-              <span>(평일 10:00~17:00, 점심 12:00~13:30)</span>
             </dl>
+
+            <span>문의전화 : 1833-2295</span>
+            <span>(평일 10:00~17:00, 점심 12:00~13:30)</span>
           </div>
           <!-- </div> -->
           <!--sticky-->
