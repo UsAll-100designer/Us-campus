@@ -361,48 +361,6 @@ ul {
   color: #767678;
   font-weight: 900;
 }
-.earlyBird-right .studyDetail.disabled .deadline-date {
-  font-size: 14px;
-  color: #242624;
-  font-weight: 500;
-}
-.earlyBird-right .studyDetail.disabled .deadline-date .deadline-date__date {
-  font-size: 11px;
-  color: #838483;
-  background: #fff;
-  line-height: 1em;
-  border: 1px solid #707070;
-  display: inline-block;
-  padding: 5px 10px;
-  border-radius: 25px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-.earlyBird-right .studyDetail.disabled > ol > li {
-  border-left: 2px solid #767678;
-  padding-left: 20px;
-  line-height: 2.5em;
-  color: #767678;
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-}
-
-.earlyBird-right .studyDetail.disabled > ol > li .priceName {
-  font-size: 18px;
-  margin-right: auto;
-}
-
-.earlyBird-right .studyDetail.disabled > ol > li .price {
-  font-size: 18px;
-}
-
-.earlyBird-right .studyDetail.disabled > ol > li .priceUnit {
-  font-size: 16px;
-  display: inline-block;
-  margin-left: 5px;
-}
 
 .earlyBird-right .payPrice {
   display: flex;
