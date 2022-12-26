@@ -200,11 +200,12 @@ dl.order-price-detail dd {
   color: #6b6b6b;
   display: flex;
   width: 100%;
+  font-size: 14px;
 }
 .pay-method-guide dl dt {
   position: relative;
   display: block;
-  width: 30%;
+  width: 25%;
 }
 .pay-method-guide dl dt::before {
   position: absolute;
@@ -425,10 +426,10 @@ ul {
 }
 
 .earlyBird_wrap button.btnST02 {
-  width: 80%;
+  width: 78%;
   height: 60px;
   font-size: 22px;
-  border: 1px solid #c2c1c4;
+  border: 2px solid #c2c1c4;
   color: #242624;
   font-weight: bold;
   background: #f8f8f8;
