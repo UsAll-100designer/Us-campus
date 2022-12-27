@@ -63,7 +63,7 @@
 /*황홍 12/23 추가요청*/
 .modal_contents {
   margin: 3%;
-  height: 80vh;
+  height: 63vh; /*12/27 추가 변경*/
   padding-bottom: 3rem;
   overflow-y: scroll;
 }
