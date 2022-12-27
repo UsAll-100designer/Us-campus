@@ -7,7 +7,7 @@ $(window).scroll(function () {
 });
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 2000) {
+  if ($(window).scrollTop() > 2300) {
     $('.right-sticky').addClass('Rsticky');
   } else {
     $('.right-sticky').removeClass('Rsticky');

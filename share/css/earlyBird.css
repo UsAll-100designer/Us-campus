@@ -229,6 +229,41 @@ dl.order-price-detail dd .priceName {
   margin-right: auto;
 }
 
+dl.order-price-detail dd .closeBtn {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #767678;
+  border-radius: 50%;
+  margin-left: 5px;
+  top: 2px;
+  margin-right: -5px;
+}
+
+dl.order-price-detail dd .closeBtn::before {
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  content: '';
+  display: block;
+  width: 10px;
+  height: 1px;
+  background: #767678;
+  transform: rotate(45deg);
+}
+
+dl.order-price-detail dd .closeBtn::after {
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  content: '';
+  display: block;
+  width: 10px;
+  height: 1px;
+  background: #767678;
+  transform: rotate(-45deg);
+}
+
 .pay-method-guide {
   width: 100%;
   height: auto;
@@ -561,7 +596,7 @@ ul {
 }
 
 .earlyBird-right .button-wrap .shareBtn {
-  background: #fff url('../../img/IC_share.png') 40% center no-repeat;
+  background: #fff url('../../img/IC_share.png') 45% center no-repeat;
   background-size: 50%;
   width: 70px;
   height: 60px;
@@ -702,6 +737,31 @@ ul {
 .disabled .control:hover .priceUnit {
   color: #767678;
   font-weight: 500;
+}
+
+.topBtn-wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+a.topBtn {
+  color: #767678;
+  font-size: 18px;
+  font-weight: 600;
+}
+a.topBtn:hover {
+  text-decoration: none;
+  color: #5bb28e;
+}
+
+.topBtn img {
+  width: 25px;
+  height: auto;
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
 }
 
 @media (max-width: 960px) {
