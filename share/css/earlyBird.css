@@ -739,11 +739,15 @@ ul {
   font-weight: 500;
 }
 
+.Rsticky .topBtn-wrap {
+  display: flex;
+}
+
 .topBtn-wrap {
   width: 100%;
   height: auto;
-  display: flex;
   justify-content: center;
+  display: none;
 }
 
 a.topBtn {
