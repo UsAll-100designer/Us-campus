@@ -1,7 +1,15 @@
 $(window).scroll(function () {
   if ($(window).scrollTop() > 750) {
-    $('.contdown-sticky-wrap').addClass('sticky');
+    $('.countdown-sticky-wrap').addClass('sticky');
   } else {
-    $('.contdown-sticky-wrap').removeClass('sticky');
+    $('.countdown-sticky-wrap').removeClass('sticky');
+  }
+});
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 2000) {
+    $('.right-sticky').addClass('Rsticky');
+  } else {
+    $('.right-sticky').removeClass('Rsticky');
   }
 });

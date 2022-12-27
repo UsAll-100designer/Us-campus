@@ -9,7 +9,7 @@
     mm = String(today.getMonth() + 1).padStart(2, '0'),
     yyyy = today.getFullYear(),
     nextYear = yyyy + 1,
-    dayMonth = '12/28/',
+    dayMonth = '12/31/',
     birthday = dayMonth + yyyy;
 
   today = mm + '/' + dd + '/' + yyyy;
@@ -40,7 +40,7 @@
     mm = String(today.getMonth() + 1).padStart(2, '0'),
     yyyy = today.getFullYear(),
     nextYear = yyyy + 1,
-    dayMonth = '12/29/',
+    dayMonth = '12/31/',
     birthday = dayMonth + yyyy;
 
   today = mm + '/' + dd + '/' + yyyy;

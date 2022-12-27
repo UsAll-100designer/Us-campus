@@ -8,25 +8,25 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="/share/css/xeicon.css" />
-    <link rel="stylesheet" type="text/css" href="/share/css/base02.css" />
-    <link rel="stylesheet" type="text/css" href="/share/css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="/share/css/menu.css" />
-    <link rel="stylesheet" type="text/css" href="/share/css/pay.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/xeicon.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/base02.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/pay.css" />
     <!-- ⚠️ 추가 시작 1️⃣ -->
     <!--CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/share/css/earlyBird.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/earlyBird.css" />
 
     <!--JS-->
     <!--📌 확인부분 05 : github pages 경로 변경 ../../ >> 해당부분 개발시 경로 재설정필요-->
-    <script type="text/javascript" src="/share/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../../share/js/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script type="text/javascript" defer src="/share/js/radio_accordian.js"></script>
-    <script type="text/javascript" defer src="/share/js/toggle.js"></script>
-    <script type="text/javascript" defer src="/share/js/countdown.js"></script>
-    <script type="text/javascript" defer src="/share/js/stickyBanner.js"></script>
+    <!-- <script type="text/javascript" defer src="../../share/js/radio_accordian.js"></script>
+    <script type="text/javascript" defer src="../../share/js/toggle.js"></script> -->
+    <script type="text/javascript" defer src="../../share/js/countdown.js"></script>
+    <script type="text/javascript" defer src="../../share/js/stickyBanner.js"></script>
     <!-- ⚠️ 추가 끝 1️⃣ -->
   </head>
 
@@ -35,11 +35,11 @@
       <header>
         <div class="content">
           <div class="logo">
-            <a href="../00_main/"><img src="/img/common/top_logo.png" /></a>
+            <a href="../00_main/"><img src="../../img/common/top_logo.png" /></a>
           </div>
           <div class="gnb">
             <a href="#">나의스터디</a>
-            <a href="#"><img src="/img/common/icon_alarm.png" /></a>
+            <a href="#"><img src="../../img/common/icon_alarm.png" /></a>
             <a class="profile s_tt" style="background: #b8c93d" href="#">어스</a>
           </div>
           <div class="menu">
@@ -56,11 +56,11 @@
             <div class="contdown-wrap">
               <div class="countdown-text">
                 <div class="img-wrap">
-                  <img src="/img/img_clock.png" />
+                  <img src="../../img/img_clock.png" />
                 </div>
                 <span class="sub-title">최저가로 구매해서 월요일부터 갓 생 살자</span>
                 <b class="title">이번주 일요일 자정 가격인상</b>
-                <span class="countdown-description">11/27 (일) 23:59까지 특별 최저가</span>
+                <span class="countdown-description">12/31 (일) 23:59까지 특별 최저가</span>
               </div>
               <div class="countdown" id="countdown">
                 <ul>
@@ -71,10 +71,10 @@
                 </ul>
               </div>
             </div>
-            <div class="contdown-sticky-wrap">
+            <div class="countdown-sticky-wrap">
               <div class="countdown-text">
                 <b class="title">이번주 일요일 자정 가격인상 &nbsp;&nbsp;&nbsp;⏰</b>
-                <span class="countdown-description">11/27 (일) 23:59까지 특별 최저가</span>
+                <span class="countdown-description">12/31 (일) 23:59까지 특별 최저가</span>
               </div>
               <div class="countdown" id="countdown">
                 <ul>
@@ -96,7 +96,7 @@
             <div class="title-label"><span class="emoji">🔥</span>론칭특가 40%</div>
             <h6>강환국과 함께하는 패밀리스터디</h6>
             <div class="deadline-date">
-              <span class="deadline-date__date"> Date </span>
+              <span class="deadline-date__date"> DATE </span>
               11.27 (일) 까지
             </div>
             <ol>
@@ -112,8 +112,15 @@
               <li>
                 <label class="control control--radio">
                   <span class="priceName">프리미엄 6개월</span>
-                  <span class="price">-1,140,000</span>
+                  <span class="discount-label">40%</span>
+                  <span class="price">880,000</span>
                   <span class="priceUnit">원</span>
+                  <div class="before-price-wrap">
+                    <span class="before-priceName">정가</span>
+                    <span class="before-price">1,140,000</span>
+                    <span class="before-priceUnit">원</span>
+                  </div>
+
                   <input type="radio" name="radio" />
                   <div class="control__indicator"></div>
                 </label>
@@ -126,27 +133,38 @@
 
             <hr class="line" />
 
-            <div class="title-label"><span class="emoji">🔥</span>론칭특가 40%</div>
-            <h6>강환국과 함께하는 패밀리스터디</h6>
+            <div class="title-label"><span class="emoji">🔥</span>수강특가 40%</div>
+            <h6>강환국 퀀트투자 저서</h6>
             <div class="deadline-date">
-              <span class="deadline-date__date"> Date </span>
+              <span class="deadline-date__date"> DATE </span>
               11.27 (일) 까지
             </div>
             <ol>
               <li>
                 <label class="control control--checkbox">
-                  <span class="priceName">베이직 3개월</span>
-                  <span class="price">380,000</span>
+                  <span class="priceName w100">퀀트투자 무작정 따라하기</span>
+                  <span class="discount-label">15%</span>
+                  <span class="price">13,000</span>
                   <span class="priceUnit">원</span>
+                  <div class="before-price-wrap">
+                    <span class="before-priceName">정가</span>
+                    <span class="before-price">17,000</span>
+                    <span class="before-priceUnit">원</span>
+                  </div>
                   <input type="checkbox" />
                   <div class="control__indicator"></div>
                 </label>
               </li>
               <li>
                 <label class="control control--checkbox">
-                  <span class="priceName">프리미엄 6개월</span>
-                  <span class="price">-1,140,000</span>
+                  <span class="priceName">거인의 포트폴리오</span>
+                  <span class="price">12,000</span>
                   <span class="priceUnit">원</span>
+                  <div class="before-price-wrap">
+                    <span class="before-priceName">정가</span>
+                    <span class="before-price">15,000</span>
+                    <span class="before-priceUnit">원</span>
+                  </div>
                   <input type="checkbox" />
                   <div class="control__indicator"></div>
                 </label>
@@ -158,45 +176,47 @@
               <span>할인코드 : 강환국 화이팅</span>
             </div>
           </div>
-          <div class="order-price-wrap">
-            <div class="order-price-bg">
-              <div class="order-price">
-                <b class="priceName">주문금액</b>
-                <b class="price">393,000</b>
-                <b class="priceUnit">원</b>
+          <div class="right-sticky">
+            <div class="order-price-wrap">
+              <div class="order-price-bg">
+                <div class="order-price">
+                  <b class="priceName">주문금액</b>
+                  <b class="price">393,000</b>
+                  <b class="priceUnit">원</b>
+                </div>
+                <dl class="order-price-detail">
+                  <dt>강환국과 함께하는 패밀리스터디</dt>
+                  <dd>
+                    <span class="priceName">ㄴ 베이직 3개월</span>
+                    <span class="price">380,000</span>
+                    <span class="priceUnit">원</span>
+                  </dd>
+                  <dt>강환국 퀀트투자 저서</dt>
+                  <dd>
+                    <span class="priceName">ㄴ 강환국 퀀트투자 저서</span>
+                    <span class="price">13,000</span>
+                    <span class="priceUnit">원</span>
+                  </dd>
+                </dl>
               </div>
-              <dl class="order-price-detail">
-                <dt>강환국과 함께하는 패밀리스터디</dt>
-                <dd>
-                  <span class="priceName">ㄴ 베이직 3개월</span>
-                  <span class="price">393,000</span>
-                  <span class="priceUnit">원</span>
-                </dd>
-                <dt>강환국 퀀트투자 저서</dt>
-                <dd>
-                  <span class="priceName">ㄴ 베이직 3개월</span>
-                  <span class="price">393,000</span>
-                  <span class="priceUnit">원</span>
-                </dd>
-              </dl>
             </div>
-          </div>
-          <div class="payPrice">
-            <b class="priceName">결제예정금액</b>
-            <b class="price">720,000</b>
-            <b class="priceUnit">원</b>
-          </div>
-          <div class="button-wrap">
-            <button class="shareBtn"></button>
-            <button class="btnST02">결제하기</button>
+            <div class="payPrice">
+              <b class="priceName">결제예정금액</b>
+              <b class="price">393,000</b>
+              <b class="priceUnit">원</b>
+            </div>
+            <div class="button-wrap">
+              <button class="shareBtn"></button>
+              <button class="btnST02">결제하기</button>
+            </div>
           </div>
 
           <div class="studyDetail disabled">
-            <div class="title-label"><span class="emoji">🔥</span>론칭특가 40%</div>
-            <h6>강환국과 함꼐하는 패밀리스터디</h6>
+            <div class="title-label"><span class="emoji">🔥</span>슈퍼얼리버드 40%</div>
+            <h6>강환국과 함께하는 패밀리스터디</h6>
             <div class="deadline-date">
-              <span class="deadline-date__date"> Date </span>
-              11.27 (일) 까지
+              <span class="deadline-date__date"> DATE </span>
+              11.27(일) ~ 12/09(일) 까지
             </div>
             <ol>
               <li>
@@ -211,8 +231,14 @@
               <li>
                 <label class="control control--radio">
                   <span class="priceName">프리미엄 6개월</span>
-                  <span class="price">-1,140,000</span>
+                  <span class="discount-label">40%</span>
+                  <span class="price">880,000</span>
                   <span class="priceUnit">원</span>
+                  <div class="before-price-wrap">
+                    <span class="before-priceName">정가</span>
+                    <span class="before-price">1,140,000</span>
+                    <span class="before-priceUnit">원</span>
+                  </div>
                   <input type="radio" name="radio" disabled />
                   <div class="control__indicator"></div>
                 </label>
@@ -225,10 +251,10 @@
           </div>
 
           <h5>결제수단 안내</h5>
-          <div style="margin-bottom: 2000px" class="pay-method-guide">
+          <div style="margin-bottom: 3000px" class="pay-method-guide">
             <dl>
               <dt>카드결제</dt>
-              <dd>결제시 최대 2-6개월 무이자할부</dd>
+              <dd>결제시 최대 2-6개월 무이자할부<span class="detail-button">안내보기</span></dd>
             </dl>
             <dl>
               <dt>무통장 입금</dt>
@@ -313,29 +339,29 @@
         <ul>
           <li class="select">
             <a href="#">
-              <img class="off" src="/img/common/mob_menu01_off.png" />
-              <img class="on" src="/img/common/mob_menu01_on.png" />
+              <img class="off" src="../../img/common/mob_menu01_off.png" />
+              <img class="on" src="../../img/common/mob_menu01_on.png" />
               <p>홈</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img class="off" src="/img/common/mob_menu02_off.png" />
-              <img class="on" src="/img/common/mob_menu02_on.png" />
+              <img class="off" src="../../img/common/mob_menu02_off.png" />
+              <img class="on" src="../../img/common/mob_menu02_on.png" />
               <p>나의 스터디</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img class="off" src="/img/common/mob_menu03_off.png" />
-              <img class="on" src="/img/common/mob_menu03_on.png" />
+              <img class="off" src="../../img/common/mob_menu03_off.png" />
+              <img class="on" src="../../img/common/mob_menu03_on.png" />
               <p>알림</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img class="off" src="/img/common/mob_menu04_off.png" />
-              <img class="on" src="/img/common/mob_menu04_on.png" />
+              <img class="off" src="../../img/common/mob_menu04_off.png" />
+              <img class="on" src="../../img/common/mob_menu04_on.png" />
               <p>마이</p>
             </a>
           </li>

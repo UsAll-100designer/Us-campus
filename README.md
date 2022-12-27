@@ -37,6 +37,7 @@
 - [<code>12M 23D</code> 황홍 수정 요청](#12m-23d-황홍-수정-요청)
 
 - [<code>12M 23D</code> 얼리버드 판매 방식](#12m-23d-얼리버드-판매-방식)
+- 12M 27D PC 버전 완료 > 검수요청
 
 ---
 
@@ -742,59 +743,41 @@ https://us-campus.co.kr/study/article/221103105706719654
 
 - JS
 
-  - share/js/swiper-bundle.min.js
-  - share/js/swiper.js
+  - share/js/countdown.js
+  - share/js/stickyBanner.js
+
+- img
+
+  - share/img/IC_share.png
+  - share/img/img_clock.png
+  - share/img/img_discount_label.png
+  - share/img/img_discount_label_disabled.png
 
 ```
     <!-- ⚠️ 추가 시작 1️⃣ -->
-    <link rel="stylesheet" type="text/css" href="../../share/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../share/css/videoPlus.css" />
-    <script src="../../share/js/swiper-bundle.min.js"></script>
-    <script defer src="../../share/js/swiper.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/earlyBird.css" />
+
+    <!--JS-->
+    <!--📌 확인부분 05 : github pages 경로 변경 ../../ >> 해당부분 개발시 경로 재설정필요-->
+    <script type="text/javascript" src="../../share/js/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" defer src="../../share/js/radio_accordian.js"></script>
+    <script type="text/javascript" defer src="../../share/js/toggle.js"></script> -->
+    <script type="text/javascript" defer src="../../share/js/countdown.js"></script>
+    <script type="text/javascript" defer src="../../share/js/stickyBanner.js"></script>
     <!-- ⚠️ 추가 끝 1️⃣ -->
 
-     <!--👇🏼 해당 부분 수정
-            1. 탭 Sticky
-            2. 탭 갯수 증가 예측 > Swipe  -->
-    <!-- ⚠️ 추가 시작 2️⃣ -->
 
-    <div class="stickyBox">
-      <div class="swiperWrap">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="./com.html">웰컴패키지 영상</a>
-            </div>
-
-            <!-- <div class="swiper-slide active">
-              <a href="./com.html">동영상동영상동영상동영상</a>
-            </div>
-            <div class="swiper-slide"><a href="./guide.html">학습가이드</a></div> -->
-            <div class="swiper-slide"><a href="./guide.html">웰컴패키지 사용안내</a></div>
-
-            <!-- <div class="swiper-slide">커뮤니티</div>
-            <div class="swiper-slide">커뮤니티</div> -->
-            <!-- <div class="swiper-slide">동영상동영상동영상동영상</div>
-            <div class="swiper-slide">학습가이드</div>
-            <div class="swiper-slide">커뮤니티</div>
-            <div class="swiper-slide">동영상</div>
-            <div class="swiper-slide">동영상동영상동영상동영상학습가이드</div>
-            <div class="swiper-slide">커뮤니티</div>
-            <div class="swiper-slide">동영상</div>
-            <div class="swiper-slide">학습가이드</div> -->
-          </div>
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-    <!-- ⚠️ 추가 끝 2️⃣ -->
+   <!-- ⚠️ 추가 시작 2️⃣ -->
+   earlyBird.html 파일내에서 확인
+   <!-- ⚠️ 추가 시작 2️⃣ -->
 
     <!--📌 확인부분 01 -->
-      <div class="p_view study-vis cf">
 
     <!--📌 확인부분 02 -->
-      <div class="content study-vis cf">
 
 ```
 
