@@ -401,6 +401,7 @@ ul {
   padding-left: 20px;
   line-height: 2.5em;
   color: #767678;
+  font-weight: 500;
 }
 .earlyBird-right .studyDetail > ol > li label {
   display: flex;
@@ -412,9 +413,11 @@ ul {
 .earlyBird-right .studyDetail > ol > li .priceName {
   font-size: 18px;
   margin-right: auto;
+  font-weight: 500;
 }
 .earlyBird-right .studyDetail > ol > li .priceName.w100 {
   width: 100%;
+  font-weight: 500;
 }
 .earlyBird-right .studyDetail > ol > li .discount-label {
   display: inline-block;
@@ -434,12 +437,14 @@ ul {
 
 .earlyBird-right .studyDetail > ol > li .price {
   font-size: 18px;
+  font-weight: 500;
 }
 
 .earlyBird-right .studyDetail > ol > li .priceUnit {
   font-size: 16px;
   display: inline-block;
   margin-left: 2px;
+  font-weight: 500;
 }
 
 .earlyBird-right .studyDetail > ol > li .before-price-wrap {
@@ -673,6 +678,30 @@ ul {
 }
 .control--radio input:disabled ~ .control__indicator:after {
   background: #7b7b7b;
+}
+
+/*label custom*/
+
+.control:hover .priceName {
+  color: #242624;
+  font-weight: 700;
+}
+
+.control:hover .price,
+.control:hover .priceUnit {
+  color: #2c5c36;
+  font-weight: 700;
+}
+
+.disabled .control:hover .priceName {
+  color: #767678;
+  font-weight: 500;
+}
+
+.disabled .control:hover .price,
+.disabled .control:hover .priceUnit {
+  color: #767678;
+  font-weight: 500;
 }
 
 @media (max-width: 960px) {
