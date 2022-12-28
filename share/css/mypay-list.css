@@ -243,6 +243,11 @@ h6 {
   font-weight: bold;
   margin-left: 20px;
   margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.mypay-right .contents-wrap h5:first-of-type {
+  margin-top: 0;
 }
 .mypay-right .contents-wrap span.order-number {
   position: absolute;
@@ -367,12 +372,31 @@ h6 {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.mypay-right .contents-wrap .delivery-info {
+  font-size: 20px;
+  padding: 25px 10px;
+  padding-right: 30px;
+  border: 1px solid #b0aeb2;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+.mypay-right .contents-wrap .pay-detail {
+  font-size: 20px;
+  padding: 25px 10px;
+  padding-right: 30px;
+  border: 1px solid #b0aeb2;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
 /* mypay-method */
 .mypay-method {
   color: #51857c;
   font-size: 20px;
   padding: 25px 10px;
-  padding-right: 3 0px;
+  padding-right: 30px;
   border: 1px solid #b0aeb2;
   border-radius: 15px;
   display: flex;
