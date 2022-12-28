@@ -218,10 +218,195 @@ h6 {
   color: #284c39;
   font-weight: 500;
 }
+.mypay-right .breadcrumbs h2 {
+  font-size: 22px;
+  color: #d3d0d6;
+  font-weight: 500;
+  padding-right: 50px;
+  background: no-repeat right/8% url('/img/IC_link.png');
+  background-position: center right 20px;
+}
+
 .mypay-right .contents-wrap {
+  position: relative;
   width: 100%;
   height: auto;
   background: #fff;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   padding: 40px;
+  margin-bottom: 30px;
+}
+.mypay-right .contents-wrap h5 {
+  position: relative;
+  color: #284c39;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.mypay-right .contents-wrap span.order-number {
+  position: absolute;
+  top: 40px;
+  right: 55px;
+  font-size: 16px;
+  color: #888888;
+}
+.mypay-right .contents-wrap h5::before {
+  position: absolute;
+  top: 7px;
+  left: -20px;
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #91c565;
+  border-radius: 50%;
+}
+
+.mypay-right .contents-wrap .mypay-right__orderProduct {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 25px 30px;
+  border-radius: 15px;
+  border: 1px solid #c2c1c4;
+  margin-bottom: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.mypay-right .contents-wrap .mypay-right__orderProduct img {
+  width: 40%;
+  height: auto;
+}
+.mypay-right__orderProduct__text {
+  width: 60%;
+  height: auto;
+  text-align: right;
+}
+.mypay-right__orderProduct__text > b {
+  font-size: 22px;
+  color: #284c39;
+  font-family: 'NanumSquareAc', sans-serif;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.mypay-right__orderProduct__text > span {
+  font-size: 16px;
+  color: #888888;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.mypay-right__orderProduct__text > strong {
+  display: inline-block;
+  color: #314b3a;
+  font-size: 17px;
+  font-weight: 600;
+  background: #f8f8f8;
+  border: 1px solid #c2c1c4;
+  border-radius: 27px;
+  padding: 4px 18px;
+  margin-bottom: 15px;
+}
+
+.mypay-right__orderProduct__text > button {
+  width: 120px;
+  height: 36px;
+  display: inline-block;
+  color: #5b9379;
+  font-size: 12px;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid #66a889;
+  border-radius: 0px 8px 8px 8px;
+  padding: 4px 18px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.mypay-right__orderProduct__text__price__before-num {
+  font-size: 21px;
+  font-weight: 600;
+  color: #767678;
+}
+.mypay-right__orderProduct__text__price__before-unit {
+  font-size: 16px;
+  font-weight: 600;
+  color: #767678;
+}
+
+.mypay-right__orderProduct__text__price__after-num {
+  font-size: 30px;
+  font-weight: 600;
+  color: #2c5c36;
+  display: inline-block;
+  margin-left: 8px;
+}
+.mypay-right__orderProduct__text__price__after-unit {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c5c36;
+}
+
+/* button */
+.mypay-right .contents-wrap button.btnST02 {
+  width: 100%;
+  height: 65px;
+  font-size: 22px;
+  border: 1px solid #c2c1c4;
+  color: #242624;
+  font-weight: bold;
+  background: #f8f8f8;
+  border-radius: 0 15px 15px 15px;
+  border: 1px solid #51857c;
+  color: #f8f8f8;
+  background: #51857c;
+  margin-top: 20px;
+}
+
+.mypay-right .contents-wrap button.btnST02:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* mypay-method */
+.mypay-method {
+  color: #51857c;
+  font-size: 20px;
+  padding: 25px 10px;
+  padding-right: 3 0px;
+  border: 1px solid #b0aeb2;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+.mypay-method__name {
+  margin-right: auto;
+}
+.mypay-method__time {
+  font-size: 16px;
+  color: #888888;
+}
+
+.mypay-method img {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #f8f8f8;
+  margin-left: 25px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.mypay-method > strong {
+  display: inline-block;
+  color: #314b3a;
+  font-size: 17px;
+  font-weight: 600;
+  background: #f8f8f8;
+  border: 1px solid #c2c1c4;
+  border-radius: 27px;
+  padding: 4px 18px;
+}
+
+.mypay-method__price {
+  display: inline-block;
 }
