@@ -799,11 +799,11 @@ https://us-campus.co.kr/study/article/221103105706719654
 
 - HTML
 
-  - html/03_pay/earlyBird.html
+  - html/05_mypage/pay_list_tobe.html
 
 - CSS
 
-  - share/css/earlyBird.css
+  - share/css/mypay-list.css
 
 - JS
 
@@ -857,11 +857,11 @@ https://us-campus.co.kr/study/article/221103105706719654
 
 - HTML
 
-  - html/03_pay/earlyBird.html
+  - html/05_mypage/pay_view_tobe.html
 
 - CSS
 
-  - share/css/earlyBird.css
+  - share/css/mypay-list.css
 
 - JS
 
