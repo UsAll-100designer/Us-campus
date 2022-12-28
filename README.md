@@ -39,6 +39,8 @@
 - [<code>12M 23D</code> 얼리버드 판매 방식](#12m-23d-얼리버드-판매-방식)
 - 12M 27D PC 버전 완료 > 검수요청
 
+- [<code>12M 28D</code> 나의 구매내역](#12m-28d-나의-구매내역)
+
 ---
 
 #### AS-IS
@@ -726,6 +728,64 @@ https://us-campus.co.kr/study/article/221103105706719654
 ---
 
 # 12M 23D 얼리버드 판매 방식
+
+-
+
+#### TO-BE
+
+추가파일
+
+- HTML
+
+  - html/03_pay/earlyBird.html
+
+- CSS
+
+  - share/css/earlyBird.css
+
+- JS
+
+  - share/js/countdown.js
+  - share/js/stickyBanner.js
+
+- img
+
+  - share/img/IC_share.png
+  - share/img/img_clock.png
+  - share/img/img_discount_label.png
+  - share/img/img_discount_label_disabled.png
+
+```
+    <!-- ⚠️ 추가 시작 1️⃣ -->
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../share/css/earlyBird.css" />
+
+    <!--JS-->
+    <!--📌 확인부분 05 : github pages 경로 변경 ../../ >> 해당부분 개발시 경로 재설정필요-->
+    <script type="text/javascript" src="../../share/js/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" defer src="../../share/js/radio_accordian.js"></script>
+    <script type="text/javascript" defer src="../../share/js/toggle.js"></script> -->
+    <script type="text/javascript" defer src="../../share/js/countdown.js"></script>
+    <script type="text/javascript" defer src="../../share/js/stickyBanner.js"></script>
+    <!-- ⚠️ 추가 끝 1️⃣ -->
+
+
+   <!-- ⚠️ 추가 시작 2️⃣ -->
+   earlyBird.html 파일내에서 확인
+   <!-- ⚠️ 추가 시작 2️⃣ -->
+
+    <!--📌 확인부분 01 -->
+
+    <!--📌 확인부분 02 -->
+
+```
+
+---
+
+# 12M 28D 나의 구매내역
 
 -
 
