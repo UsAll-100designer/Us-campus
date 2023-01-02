@@ -41,6 +41,44 @@
 
 - [<code>12M 28D</code> 나의 구매내역](#12m-28d-나의-구매내역)
 
+- 01M 02D popUp-높이 수정
+  - share/css/PopUp.css
+
+```
+/*황홍 12/23 추가요청*/  /*23.01/02 픽셀로 max-height로 변경*/
+.modal_contents {
+  margin: 3%;
+  max-height: 700px; /*12/27 추가 변경*/ /*23.01/02 픽셀로 max-height로 변경*/
+  padding-bottom: 3rem;
+  overflow-y: scroll;
+}
+```
+
+- 01M 02D 모바일 메뉴 변경으로 높이 부분 Class 변경 및 CSS 조정
+
+```
+@media (max-width: 720px){
+  .master,
+  .board,
+  .study,
+  .product
+  {
+   padding-top:65px;
+  }
+
+}
+
+/*study 메뉴에서 영상클릭시 Study 제외가 필요함 */
+
+/*모바일 기존 메뉴 삭제*/
+
+@media (max-width: 960px)
+.study .l_box.profile {
+    display: none;
+}
+
+```
+
 ---
 
 #### AS-IS
