@@ -768,168 +768,37 @@ a.topBtn:hover {
   margin-right: 5px;
 }
 
+/*max-width: 960px*/
 @media (max-width: 960px) {
-  .pay_wrap {
+  .earlyBird_wrap {
     width: 100%;
     flex-wrap: wrap;
   }
-  .pay_wrap > .pay-left {
+  .earlyBird_wrap > .earlyBird-left {
     width: 100%;
-    padding: 20px;
+    padding: 0;
   }
-  .pay_wrap .pay-left__orderProduct {
-    position: relative;
-  }
-
-  .pay-left__saleCode__btnWrap input[type='text'] {
-    width: 49%;
-    font-size: 12px;
-  }
-  .pay_wrap button.btnST01 {
-    width: 49%;
-    height: 35px;
-    font-size: 14px;
-    border-radius: 0 7px 7px 7px;
-  }
-  .pay_wrap input[type='text'],
-  .pay_wrap input[type='number'],
-  .pay_wrap input[type='password'] {
-    height: 35px;
-    line-height: 35px;
-    font-size: 12px;
-    padding: 6px 10px;
-    border-radius: 7px;
-  }
-
-  article .explanation {
-    padding: 15px 15px 15px 30px;
-    font-size: 12px;
-  }
-  .pay-accordion {
-    margin: 0;
+  .earlyBird_wrap > .earlyBird-right {
     width: 100%;
-  }
-  .pay-accordion__summary__header {
-    height: 35px;
-    line-height: 35px;
-    font-size: 14px;
-  }
-  .pay-accordion__summary__header label img {
-    width: 20px;
-    height: 20px;
-    margin-left: 15px;
-    margin-right: 10px;
-  }
-  .pay-accordion__summary__header label .arrowed {
-    margin: 0;
-    top: 2px;
-    right: 0px;
-  }
-  .arrow-1 {
-    height: 10px;
-    width: 10px;
-    border: 1px solid #cdcad1;
-    border-width: 1px 1px 0 0;
-  }
-  select {
-    height: 35px;
-    font-size: 12px;
-    border-radius: 7px;
-    background: #fff url('../../img/IC_SelectArrow.png') no-repeat right 8px center;
-    background-size: 10%;
-  }
-
-  select:required {
-    background: #f8e5e5 url('../../img/IC_SelectArrow.png') no-repeat right 8px center;
-  }
-  .pay-accordion__details-wrap {
-    padding: 15px;
-  }
-  .pay-accordion__details__input--half {
-    margin-bottom: 10px;
-  }
-  .pay-accordion__details__input--half label,
-  .pay-accordion__details__input label {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  .pay-accordion__details__input--half.inputHalf input:nth-of-type(2) {
-    margin-left: 3px;
-  }
-  .pay-accordion__details__input--half.cardPassword ::before {
-    width: 5px;
-    height: 5px;
-    top: 40px;
-    right: 60px;
-  }
-  .pay-accordion__details__input--half.cardPassword ::after {
-    width: 5px;
-    height: 5px;
-    top: 40px;
-    right: 50px;
-  }
-  .function-down {
-    visibility: visible;
-  }
-  .function-down {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    margin-left: -22px;
-  }
-  .function-down .studyDetail {
-    display: none;
-  }
-
-  .function-down.down .studyDetail {
-    display: block;
-    width: 100%;
-    background: #fff;
-    border: 2px solid #5d847c;
-    padding: 25px;
-    border-radius: 15px 15px 0 0;
-  }
-  .function-down.down .studyDetail .studyDetail-BG {
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 15px 15px 0 0;
   }
   .mob_box {
     display: none;
+  }
+  .countdown-sticky-wrap {
+    width: 100%;
+  }
+  .countdown {
+    width: 80%;
+    margin: 0 auto;
   }
   .Mo-payPrice-wrap {
     display: block;
     position: fixed;
     bottom: 0px;
     width: 100%;
-  }
-  .Mo-payPrice-wrap .payPrice {
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding: 15px 45px;
-    padding-bottom: 5px;
-    background: #5bb28e;
-    color: #fff;
-    z-index: 3;
-    position: relative;
+    z-index: 10;
   }
 
-  .Mo-payPrice-wrap .payPrice .priceName {
-    font-family: 'NanumSquareAc', sans-serif;
-    font-size: 14px;
-    font-weight: 800;
-    margin-right: auto;
-  }
-  .Mo-payPrice-wrap .payPrice .price {
-    font-size: 18px;
-    position: relative;
-    top: -4px;
-  }
-  .Mo-payPrice-wrap .payPrice .priceUnit {
-    display: inline-block;
-    margin-left: 4px;
-  }
   .Mo-payPrice-wrap .payPrice-button-wrap {
     position: relative;
     z-index: 1;
@@ -966,200 +835,101 @@ a.topBtn:hover {
     font-size: 14px;
     border-radius: 0 7px 7px 7px;
   }
-  .function-down .studyDetail__orderPrice {
+  .function-down .paymentDetail__orderPrice {
     display: flex;
     margin-bottom: 10px;
   }
-  .function-down .studyDetail__orderPrice .priceName {
+  .function-down .paymentDetail__orderPrice .priceName {
     font-family: 'NanumSquareAc', sans-serif;
     font-size: 14px;
     font-weight: 800;
     margin-right: auto;
   }
-  .function-down .studyDetail__orderPrice .price {
+  .function-down .paymentDetail__orderPrice .price {
     font-size: 15px;
     color: #2c5c36;
     position: relative;
     top: -2px;
   }
-  .function-down .studyDetail__orderPrice .priceUnit {
+  .function-down .paymentDetail__orderPrice .priceUnit {
     font-size: 13px;
     color: #2c5c36;
     display: inline-block;
     margin-left: 3px;
   }
-  .function-down .studyDetail ol li {
+  .function-down .paymentDetail ol li {
     border-left: 1px solid #767678;
     padding-left: 10px;
     line-height: 2em;
     color: #767678;
     display: flex;
   }
-  .function-down .studyDetail ol li .priceName {
+  .function-down .paymentDetail ol li .priceName {
     font-size: 12px;
     font-weight: 700;
     margin-right: auto;
   }
-  .function-down .studyDetail ol li .price {
+  .function-down .paymentDetail ol li .price {
     font-size: 13px;
     font-weight: 700;
   }
-  .function-down .studyDetail ol li .priceUnit {
+  .function-down .paymentDetail ol li .priceUnit {
     font-size: 10px;
     display: inline-block;
     margin-left: 3px;
-  }
-
-  .pay-right .studyDetail__orderPrice .priceName {
-    font-family: 'NanumSquareAc', sans-serif;
-    font-size: 14px;
-    font-weight: 800;
-    margin-right: auto;
-  }
-  .pay-right .studyDetail__orderPrice .price {
-    font-size: 15px;
-    color: #2c5c36;
-    position: relative;
-    top: -2px;
-  }
-  .pay-right .studyDetail__orderPrice .priceUnit {
-    font-size: 13px;
-    color: #2c5c36;
-    display: inline-block;
-    margin-left: 3px;
-  }
-  .pay-right .studyDetail > ol > li {
-    border-left: 1px solid #767678;
-    padding-left: 10px;
-    line-height: 2em;
-    color: #767678;
-    display: flex;
-  }
-  .pay-right .studyDetail > ol > li .priceName {
-    font-size: 12px;
-    font-weight: 700;
-    margin-right: auto;
-  }
-  .pay-right .studyDetail > ol > li .price {
-    font-size: 13px;
-    font-weight: 700;
-  }
-  .pay-right .studyDetail > ol > li .priceUnit {
-    font-size: 10px;
-    display: inline-block;
-    margin-left: 3px;
-  }
-
-  .pay-right .payPrice {
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding: 15px 25px;
-    padding-bottom: 5px;
-    background: #5bb28e;
-    color: #fff;
-
-    position: relative;
-  }
-
-  .pay-right .payPrice .priceName {
-    font-family: 'NanumSquareAc', sans-serif;
-    font-size: 14px;
-    font-weight: 800;
-    margin-right: auto;
-  }
-  .pay-right .payPrice .price {
-    font-size: 18px;
-    position: relative;
-    top: -4px;
-  }
-  .pay-right .payPrice .priceUnit {
-    font-size: 13px;
-    display: inline-block;
-    margin-left: 4px;
-  }
-  .toggle-up.active {
-    right: 71%;
-    top: -22px;
-  }
-  .toggle-up {
-    right: 71%;
-    top: -17px;
-  }
-  .pay_wrap .pay-right button.btnST02 {
-    display: none;
-  }
-  .pay-right .sticky {
-    position: relative;
-    padding-top: 0;
-  }
-
-  .pay_wrap article.paymentMethod {
-    margin-bottom: 20px;
-  }
-  .pay_wrap > .pay-right {
-    min-height: 200px;
-    width: 100%;
-  }
-  .pay_wrap article h5::before,
-  .pay_wrap aside h5::before {
-    top: 4px;
   }
 }
 
+/*max-width: 768px*/
 @media (max-width: 768px) {
 }
 
+/*max-width: 500px*/
 @media (max-width: 500px) {
-  .pay_wrap .pay-left__orderProduct img {
-    position: absolute;
-    top: 100px;
+  .contdown-wrap {
+    padding-bottom: 40px;
   }
-  .pay-left__orderProduct__text {
+  .countdown {
     width: 100%;
-    text-align: left;
   }
-  .pay-left__orderProduct__text > b {
-    margin-bottom: 0;
+  .countdown li {
+    font-size: 22px;
   }
-  .pay-left__orderProduct__text strong {
-    display: inline-block;
-    float: right;
-    margin-left: 50%;
+  .countdown li span {
+    font-size: 22px;
+  }
+  .countdown-text .sub-title {
+    font-size: 18px;
+  }
+  .countdown-text .title {
+    font-size: 24px;
+  }
+  .countdown-text .countdown-description {
     font-size: 14px;
-    margin-bottom: 7px;
+    line-height: 45px;
   }
-  .pay-left__orderProduct__text__price {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin-left: auto;
-    justify-content: flex-end;
-    float: right;
+  .countdown-sticky-wrap .countdown {
+    padding-bottom: 15px;
   }
-  .pay-left__orderProduct__text__price__before-num {
-    font-size: 17px;
+  .countdown-sticky-wrap .countdown li {
+    font-size: 18px;
+    line-height: 40px;
   }
-  .pay-left__orderProduct__text__price__before-unit {
+  .countdown-sticky-wrap .countdown li span {
+    font-size: 18px;
+  }
+  .countdown-sticky-wrap .countdown-text b {
     font-size: 14px;
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    margin-left: 2px;
-  }
-  .pay-left__orderProduct__text__price__after-num {
-    font-size: 25px;
-  }
-  .pay-left__orderProduct__text__price__after-unit {
-    font-size: 20px;
-    display: inline-block;
-    margin-left: 3px;
-    margin-top: 5px;
+    line-height: 35px;
   }
 }
 
+/*max-width: 361px*/
 @media (max-width: 361px) {
-  .pay-left__orderProduct__text > b {
-    font-size: 20px;
+  .countdown li {
+    font-size: 18px;
+  }
+  .countdown li span {
+    font-size: 18px;
   }
 }
