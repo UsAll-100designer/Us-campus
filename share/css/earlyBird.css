@@ -794,8 +794,8 @@ a.topBtn:hover {
 /* -- ARROW 1      -- */
 
 .arrow-1 {
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
   border: 1px solid #cdcad1;
   border-width: 2px 2px 0 0;
   transform: rotate(135deg);
@@ -923,8 +923,8 @@ a.topBtn:hover {
   cursor: pointer;
   position: absolute;
   right: auto;
-  left: 100px;
-  bottom: 9px;
+  left: 105px;
+  bottom: 6px;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1037,9 +1037,10 @@ a.topBtn:hover {
     z-index: 1;
     display: flex;
     width: 100%;
+    height: 65px;
     border: 2px solid #5d847c;
     background: #f8f8f8;
-    padding: 10px 20px;
+    padding: 10px 25px;
   }
   .Mo-payPrice-wrap .payPrice-button-wrap .payPrice__button {
     width: 50%;
@@ -1061,7 +1062,21 @@ a.topBtn:hover {
     top: 2px;
   }
 
-  .Mo-payPrice-wrap .payPrice-button-wrap .btnST02 {
+  .Mo-payPrice-wrap .button-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
+
+  .Mo-payPrice-wrap .button-wrap .shareBtn {
+    background: #fff url('../../img/IC_share.png') 45% center no-repeat;
+    background-size: 50%;
+    width: 45px;
+    height: 40px;
+    border-radius: 0 10px 10px 10px;
+    border: 2px solid #c2c1c4;
+  }
+  .Mo-payPrice-wrap .button-wrap .btnST02 {
     width: 50%;
     width: 49%;
     height: 40px;
