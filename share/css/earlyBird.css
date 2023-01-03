@@ -948,6 +948,19 @@ a.topBtn:hover {
 
 /*max-width: 960px*/
 @media (max-width: 960px) {
+  /* 스크롤바 스타일 */
+  .earlyBird-right.mobile-block::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .earlyBird-right.mobile-block::-webkit-scrollbar-track {
+    background: #e5e5e5;
+  }
+
+  .earlyBird-right.mobile-block::-webkit-scrollbar-thumb {
+    background: #82a27e;
+    border-radius: 4px;
+  }
   .earlyBird_wrap {
     width: 100%;
     flex-wrap: wrap;
@@ -958,7 +971,13 @@ a.topBtn:hover {
   }
   .earlyBird_wrap > .earlyBird-right {
     width: 100%;
+    display: none;
   }
+  .earlyBird_wrap > .earlyBird-right.mobile-block {
+    width: 100%;
+    display: block;
+  }
+
   .mob_box {
     display: none;
   }
@@ -994,6 +1013,7 @@ a.topBtn:hover {
     height: 50vh;
     background: #fff;
     border: 2px solid #5d847c;
+    border-bottom: 0px;
     padding: 25px;
     border-radius: 15px 15px 0 0;
     overflow-y: scroll;
