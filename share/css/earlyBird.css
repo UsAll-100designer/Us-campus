@@ -370,7 +370,7 @@ ul {
   border: 2px solid #65837c;
   border-bottom: 0px;
   border-radius: 15px 15px 0px 0px;
-  padding: 30px 35px;
+  padding: 20px 25px;
 }
 .earlyBird-right .studyDetail hr.line {
   width: 100%;
@@ -1031,6 +1031,141 @@ a.topBtn:hover {
     z-index: 10;
   }
 
+  /*모바일 변경 내용 시작*/
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail {
+    padding: 20px 20px;
+  }
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail h6 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail .title-label {
+    font-size: 12px;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+  }
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail .deadline-date .deadline-date__date {
+    margin-bottom: 15px;
+  }
+
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail > ol > li label {
+    width: 100%;
+  }
+
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail > ol > li .before-price-wrap {
+  }
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail > ol > li .before-price-wrap .before-priceName {
+    font-size: 10px;
+  }
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail > ol > li .before-price-wrap .before-price {
+    font-size: 12px;
+    position: relative;
+    top: 1px;
+  }
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail > ol > li .before-price-wrap .before-priceUnit {
+    font-size: 10px;
+  }
+
+  .Mo-payPrice-wrap .control__indicator {
+    width: 15px;
+    height: 15px;
+    top: 6px;
+    left: 4px;
+  }
+
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail > ol > li .discount-label {
+    margin-top: 0px;
+  }
+
+  .Mo-payPrice-wrap .earlyBird-right .description {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail .title-label .emoji {
+    margin-right: 4px;
+  }
+
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail hr.line {
+    height: 1px;
+    margin: 25px 0px;
+  }
+
+  .Mo-payPrice-wrap .earlyBird-right .studyDetail > ol > li .priceName.w100 {
+    width: auto;
+  }
+
+  .Mo-payPrice-wrap .control--radio .control__indicator:after {
+    width: 7px;
+    height: 7px;
+    left: 3px;
+    top: 3px;
+  }
+
+  .Mo-payPrice-wrap .control--checkbox .control__indicator:after {
+    border-width: 0 1px 1px 0;
+    width: 4px;
+    height: 8px;
+    left: 5px;
+    top: 1px;
+  }
+
+  .Mo-payPrice-wrap .order-price-wrap {
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+
+  .mobile-none {
+    display: none !important;
+  }
+
+  .Mo-payPrice-wrap .earlyBird-right .payPrice {
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 30px;
+  }
+
+  .Mo-payPrice-wrap dl.order-price-detail dt {
+    font-size: 12px;
+  }
+  .Mo-payPrice-wrap dl.order-price-detail dd {
+    font-size: 11px;
+  }
+
+  .Mo-payPrice-wrap dl.order-price-detail dd .closeBtn {
+    width: 13px;
+    height: 13px;
+  }
+
+  .Mo-payPrice-wrap dl.order-price-detail dd .closeBtn::before {
+    width: 7px;
+    top: 5px;
+    left: 2px;
+  }
+
+  .Mo-payPrice-wrap dl.order-price-detail dd .closeBtn::after {
+    width: 7px;
+    top: 5px;
+    left: 2px;
+  }
+
+  .Mo-payPrice-wrap .pay-method-guide {
+    padding: 20px 1px;
+    padding-left: 30px;
+    font-size: 11px;
+  }
+
+  .Mo-payPrice-wrap .pay-method-guide dl {
+    font-size: 12px;
+  }
+
+  .Mo-payPrice-wrap .pay-method-guide span.detail-button {
+    font-size: 7px;
+    padding: 1px 6px;
+  }
+
+  /*모바일 변경 내용 끝*/
+
   .Mo-payPrice-wrap .payPrice-button-wrap {
     position: relative;
     z-index: 1;
@@ -1105,7 +1240,7 @@ a.topBtn:hover {
     margin-left: 3px;
   }
   .function-down .paymentDetail ol li {
-    border-left: 1px solid #767678;
+    border-left: 2px solid #767678;
     padding-left: 10px;
     line-height: 2em;
     color: #767678;
