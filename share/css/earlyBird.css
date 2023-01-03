@@ -921,10 +921,9 @@ a.topBtn:hover {
   z-index: 1;
   transition: all 0.8s;
   cursor: pointer;
-  position: absolute;
-  right: auto;
-  left: 105px;
-  bottom: 6px;
+  position: relative;
+  top: 20px;
+  right: 15px;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1001,7 +1000,7 @@ a.topBtn:hover {
     position: fixed;
     bottom: 66px;
     width: 100%;
-    margin-left: -22px;
+    margin-left: -27px;
   }
   .function-down .paymentDetail {
     display: none;
@@ -1064,22 +1063,22 @@ a.topBtn:hover {
 
   .Mo-payPrice-wrap .button-wrap {
     position: relative;
-    width: 100%;
     display: flex;
+    margin-left: auto;
   }
 
   .Mo-payPrice-wrap .button-wrap .shareBtn {
     background: #fff url('../../img/IC_share.png') 45% center no-repeat;
     background-size: 50%;
     width: 45px;
-    height: 40px;
+    height: 42px;
     border-radius: 0 10px 10px 10px;
     border: 2px solid #c2c1c4;
   }
   .Mo-payPrice-wrap .button-wrap .btnST02 {
-    width: 50%;
-    width: 49%;
-    height: 40px;
+    width: 115px;
+    height: 42px;
+    margin-left: 5px;
     font-size: 14px;
     border-radius: 0 7px 7px 7px;
   }
