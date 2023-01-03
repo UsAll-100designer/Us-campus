@@ -965,6 +965,9 @@ a.topBtn:hover {
   .countdown-sticky-wrap {
     width: 100%;
   }
+  .countdown-sticky-wrap.sticky {
+    bottom: 67px;
+  }
   .countdown {
     width: 80%;
     margin: 0 auto;
