@@ -20,6 +20,11 @@ h6 {
   font-family: 'NanumSquareAc', sans-serif;
 }
 
+html,
+body {
+  font-family: 'Pretendard', serif;
+}
+
 /* text-decoration: line-through; */
 
 /*layout*/
