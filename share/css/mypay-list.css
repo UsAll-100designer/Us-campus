@@ -596,6 +596,9 @@ h6 {
 
 /*max-width: 960px*/
 @media (max-width: 960px) {
+  .mobile-none {
+    display: none !important;
+  }
   .mob_box {
     display: none;
   }
@@ -612,9 +615,17 @@ h6 {
   .mypay-right .breadcrumbs {
     display: none;
   }
+
+  .mypay-right .contents-wrap {
+    padding: 20px;
+  }
+  .mypay-right .contents-wrap .mypay-right__orderProduct {
+    flex-wrap: wrap-reverse;
+    margin-bottom: 20px;
+  }
+
   .mypay-right .contents-wrap .mypay-right__orderProduct img {
-    position: absolute;
-    top: 80px;
+    width: 45%;
   }
   .mypay-right__orderProduct__text {
     width: 100%;
@@ -627,25 +638,127 @@ h6 {
 
   .mypay-right__orderProduct__text > span {
     font-size: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   .mypay-right__orderProduct__text strong {
     display: inline-block;
-    float: right;
-    margin-left: 50%;
     font-size: 14px;
-    margin-bottom: 7px;
     line-height: 1.5em;
+    position: absolute;
+    top: auto;
+    right: 25px;
+    bottom: 50px;
   }
+
+  .mypay-right__orderProduct__text strong.delivery-state {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    font-size: 11px;
+    line-height: 1.2em;
+    padding: 4px 10px;
+    margin-left: 10px;
+  }
+
+  .mypay-right__orderProduct__text > button {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.5em;
+    position: absolute;
+    top: auto;
+    right: 25px;
+    bottom: 50px;
+  }
+
   .mypay-right__orderProduct__text__price {
-    float: right;
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
   }
   .mypay-right__orderProduct__text__price__after-num {
-    font-size: 25px;
+    font-size: 20px;
   }
   .mypay-right__orderProduct__text__price__after-unit {
+    font-size: 18px;
+  }
+  .mypay-right .contents-wrap button.btnST02 {
+    font-size: 18px;
+    height: 50px;
+  }
+  .mypay-method {
+    font-size: 18px;
+    justify-content: flex-end;
+  }
+  .mypay-method .mypay-method__name {
+    font-weight: bold;
+  }
+  .mypay-method .mypay-method__time {
+    font-size: 12px;
+  }
+  .mypay-method .mypay-method__price {
+    margin-top: 15px;
+  }
+  .mypay-method > strong {
+    margin-top: 20px;
+    margin-left: 55px;
+    margin-right: auto;
+    position: relative;
+    top: -3px;
+  }
+
+  .mypay-method img {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .mypay-right .contents-wrap span.order-number {
+    top: 20px;
+    right: 45px;
+  }
+
+  .mypay-method .card-detail {
+    font-size: 14px;
+  }
+
+  .mypay-right .contents-wrap .delivery-info {
+    padding: 25px 30px;
+    font-size: 16px;
+  }
+  .mypay-right .contents-wrap .delivery-info dl dt {
+    width: 30%;
+  }
+  .mypay-right .contents-wrap .delivery-info dl dd {
+    width: 70%;
+  }
+
+  .mypay-right .contents-wrap .pay-detail {
+    padding: 25px 30px;
+  }
+  .mypay-right .paymentDetail__orderPrice .priceName {
+    font-size: 18px;
+  }
+  .mypay-right .paymentDetail__orderPrice .price {
+    font-size: 22px;
+  }
+  .mypay-right .paymentDetail__orderPrice .priceUnit {
     font-size: 20px;
+  }
+  .mypay-right .pay-detail > ol > li {
+    font-size: 18px;
+    line-height: 1.8em;
+  }
+  .mypay-right .pay-detail > ol > li > .priceName,
+  .mypay-right .pay-detail > ol > li > .price {
+    font-size: 16px;
+  }
+  .mypay-right .pay-detail > ol > li > .priceUnit {
+    font-size: 14px;
+  }
+
+  .mypay-right .contents-wrap button.btnST03 {
+    font-size: 18px;
+    height: 50px;
   }
 }
 
