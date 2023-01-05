@@ -99,6 +99,7 @@
     box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
 }
 
+
 /*
 제품 상세페이지 Tab 최적화
 상위 개별 Class 추가로 가능한지 판단하기
@@ -119,6 +120,8 @@
     margin: 0;  /* 해당부분 상세페이지 최적화 */
     box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
 }
+
+해당 CSS
 
 ```
 

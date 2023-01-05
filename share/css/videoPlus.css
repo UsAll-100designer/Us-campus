@@ -104,6 +104,26 @@
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
+/*
+제품 상세페이지 Tab 최적화
+상위 개별 Class 추가로 가능한지 판단하기
+.p_view.study-vis
+*/
+
+.p_view.study-vis .stickyBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  z-index: 30;
+  background: #fff;
+  margin: 0; /* 해당부분 상세페이지 최적화 */
+  box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
+}
+
 /*clearfix*/
 .cf:after {
   clear: both;
