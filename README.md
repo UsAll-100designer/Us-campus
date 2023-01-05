@@ -80,6 +80,48 @@
 
 ```
 
+- 01M 05D Tab 추가 최적화 부분
+
+  - share/css/videoPlus.css
+
+```
+.stickyBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    z-index: 30;
+    background: #fff;
+    margin: 1.5rem 0;  /* 해당부분 상세페이지 최적화 */
+    box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
+}
+
+/*
+제품 상세페이지 Tab 최적화
+상위 개별 Class 추가로 가능한지 판단하기
+.p_view.study-vis
+*/
+
+예시
+.p_view.study-vis .stickyBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    z-index: 30;
+    background: #fff;
+    margin: 0;  /* 해당부분 상세페이지 최적화 */
+    box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
+}
+
+```
+
 ---
 
 #### AS-IS
