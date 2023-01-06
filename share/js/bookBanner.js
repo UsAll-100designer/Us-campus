@@ -3,10 +3,10 @@ const swiper = new Swiper('.mySwiper', {
     nextEl: '.swiper-next-button',
     prevEl: '.swiper-prev-button',
   },
-  // autoplay: {
-  //   delay: 8500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 8500,
+    disableOnInteraction: false,
+  },
   effect: 'fade',
   loop: 'infinite',
   pagination: {

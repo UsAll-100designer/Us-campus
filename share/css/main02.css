@@ -187,7 +187,7 @@ img {
 .button-wrapper {
   position: absolute;
   left: 100px;
-  top: 47%;
+  bottom: 18%;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -195,7 +195,7 @@ img {
 
 .button-wrapper svg {
   width: 28px;
-  color: #ddd;
+  color: #555;
 }
 .button-wrapper .swiper-button {
   border: 1px solid #555;
