@@ -293,7 +293,7 @@ img {
   top: 50%;
 }
 [data-sld='1'] .boxBook {
-  background: var(--beach-bg) url('../../img/img_slide_bg.png') no-repeat;
+  background: var(--beach-bg) url('../../img/img_slide_bg02.png') no-repeat;
   background-size: contain;
 }
 
